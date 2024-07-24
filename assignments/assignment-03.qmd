@@ -1,0 +1,117 @@
+---
+title: "Assignment 03"
+subtitle: "ESTIMATING UNCERTAINTY AND COMPARING DATA TO A STANDARD"
+description: This assignment is worth 15 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+   highlight-style: atom-one
+date: today
+
+---
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-03.png")
+```
+
+
+
+## Instructions
+
+You will use the *sandwiches.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/sandwiches.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+
+Use the code chunks in the *assignment03.qmd* file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment. 
+
+<br />
+
+
+# Part 1: Visualizing, Summarizing, and Describing the Sample Data
+
+1. Create a histogram for the `sugar` attribute. Be sure to update the labels and add a color of your choice. Include your histogram in your document.
+ 
+2. Use the `df_stats()` function to compute a set of numerical summary measures for the `sugar` attribute. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).
+
+3. **(3pts.)** Write a couple of sentences describing the shape, center, and variation of the distribution using the context of the sugar content in sub shop sandwiches.
+
+<br />
+
+
+# Part 2: Estimating Uncertainty
+
+Suppose a social scientist carried out a bootstrap simulation (used the `do()` function similar to how we did in the Day 5 activity) to estimate the standard error of the sample mean amount of sugar. The resulting histogram and summary statistics of this simulation are shown below: 
+
+```{r}
+#| label: fig-bootstrap-dist
+#| fig-cap: "Distribution of 1000 bootstrapped means."
+#| out-width: "80%"
+#| echo: false
+
+knitr::include_graphics("../img/lab-03-hist.png")
+```
+
+
+
+```{r}
+#| eval: false
+#| highlight-style: atom-one
+> df_stats(~result, data = bootstrap_means)
+
+  response   min       Q1  median    Q3   max     mean        sd    n missing
+1   result 6.592 7.260375 7.49725 7.735 8.775 7.502887 0.3305093 1000       0
+```
+
+
+<br />
+
+4. Explain why we expect the mean of this distribution of sample means to be 7.50.
+
+5. What is the estimated standard error of the means?
+
+6. Explain what the standard error measures using the context.
+
+
+<br />
+
+
+# Part 3: Hypothesis Test to Compare Data to a Standard
+
+The [American Heart Association](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much) recommends on average no more than ~30g of sugar per day. If we divide this up across three meals a day, the recommended amount for breakfast is 10g. You will use the `sugar` attribute from the *sandwiches.csv* data to carry out a hypothesis test to answer the following research question:
+
+> **Research Question:** Is the average amount of sugar in sub shop sandwiches different from the recommended amount of 10g (for a single meal)?
+
+7. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested in words.
+
+8. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested using mathematical symbols.
+
+9. **(5pts.)** Conduct a hypothesis test using R that allows you to answer the research question. Please be sure to state your conclusions in reference to the hypotheses you wrote out in response to Question 1. 
+To fully answer this question you must:
+  
+    - Include the R syntax you used to carry out the test.
+    - State the observed sample statistic.
+    - State the *p*-value.
+    - State your conclusion and answer the research question (in context).
+
+
+
+## How do I submit the assignment?
+
+Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:
+
+- [ ] All group members' names are on the assignment.
+- [ ] All tables are numbered and have a caption.
+- [ ] All figures are numbered and have a caption.
+- [ ] All figures are re-sized to not take up more page space than is necessary to read them.
+- [ ] No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).
+- [ ] Do not submit the script file you used unless the directions specifically ask you to submit it.
+
+
+<br />
+
+
+    
+    

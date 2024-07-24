@@ -1,0 +1,118 @@
+---
+title: "Assignment 04"
+subtitle: "STUDY DESIGN AND HYPOTHESIS TESTS FOR COMPARING GROUPS"
+description: This assignment is worth 19 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+   highlight-style: atom-one
+date: today
+
+---
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-04.jpg")
+```
+
+## Instructions
+
+You will use the *nhanes.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/nhanes.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+
+Use the code chunks in the *assignment04.qmd* file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment. 
+
+
+
+# Part 1: Study Design
+
+*You do not need to analyze any of the data in the nhanes.csv file to answer the questions in this section.*
+
+Suppose that it is found in an analysis of the NHANES data that people who are more physically active tend to be statistically significantly less likely to have depression.
+
+1. **(2pts.)** Given how the data were collected, can we generalize this result to a larger population? If so, describe the population that we can generalize to. If not, explain why not. 
+
+2. **(2pts.)** Given how the study was designed, can we conclude that physical activity causes a lower likelihood of depression? If so, explain why? If not, explain why not?  
+
+<br />
+
+
+# Part 2: Investigating Research Question 1
+
+A social scientist is interested in answering the following research question:
+
+> Is there a difference in the average amount of exercise American adults get between those that have trouble sleeping and those that do not?
+
+You will use the `vigorous_exercise` and `trouble_sleeping` variables from the *nhanes.csv* data to carry out hypothesis tests to answer this research question.  
+
+3. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested *in words*.
+
+4. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested *using mathematical symbols*.
+
+5. **(5pts.)** Conduct a hypothesis test using R that allows you to answer the research question. Please be sure to state your conclusions in reference to the hypotheses you wrote out in response to Question 1. To fully answer this question you must:
+
+    - Include the R syntax you used to carry out the test.
+    - State the observed sample statistic.
+    - State the p-value.
+    - State your decision about the null hypothesis (reject or fail to reject)
+    - Answer the research question (in context).
+
+6. **(2pts.)** Based on the conclusion you drew in Question 5, indicate the type of statistical error you may have made (type I error, or type II error), and explain what this type of error would mean in the context of this research question. 
+
+7. **(3pts.)** Evaluate all three of the assumptions underlying the hypothesis test. For each assumption (a) include any graphical or numerical evidence you use to help evaluate the assumption, (b) clearly state whether the assumption is tenable or not, and (c) explain why you believe the assumption is tenable or not by referring to the evidence you included. 
+
+<br />
+
+
+# Part 3: Investigating Research Question 2
+
+A social scientist is interested in answering the following research question:
+
+> Is there a difference in the proportion of American adults that indicated they were feeling down, depressed, or hopeless between those that have trouble sleeping and those that do not?
+
+
+They collect data and carry out a two-sample *z*-test to evaluate the differences in proportions. The results in R are given below:
+
+```
+--------------------------------------------------
+2-sample test for equality of proportions without continuity correction
+--------------------------------------------------
+
+H[0]: pi_1 = pi_2
+H[A]: pi_1 ≠ pi_2
+z = -4.700815
+p = 2.591249e-06
+
+--------------------------------------------------
+```
+
+8. **(3pts.)** Sketch a picture of the *z*-distribution based on the null hypothesis being true. To fully answer this question include the following in your sketch:
+    
+    + Label the x-axis.
+    + Clearly indicate the observed z-value(s) in the sketch (based on the output) and draw vertical line(s) at the observed z-value(s).
+    + Shade the area under the curve associated with the p-value based on the alternative hypothesis (from the output).
+
+
+<br />
+
+
+## How do I submit the assignment?
+
+Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:
+
+- [ ] All group members' names are on the assignment.
+- [ ] All tables are numbered and have a caption.
+- [ ] All figures are numbered and have a caption.
+- [ ] All figures are re-sized to not take up more page space than is necessary to read them.
+- [ ] No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).
+- [ ] Do not submit the script file you used unless the directions specifically ask you to submit it.
+
+
+<br />
+
+
+    
+    

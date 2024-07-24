@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+.DS_Store
+.key
+.keynote
+.zip
+
+/.quarto/
+
+
+# Ignore the following folders
+/answer-keys
+/admin

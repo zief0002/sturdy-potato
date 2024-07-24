@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+
+// Fonts
+$font-weight-base: 400 !default;
+
+
+// Links
+$link-color: #da1884;
+$link-decoration: underline !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color(#fe59ae, 100%) !default;
+$link-hover-decoration: underline !default;
+
+// Top Navigation
+$nav-link-color: #610032;
+$nav-link-hover-color: #1B2A41;
+$navbar-bg: #ffc8e4;
+
+/*-- scss:rules --*/
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: #da1884;
+}
+
+.header-section-number {
+  color: #1B2A41;
+}
+
+/* Make th of texreg table normal font weight
+.texreg th {
+  font-weight: normal;
+} */

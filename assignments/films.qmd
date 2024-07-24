@@ -1,0 +1,54 @@
+---
+title: "films.csv"
+subtitle: "DATA CODEBOOK"
+format: 
+  html:
+    df-print: paged
+theme: "lumen"
+highlight-style: "atom-one"
+bibliography: '../assets/epsy5261.bib'
+csl: '../assets/apa-single-spaced.csl'
+---
+
+
+
+The data in [films.csv](https://raw.githubusercontent.com/zief0002/barbieland/main/data/films.csv) includes measures collected from $n=3029$ films released between 1937 and 2016. The data was scraped from various websites (e.g., IMdB). The variables are:
+
+- `movie`: Name of the film
+- `year`: Year the film was released in theaters
+- `genre`: Primary genre of the film (e.g., Adventure, Horror, Comedy)
+- `color`: Was the film released in color or black-and-white? 
+- `language`: The original language the film was originally released in.
+- `country`: The first country the movie was originally released to
+- `rating`: MPAA rating of the film (e.g., G, PG, R)
+- `duration`: Duration (running time) of the film, in minutes
+- `budget`: The film's budget (in U.S. dollars)
+   
+
+<br />
+
+
+### Preview
+
+```{r}
+#| message: false
+#| code-fold: true
+# Import Data
+films = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/barbieland/main/data/films.csv")
+
+# View data
+films
+```
+
+<br />
+
+
+### References
+
+
+<!-- Roser, M. (2017). [Fertility rate](https://ourworldindata.org/fertility-rate#empowerment-of-women). *Our world in data*. -->
+
+<!-- UNICEF. (2016). [State of the world's children 2016](https://www.unicef.org/publications/files/UNICEF_SOWC_2016.pdf). *United Nations Population Division's World Contraceptive Use, household surveys including Demographic and Health Surveys and Multiple Indicator Cluster Surveys.* -->
+
+<!-- World Bank (2019). [World Bank open data](https://data.worldbank.org/).  -->
+

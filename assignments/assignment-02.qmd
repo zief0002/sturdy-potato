@@ -1,0 +1,78 @@
+---
+title: "Assignment 02"
+subtitle: "VISUALIZING AND SUMMARIZING DATA"
+description: This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+date: today
+
+---
+
+
+
+
+
+
+<!-- - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/broadband.csv) -->
+<!-- - [[Data Codebook]](https://zief0002.github.io/rustic-penguin/codebooks/broadband.html) -->
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-02.png")
+```
+
+
+
+## Instructions
+
+You will use the *nhanes.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/nhanes.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+
+Use the code chunks in the *assignment02.qmd* file to load packages, import the data, and carry out any R computations. You will use the `sleep_weeknight` and `sleep_weekend` attributes from the *nhanes.csv* data to compute graphical and numerical summaries to answer the following research question:
+
+> **Research Question**: How does the distribution of hours of sleep on the weekend compare to that for hours of sleep during the week for American adults who responded to the NHANES 2017 survey?
+
+<br />
+
+
+# Questions
+
+Submit a PDF document of your responses to the following questions. 
+
+1. Create a histogram of the distribution of weeknight hours slept. Change the color and fill arguments from the default colors. Include appropriate axis labels. **(3pts.)**
+
+2. Based on the shape of the distribution from Question 1, compute and report a set of **appropriate** numerical summaries for the center and variation of the distribution of weeknight hours slept. (Note: You should only have two numerical summaries—one to summarize the center and one to summarize the variation.) Your answer does not need a description; you only need to include the statistics and the graphs. **(2pts.)**
+
+3. Use your results from Questions 1 and 2 to write a couple of sentences describing the shape, center, and variation of the distribution using the context of weeknight hours slept. **(3pts.)**
+
+4. Create a density plot of the distribution of weekend hours slept. Change the color and fill arguments from the default colors. Include appropriate axis labels. **(3pts.)**
+
+5. Based on the shape of the distribution from Question 3, compute and report a set of **appropriate** numerical summaries for the center and variation of the distribution of weekend hours slept. (Note: You should only have two numerical summaries—one to summarize the center and one to summarize the variation.) Your answer does not need a description; you only need to include the statistics and the graphs. **(2pts.)**
+
+6. Use your results from Questions 4 and 5 to write a couple of sentences describing the shape, center, and variation of the distribution using the context of weekend hours slept. **(3pts.)**
+
+7. Using no more than 200 words, answer the research question. To do this, your response should compare and contrast each of the different features of the two distributions (shape, center, and variability). It should also include any conclusions about how sleep on weekends and weeknights differs (or is similar) for adult Americans in 2017. These conclusions should be understandable by someone who does not have a strong background in statistics. **(4pts.)**
+
+<br />
+
+
+## How do I submit the assignment?
+
+Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:
+
+- [ ] All group members' names are on the assignment.
+- [ ] All tables are numbered and have a caption.
+- [ ] All figures are numbered and have a caption.
+- [ ] All figures are re-sized to not take up more page space than is necessary to read them.
+- [ ] No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).
+- [ ] Do not submit the script file you used unless the directions specifically ask you to submit it.
+
+
+<br />
+
+
+    
+    

@@ -1,0 +1,524 @@
+---
+title: "Calendar"
+---
+
+
+The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor's discretion.
+
+<!-- As part of the course, there are several articles, papers and technical reports that you will need to read during the semester. Most of the articles themselves are accessible through the [University of Minnesota library website](http://www.lib.umn.edu). In order to access the full text of some of the articles, you will need to log in using your University x500 username and password. More detailed information, including references or links to specific readings, are linked under the day's "Reading". -->
+
+<br /><br />
+
+
+<br />
+
+
+<table class="table">
+
+<thead>
+<tr>
+<th style="width:5%;text-align:center"></th>
+<th style="width:10%;text-align:center"">Day</th>
+<th style="width:10%;">Date</th>
+<th style="width:15%;text-align:center">Reading</th>
+<th style="width:50%;">Topic/Slides</th>
+<th style="width:10%;text-align:center">Materials</th>
+</tr>
+</thead>
+
+
+<tbody>
+
+<!-- <span style="margin-left:5px; color:#5a067d;font-size:12px;">*[Notes and Script file updated 09-24-2019]*</span></td> -->
+
+<!-- READING <a class="my-link" href="readings/00-welcome-to-8264.html"><span class="fa fa-book"></span></a> -->
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">1</td>
+<td style="vertical-align:middle;">Sept. 05</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>Welcome to EPsy 5261</td>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+</tr>
+
+
+<!-- Unit 01: STATISTICAL COMPUTATION -->
+
+<tr>
+<td colspan="5"><b>Unit 01: Statistical Computation</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">2</td>
+<td style="vertical-align:middle;">Sept. 07</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  [Introduction to Coding](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-02.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day02.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">3</td>
+<td style="vertical-align:middle;">Sept. 12</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 1--2](https://zief0002.github.io/epsy-5261/01-01-r-and-rstudio-installation.html)
+</td>
+<td>
+  [Introduction to R and RStudio](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-03.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day03.zip)
+</td>
+</tr>
+
+<!-- Unit 02: SUMMARIZING AND VISUALIZING DATA -->
+
+<tr>
+<td colspan="5"><b>Unit 02: Summarizing and Visualizing Data</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">4</td>
+<td style="vertical-align:middle;">Sept. 14</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 4--6](https://zief0002.github.io/epsy-5261/02-01-data-structure-and-attributes.html)
+</td>
+<td>
+  [Visualization and Numerical Summaries](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-04.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day04.zip)
+</td>
+</tr>
+
+<!-- <tr> -->
+<!-- <td></td> -->
+<!-- <td style="vertical-align:middle; background-color:#e0bed1;">**Lab Assignment #1 Due**</td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a class="my-link" href="files/day04.zip"><span class="fa-solid fa-file-signature"></span></a> -->
+<!-- </td> -->
+<!-- </tr> -->
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">5</td>
+<td style="vertical-align:middle;">Sept. 19</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  [Visualization and Numerical Summaries](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-05.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder">](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day05.zip)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">6</td>
+<td style="vertical-align:middle;">Sept. 21</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  [Visualization and Numerical Summaries](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-05.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder">](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day05.zip)
+</td>
+</tr>
+
+
+<!-- Unit 03: HYPOTHESIS TESTING -->
+
+<tr>
+<td colspan="5"><b>Unit 03: Hypothesis Testing</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">7</td>
+<td style="vertical-align:middle;">Sept. 26</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 7--8](https://zief0002.github.io/epsy-5261/04-01-case-study-teen-sleep.html)
+</td>
+<td>
+  [Estimating Uncertainty](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-06.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day06.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">8</td>
+<td style="vertical-align:middle;">Sept. 28</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  [Introduction to Hypothesis Testing](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-07.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day07.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">9</td>
+<td style="vertical-align:middle;">Oct. 03</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  [Simulation-Based Hypothesis Testing](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-08.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day08.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">10</td>
+<td style="vertical-align:middle;">Oct. 05</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 9--11](https://zief0002.github.io/epsy-5261/04-03-one-sample-test.html)
+</td>
+<td>
+  [Hypothesis Testing with the *t*-distribution](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-09.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day09.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">11</td>
+<td style="vertical-align:middle;">Oct. 10</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 12](https://zief0002.github.io/epsy-5261/04-06-one-sample-test-proportions.html)
+</td>
+<td>
+  [Hypothesis Testing for Proportions](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-10.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder">](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day10.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">12</td>
+<td style="vertical-align:middle;">Oct. 12</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 13--14](https://zief0002.github.io/epsy-5261/05-01-two-sample-t-test.html)
+</td>
+<td>
+  [Hypothesis Testing for Comparing Two Means](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-11.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day11.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">13</td>
+<td style="vertical-align:middle;">Oct. 17</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 15](https://zief0002.github.io/epsy-5261/05-03-two-sample-test-proportions.html)
+</td>
+<td>
+  [Hypothesis Testing for Comparing Two Proportions](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-12.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day12.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">14</td>
+<td style="vertical-align:middle;">Oct. 19</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 17](https://zief0002.github.io/epsy-5261/06-01-generalization.html)
+</td>
+<td>
+  [Study Design: Generalizability](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-13.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day13.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">15</td>
+<td style="vertical-align:middle;">Oct. 24</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 18](https://zief0002.github.io/epsy-5261/06-02-cause-and-effect.html)
+</td>
+<td>
+  [Study Design: Causal Claims](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-14.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/activities/day14.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">16</td>
+<td style="vertical-align:middle;">Oct. 26</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">NO CLASS---Mental Health Day 🛌 🍷</td>
+<td align="center" style="vertical-align:middle;"></td>
+</tr>
+
+
+<!-- Unit 04: EFFECT SIZE -->
+
+<tr>
+<td colspan="5"><b>Unit 04: Effect Size</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">17</td>
+<td style="vertical-align:middle;">Oct. 31</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 19--21](https://zief0002.github.io/epsy-5261/07-01-confidence-intervals.html)
+</td>
+<td>
+  [Introduction to Confidence Intervals](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-16.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day16.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">18</td>
+<td style="vertical-align:middle;">Nov. 02</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  [Confidence Intervals for a Single Mean](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-17.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day17.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">19</td>
+<td style="vertical-align:middle;">Nov. 07</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+  <!-- Confidence Intervals for a Single Proportion -->
+  [Confidence Intervals for a Single Proportion](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-18.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day18.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">20</td>
+<td style="vertical-align:middle;">Nov. 09</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+<!-- Confidence Intervals for Comparing Two Means -->
+  [Confidence Intervals for Comparing Two Means](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-19.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day19.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">20</td>
+<td style="vertical-align:middle;">Nov. 09</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+<!-- Confidence Intervals for Comparing Two Proportions -->
+  [Confidence Intervals for Comparing Two Proportions](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-20.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day20.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">21</td>
+<td style="vertical-align:middle;">Nov. 14</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>
+More Confidence Intervals<br />
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day21.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">22</td>
+<td style="vertical-align:middle;">Nov. 16</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 22--23](https://zief0002.github.io/epsy-5261/07-04-standardized-effects-means.html)
+</td>
+<td>
+  <!-- Standardized Effect Size -->
+  [Standardized Effect Size](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-22.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day22.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">23</td>
+<td style="vertical-align:middle;">Nov. 21</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">NO CLASS---Mental Health Day 🛌 🍷</td>
+<td align="center" style="vertical-align:middle;"></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">24</td>
+<td style="vertical-align:middle;">Nov. 23</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">NO CLASS---Thanksgiving Break 🦃 🌽 🥧</td>
+<td align="center" style="vertical-align:middle;"></td>
+</tr>
+
+
+<!-- Unit 05: CORRELATION AND REGRESSION -->
+
+<tr>
+<td colspan="5"><b>Unit 05: Correlation and Regression</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">25</td>
+<td style="vertical-align:middle;">Nov. 28</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 24](https://zief0002.github.io/epsy-5261/08-01-scatterplot-correlation.html)
+</td>
+<td>
+  [Introduction to Correlation](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-25.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day25.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">26</td>
+<td style="vertical-align:middle;">Nov. 30</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 25](https://zief0002.github.io/epsy-5261/08-02-linear-regression-description.html)
+</td>
+<td>
+  [Introduction to Simple Linear Regression](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-26.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day26.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">27</td>
+<td style="vertical-align:middle;">Dec. 05</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 26](https://zief0002.github.io/epsy-5261/08-03-r-squared.html)
+</td>
+<td>
+  [Simple Linear Regression (Continued)](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-27.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day27.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">28</td>
+<td style="vertical-align:middle;">Dec. 07</td>
+<td align="center" style="vertical-align:middle;">
+  [Ch. 27](https://zief0002.github.io/epsy-5261/08-04-regression-inference.html)
+</td>
+<td>
+  [Simple Linear Regression (Continued)](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-28.pdf)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa-solid fa-folder"></span>](files/activities/day28.zip)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">29</td>
+<td style="vertical-align:middle;">Dec. 12</td>
+<td align="center" style="vertical-align:middle;">
+  TBD
+</td>
+<td>
+Review Day
+  <!-- [Review Day](files/slides/day29.pdf) -->
+</td>
+<td align="center" style="vertical-align:middle;">
+  <!-- [<span class="fa-solid fa-folder"></span>](https://raw.githubusercontent.com/zief0002/barbieland/main/files/slides/day-29.zip) -->
+</td>
+</tr>
+
+
+
+
+
+</tbody>
+</table>    
+
+

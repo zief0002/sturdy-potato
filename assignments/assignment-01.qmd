@@ -1,0 +1,85 @@
+---
+title: "Assignment 01"
+subtitle: "INTRODUCTION TO CODING AND USING R"
+description: This assignment is worth 15 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+date: today
+---
+
+
+
+
+
+
+<!-- - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/broadband.csv) -->
+<!-- - [[Data Codebook]](https://zief0002.github.io/rustic-penguin/codebooks/broadband.html) -->
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-01.png")
+```
+
+
+
+## Instructions
+
+Download the [assignment01.zip](files/assignments/lab-assignment-01.zip) folder and unzip it. This
+
+You will use the *films.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/films.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+
+Use the code chunks in the *assignment01.qmd* file to load packages and import the data. (Reference the in-class activity from Day 3 if you need to remember how to do this.) You can also do any computations needed for the assignment in this QMD document. 
+
+<br />
+
+
+# Questions
+
+Submit a PDF document of your responses to the following questions. 
+
+1. Print the first 10 rows of the dataset to make sure it was imported correctly. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).
+
+2.  What does a row represent in this data set? 
+
+3. What type of attribute is `duration` (categorical or quantitative)? How can you tell?
+
+4. What type of attribute is `genre` (categorical or quantitative)? How can you tell?
+
+5. Using the `df_stats()` function, create a table of the `genre` attribute and have it display proportions. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).
+
+6. Based on the output from Question 5, what proportion of movies in this dataset are action movies?
+
+7. Using the `df_stats()` function, compute the summary statistics for the `duration` attribute. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).
+
+8. What is the mean movie duration? Write a single sentence interpreting this value in the context of the duration of the movie. **(2pts.)**
+
+9. Create a histogram of the movie durations. **(4pts.)**
+    + Update the *x*- and *y*-axis labels.
+    + Color the bars and bar borders of the histogram.
+    + Insert a picture of the plot into your word-processed document. Re-size it so that it does not take up more room than necessary. (But, make sure the labels are still readable.)
+    
+10. Where is "most" of the data in your histogram? (Note: You can give your best guess here, but we will formalize this later in the semester) Interpret this in the context of the duration of the movie. **(2pts.)**
+
+
+<br />
+
+
+## How do I submit the assignment?
+
+Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:
+
+- [ ] All group members' names are on the assignment.
+- [ ] All figures are re-sized to not take up more page space than is necessary to read them.
+- [ ] No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).
+- [ ] Do not submit the QMD file you used unless the directions specifically ask you to submit it.
+
+
+<br />
+
+
+    
+    

@@ -1,0 +1,118 @@
+---
+title: "Assignment 05"
+subtitle: "CONFIDENCE INTERVALS"
+description: This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+   highlight-style: atom-one
+date: today
+
+---
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-02.png")
+```
+
+## Instructions
+
+You will use the *nhanes.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/nhanes.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+
+Use the code chunks in the *assignment05.qmd* file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment. 
+
+A social scientist is interested in answering the following two research questions:
+
+> **Research Question 1:** What proportion of adults in the U.S. in 2017 report having sleep trouble?
+>
+> **Research Question 2:** What is the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not?
+
+You will use the `recent_depression` and `trouble_sleeping` variables from the *nhanes.csv* data to compute confidence intervals to answer these research questions.
+
+
+
+# Part 1: Investigating Research Question 1
+
+1. **(5pts.)** Compute and report a 95% confidence interval to estimate the proportion of adults in the U.S. in 2017 report having sleep trouble. Then interpret this interval to answer Research Question 1. To fully answer this question, you must:
+
+    + Include the syntax you used to create the interval.
+    + Include an interpretation of the confidence interval in context.
+ 
+
+2. **(3pts.)** Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here. 
+
+<br />
+
+
+# Part 2: Investigating Research Question 2
+
+3. **(5pts.)** Compute and report a 95% confidence interval to estimate the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not. Then interpret this interval to answer Research Question 2. To fully answer this question, you must:
+
+    + Include the syntax you used to create the interval.
+    + Include an interpretation of the confidence interval in context.
+
+
+
+4. **(3pts.)** Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here.
+
+<br />
+
+
+# Part 3: Multiple Choice Questions
+
+*Please indicate your answer to each question clearly. (You do NOT need to explain your choice.)*
+
+
+5. If the sample size was increased, all else being the same, how would the widths of the confidence intervals in Questions \#1 and \#2 change?
+
+    a. The interval widths would both decrease.
+    b. The interval widths would both increase.
+    c. The interval widths would both stay the same.
+    d. One of the interval widths would decrease, the other would increase.
+ 
+
+6. If the confidence level was increased to 98%, all else being the same, how would the widths of the confidence intervals in Questions \#1 and \#2 change?
+
+    a. The interval widths would both decrease.
+    b. The interval widths would both increase.
+    c. The interval widths would both stay the same.
+    d. One of the interval widths would decrease, the other would increase.
+
+
+Suppose a researcher computed a 90% confidence interval to estimate the mean number of hours per weekend night adults in U.S. households in 2017 slept. This interval was reported as 90% CI = [8.05, 8.31]. Questions 7--8 each give a potential interpretation of this interval. *For each of these questions, indicate whether the interpretation provided is correct or incorrect. (You do NOT need to explain why.)*
+
+7. There is a 90% chance the confidence interval includes the sample mean number of hours per weekend night adults in U.S. households in 2017 slept. 
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+8. About 90% of adults in U.S. households in 2017 slept between 8.05 and 8.31 hrs per weekend night.
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+<br />
+
+
+
+## How do I submit the assignment?
+
+Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:
+
+- [ ] All group members' names are on the assignment.
+- [ ] All tables are numbered and have a caption.
+- [ ] All figures are numbered and have a caption.
+- [ ] All figures are re-sized to not take up more page space than is necessary to read them.
+- [ ] No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).
+- [ ] Do not submit the script file you used unless the directions specifically ask you to submit it.
+
+
+<br />
+
+
+    
+    

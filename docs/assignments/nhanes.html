@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>EPsy 5261 - nhanes.csv</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../assets/sticky-notes.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">EPsy 5261</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html" rel="" target="">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments.html" rel="" target="">
+ <span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data.html" rel="" target="">
+ <span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">Instructor &amp; TA</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../mission-statements.html" rel="" target="">
+ <span class="menu-text">Mission Statements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../umn-policies.html" rel="" target="">
+ <span class="menu-text">University Policies</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preview" id="toc-preview" class="nav-link active" data-scroll-target="#preview">Preview</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">nhanes.csv</h1>
+<p class="subtitle lead">DATA CODEBOOK</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>The <a href="https://www.cdc.gov/nchs/nhanes">National Health and Nutrition Examination Survey (NHANES)</a> is a program of studies carried out by the Centers for Disease Control and Prevention (CDC) and is designed to assess the health and nutritional status of adults and children in the United States. These studies are conducted in two-year cycles and the data collected is representative of the non-institutionalized U.S. population. The data comes from interviews and physical examinations of the sampled participants.</p>
+<p>The data in <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/nhanes.csv">nhanes.csv</a> were collected by the CDC in 2017 and includes measures collected from 500 randomly sampled participants. The variables are:</p>
+<ul>
+<li><code>sleep_weeknight</code>: Number of hours participant usually sleep on weekdays or workdays (to nearest half hour).</li>
+<li><code>sleep_weekend</code>: Number of hours participant usually sleep on weekends or non-workdays (to nearest half hour).</li>
+<li><code>trouble_sleeping</code>: Participant’s response to the question: “Have you ever told a doctor or other health professional that you have trouble sleeping?” (<code>YES</code>, <code>NO</code>)</li>
+<li><code>exercise_hour</code>: Participant’s response to the question: “Do you get more than 60 minutes of moderate to vigorous exercise per day?” (<code>YES</code>, <code>NO</code>)</li>
+<li><code>vigorous_exercise</code>: Amount of time the participant spends doing moderate- or vigorous-intensity sports, fitness or recreational activities on a typical day. Moderate-intensity sports, fitness or recreational activities were defined as causing small increases in breathing or heart rate and is done for at least 10 minutes continuously. Vigorous-intensity sports, fitness or recreational activities were defined as causeing large increases in breathing or heart rate and is done for at least 10 minutes continuously.</li>
+<li><code>pulse</code>: Participant’s 60 second pulse rate</li>
+<li><code>recent_depression</code>: Participant’s response to the question: “Over the last 2 weeks, have you felt down, depressed, or hopeless?” (<code>YES</code>, <code>NO</code>)</li>
+<li><code>age</code>: Participant’s age (in years)</li>
+<li><code>martital_status</code>: Participant’s marital status (<code>Married</code>, <code>Divorced</code>, <code>Separated</code>, <code>Never Married</code>, <code>Live with Partner</code>, or <code>Widowed</code>)</li>
+<li><code>us_citizen</code>: Participant’s response to the question: “Are you a citizen of the United States? [Information about citizenship is being collected by the U.S. Public Health Service to perform health related research. Providing this information is voluntary and is collected under the authority of the Public Health Service Act. There will be no effect on pending immigration or citizenship petitions.]” (<code>YES</code>, <code>NO</code>)</li>
+</ul>
+<p><br></p>
+<section id="preview" class="level3">
+<h3 class="anchored" data-anchor-id="preview">Preview</h3>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>nhanes <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/barbieland/main/data/nhanes.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>nhanes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["sleep_weeknight"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["sleep_weekend"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["trouble_sleeping"],"name":[3],"type":["chr"],"align":["left"]},{"label":["exercise_hour"],"name":[4],"type":["chr"],"align":["left"]},{"label":["vigorous_exercise"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["pulse"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["recent_depression"],"name":[7],"type":["chr"],"align":["left"]},{"label":["age"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["martital_status"],"name":[9],"type":["chr"],"align":["left"]},{"label":["us_citizen"],"name":[10],"type":["chr"],"align":["left"]}],"data":[{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"60","9":"Married","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"YES","5":"120","6":"80","7":"NO","8":"36","9":"Divorced","10":"NO"},{"1":"8.0","2":"8.0","3":"YES","4":"YES","5":"120","6":"84","7":"NO","8":"55","9":"Never Married","10":"YES"},{"1":"9.0","2":"8.5","3":"YES","4":"NO","5":"15","6":"68","7":"YES","8":"45","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"8.0","3":"NO","4":"YES","5":"75","6":"78","7":"YES","8":"27","9":"Never Married","10":"YES"},{"1":"7.5","2":"8.0","3":"YES","4":"YES","5":"240","6":"90","7":"YES","8":"67","9":"Married","10":"YES"},{"1":"7.0","2":"9.0","3":"NO","4":"NO","5":"60","6":"74","7":"NO","8":"39","9":"Married","10":"YES"},{"1":"8.0","2":"9.0","3":"YES","4":"YES","5":"120","6":"82","7":"NO","8":"30","9":"Live with Partner","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NO","5":"20","6":"60","7":"NO","8":"33","9":"Separated","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"180","6":"70","7":"NO","8":"57","9":"Divorced","10":"YES"},{"1":"4.0","2":"5.0","3":"YES","4":"NO","5":"60","6":"72","7":"NO","8":"64","9":"Married","10":"YES"},{"1":"7.5","2":"9.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"61","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"40","6":"60","7":"NO","8":"79","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"NO","5":"30","6":"86","7":"NO","8":"61","9":"Married","10":"YES"},{"1":"7.5","2":"10.5","3":"NO","4":"NO","5":"60","6":"76","7":"YES","8":"20","9":"Never Married","10":"YES"},{"1":"6.0","2":"9.5","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"55","9":"Married","10":"NO"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"61","9":"Divorced","10":"NO"},{"1":"9.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"62","7":"YES","8":"49","9":"Live with Partner","10":"YES"},{"1":"6.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"58","7":"YES","8":"64","9":"Married","10":"NO"},{"1":"6.5","2":"6.5","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"72","9":"Married","10":"YES"},{"1":"8.0","2":"7.0","3":"YES","4":"NO","5":"30","6":"68","7":"YES","8":"23","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"76","7":"YES","8":"43","9":"Married","10":"NO"},{"1":"9.0","2":"10.0","3":"NO","4":"NO","5":"30","6":"78","7":"NO","8":"22","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"88","7":"NO","8":"63","9":"Married","10":"YES"},{"1":"4.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"90","7":"YES","8":"43","9":"Married","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"62","7":"NO","8":"68","9":"Married","10":"YES"},{"1":"2.0","2":"3.5","3":"YES","4":"YES","5":"120","6":"50","7":"NO","8":"24","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"88","7":"YES","8":"71","9":"Widowed","10":"YES"},{"1":"5.5","2":"NA","3":"NO","4":"NA","5":"NA","6":"76","7":"YES","8":"39","9":"Never Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"72","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"37","9":"Live with Partner","10":"NO"},{"1":"7.5","2":"10.5","3":"NO","4":"NA","5":"NA","6":"88","7":"YES","8":"60","9":"Separated","10":"NO"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"71","9":"Widowed","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"68","7":"YES","8":"26","9":"Married","10":"NO"},{"1":"7.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"53","9":"Married","10":"YES"},{"1":"7.0","2":"10.0","3":"NO","4":"NO","5":"60","6":"92","7":"NO","8":"55","9":"Married","10":"YES"},{"1":"7.0","2":"7.5","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"65","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"79","9":"Married","10":"YES"},{"1":"7.5","2":"7.0","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"24","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"61","9":"Married","10":"YES"},{"1":"8.0","2":"8.5","3":"YES","4":"YES","5":"70","6":"74","7":"NO","8":"23","9":"Never Married","10":"YES"},{"1":"6.5","2":"7.0","3":"NO","4":"NO","5":"60","6":"66","7":"YES","8":"43","9":"Married","10":"NO"},{"1":"6.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"66","7":"YES","8":"43","9":"Married","10":"NO"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"72","7":"YES","8":"74","9":"Divorced","10":"YES"},{"1":"6.0","2":"3.0","3":"NO","4":"NO","5":"60","6":"72","7":"NO","8":"55","9":"Divorced","10":"YES"},{"1":"5.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"90","7":"NO","8":"42","9":"Married","10":"YES"},{"1":"9.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"70","7":"NO","8":"71","9":"Married","10":"YES"},{"1":"6.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"59","9":"Never Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NO","5":"20","6":"58","7":"NO","8":"48","9":"Married","10":"YES"},{"1":"9.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"40","9":"Divorced","10":"YES"},{"1":"7.5","2":"9.0","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"48","9":"Divorced","10":"YES"},{"1":"10.0","2":"8.0","3":"NO","4":"NO","5":"30","6":"80","7":"NO","8":"46","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NO","5":"10","6":"72","7":"NO","8":"71","9":"Separated","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NO","5":"30","6":"62","7":"NO","8":"66","9":"Married","10":"YES"},{"1":"6.5","2":"7.0","3":"NO","4":"YES","5":"120","6":"66","7":"NO","8":"34","9":"Never Married","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"90","7":"NO","8":"60","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"YES","5":"80","6":"78","7":"NO","8":"58","9":"Never Married","10":"YES"},{"1":"4.0","2":"13.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"26","9":"Married","10":"NO"},{"1":"7.0","2":"7.0","3":"YES","4":"NO","5":"22","6":"66","7":"YES","8":"43","9":"Separated","10":"YES"},{"1":"10.0","2":"10.0","3":"YES","4":"NO","5":"45","6":"94","7":"NO","8":"26","9":"Married","10":"YES"},{"1":"5.0","2":"5.0","3":"YES","4":"YES","5":"240","6":"98","7":"NO","8":"52","9":"Divorced","10":"YES"},{"1":"4.5","2":"4.5","3":"YES","4":"NA","5":"NA","6":"80","7":"YES","8":"36","9":"Married","10":"YES"},{"1":"3.5","2":"5.0","3":"NO","4":"NO","5":"20","6":"90","7":"NO","8":"26","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"70","9":"Divorced","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"60","9":"Married","10":"YES"},{"1":"8.0","2":"10.0","3":"NO","4":"NO","5":"30","6":"68","7":"YES","8":"51","9":"Divorced","10":"NO"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"62","7":"NO","8":"71","9":"Never Married","10":"NO"},{"1":"9.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"90","7":"YES","8":"34","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"52","9":"Divorced","10":"YES"},{"1":"14.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"86","7":"YES","8":"21","9":"Never Married","10":"NO"},{"1":"8.5","2":"8.5","3":"YES","4":"YES","5":"80","6":"44","7":"YES","8":"29","9":"Never Married","10":"YES"},{"1":"6.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"76","7":"NO","8":"38","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"52","7":"NO","8":"45","9":"Married","10":"YES"},{"1":"6.5","2":"6.5","3":"NO","4":"YES","5":"90","6":"74","7":"NO","8":"64","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"YES","4":"NA","5":"NA","6":"60","7":"NO","8":"70","9":"Divorced","10":"YES"},{"1":"8.5","2":"8.0","3":"YES","4":"YES","5":"240","6":"78","7":"YES","8":"44","9":"Married","10":"NO"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"160","6":"60","7":"NO","8":"62","9":"Divorced","10":"YES"},{"1":"10.0","2":"9.0","3":"NO","4":"NO","5":"50","6":"76","7":"NO","8":"44","9":"Never Married","10":"NO"},{"1":"7.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"66","7":"NO","8":"38","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"11.0","3":"NO","4":"NO","5":"20","6":"66","7":"NO","8":"63","9":"Married","10":"YES"},{"1":"7.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"56","9":"Married","10":"NO"},{"1":"6.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"56","7":"NO","8":"36","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"YES","5":"300","6":"74","7":"NO","8":"36","9":"Married","10":"YES"},{"1":"5.5","2":"8.0","3":"NO","4":"NO","5":"60","6":"62","7":"NO","8":"35","9":"Married","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"NO","5":"10","6":"66","7":"NO","8":"68","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"YES","5":"90","6":"74","7":"NO","8":"26","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.5","3":"YES","4":"NO","5":"45","6":"126","7":"NO","8":"29","9":"Married","10":"YES"},{"1":"8.0","2":"9.0","3":"NO","4":"NO","5":"30","6":"68","7":"NO","8":"63","9":"Divorced","10":"YES"},{"1":"7.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"21","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"8.0","3":"YES","4":"NO","5":"15","6":"88","7":"NO","8":"31","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"80","7":"NO","8":"22","9":"Married","10":"YES"},{"1":"4.0","2":"7.0","3":"NO","4":"NO","5":"60","6":"88","7":"NO","8":"52","9":"Never Married","10":"YES"},{"1":"7.0","2":"2.0","3":"YES","4":"YES","5":"120","6":"78","7":"YES","8":"60","9":"Married","10":"YES"},{"1":"7.5","2":"9.0","3":"NO","4":"NO","5":"60","6":"50","7":"NO","8":"51","9":"Separated","10":"YES"},{"1":"5.0","2":"5.0","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"75","9":"Widowed","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"58","7":"YES","8":"51","9":"Never Married","10":"NO"},{"1":"2.0","2":"2.0","3":"YES","4":"NA","5":"NA","6":"82","7":"NO","8":"60","9":"Married","10":"YES"},{"1":"7.0","2":"6.0","3":"YES","4":"NA","5":"NA","6":"80","7":"YES","8":"64","9":"Never Married","10":"NO"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"88","7":"NO","8":"48","9":"Married","10":"YES"},{"1":"10.0","2":"8.5","3":"NO","4":"NO","5":"20","6":"66","7":"NO","8":"63","9":"Married","10":"YES"},{"1":"9.5","2":"9.5","3":"NO","4":"NO","5":"30","6":"98","7":"NO","8":"68","9":"Divorced","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"74","7":"NO","8":"59","9":"Separated","10":"NO"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"20","6":"60","7":"NO","8":"63","9":"Separated","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"55","9":"Divorced","10":"YES"},{"1":"8.5","2":"7.0","3":"NO","4":"NA","5":"NA","6":"74","7":"YES","8":"44","9":"Married","10":"YES"},{"1":"7.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"27","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"YES","5":"240","6":"56","7":"NO","8":"32","9":"Married","10":"NO"},{"1":"8.0","2":"8.0","3":"YES","4":"YES","5":"120","6":"72","7":"YES","8":"34","9":"Never Married","10":"YES"},{"1":"12.0","2":"12.0","3":"YES","4":"NA","5":"NA","6":"74","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"66","7":"NO","8":"69","9":"Divorced","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"47","9":"Married","10":"YES"},{"1":"6.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"68","7":"NO","8":"74","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"56","7":"YES","8":"70","9":"Divorced","10":"YES"},{"1":"6.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"66","7":"YES","8":"45","9":"Divorced","10":"YES"},{"1":"7.5","2":"8.0","3":"YES","4":"NO","5":"30","6":"78","7":"NO","8":"49","9":"Never Married","10":"YES"},{"1":"11.0","2":"14.0","3":"NO","4":"NA","5":"NA","6":"62","7":"NO","8":"62","9":"Married","10":"YES"},{"1":"7.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"56","7":"NO","8":"25","9":"Married","10":"YES"},{"1":"10.0","2":"10.0","3":"NO","4":"YES","5":"360","6":"58","7":"NO","8":"22","9":"Never Married","10":"YES"},{"1":"5.5","2":"5.5","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"73","9":"Widowed","10":"YES"},{"1":"8.5","2":"10.5","3":"NO","4":"YES","5":"105","6":"58","7":"NO","8":"35","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"80","7":"NO","8":"61","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"7.0","3":"NO","4":"NA","5":"NA","6":"66","7":"NO","8":"73","9":"Married","10":"YES"},{"1":"3.5","2":"3.5","3":"YES","4":"NA","5":"NA","6":"72","7":"YES","8":"48","9":"Separated","10":"YES"},{"1":"NA","2":"NA","3":"YES","4":"NO","5":"15","6":"62","7":"NO","8":"26","9":"Never Married","10":"YES"},{"1":"8.5","2":"8.0","3":"NO","4":"YES","5":"90","6":"58","7":"NO","8":"58","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"5.0","3":"YES","4":"NA","5":"NA","6":"100","7":"NO","8":"50","9":"Married","10":"YES"},{"1":"5.5","2":"4.0","3":"NO","4":"YES","5":"300","6":"64","7":"NO","8":"31","9":"Live with Partner","10":"YES"},{"1":"5.0","2":"8.0","3":"NO","4":"YES","5":"80","6":"66","7":"NO","8":"40","9":"Married","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"3.0","2":"3.0","3":"NO","4":"NA","5":"NA","6":"68","7":"YES","8":"66","9":"Divorced","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"74","7":"NO","8":"54","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"72","7":"NO","8":"70","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"240","6":"70","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"50","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"6.5","2":"6.5","3":"NO","4":"NA","5":"NA","6":"90","7":"NO","8":"47","9":"Divorced","10":"YES"},{"1":"10.5","2":"10.5","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"62","9":"Divorced","10":"YES"},{"1":"7.0","2":"8.5","3":"NO","4":"NO","5":"45","6":"58","7":"NO","8":"21","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NO","5":"30","6":"90","7":"NO","8":"36","9":"Married","10":"YES"},{"1":"8.0","2":"9.5","3":"NO","4":"YES","5":"120","6":"70","7":"NO","8":"23","9":"Never Married","10":"YES"},{"1":"7.5","2":"11.0","3":"YES","4":"YES","5":"120","6":"86","7":"NO","8":"56","9":"Married","10":"YES"},{"1":"14.0","2":"NA","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"62","9":"Married","10":"NO"},{"1":"6.0","2":"4.0","3":"NO","4":"NA","5":"NA","6":"94","7":"NO","8":"60","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"76","7":"YES","8":"34","9":"Married","10":"NO"},{"1":"11.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"79","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"23","9":"Married","10":"YES"},{"1":"4.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"32","9":"Never Married","10":"YES"},{"1":"9.0","2":"12.0","3":"NO","4":"NA","5":"NA","6":"54","7":"NO","8":"59","9":"Married","10":"NO"},{"1":"9.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"88","7":"NO","8":"39","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"78","7":"NO","8":"40","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"60","7":"YES","8":"76","9":"Widowed","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NO","5":"30","6":"68","7":"NO","8":"23","9":"Married","10":"YES"},{"1":"9.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"56","7":"NO","8":"67","9":"Divorced","10":"YES"},{"1":"7.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"78","7":"YES","8":"22","9":"Never Married","10":"YES"},{"1":"7.0","2":"6.0","3":"YES","4":"NO","5":"60","6":"78","7":"YES","8":"64","9":"Married","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NO","5":"60","6":"94","7":"YES","8":"47","9":"Never Married","10":"YES"},{"1":"3.5","2":"8.5","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"77","9":"Divorced","10":"YES"},{"1":"9.0","2":"10.0","3":"NO","4":"YES","5":"180","6":"86","7":"NO","8":"67","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"96","7":"NO","8":"74","9":"Divorced","10":"YES"},{"1":"8.0","2":"10.0","3":"NO","4":"YES","5":"140","6":"72","7":"NO","8":"22","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"120","6":"82","7":"NO","8":"60","9":"Divorced","10":"YES"},{"1":"11.0","2":"11.0","3":"NO","4":"YES","5":"120","6":"80","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"6.0","2":"9.5","3":"NO","4":"YES","5":"240","6":"62","7":"NO","8":"56","9":"Divorced","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"YES","5":"180","6":"52","7":"NO","8":"21","9":"Never Married","10":"YES"},{"1":"9.5","2":"9.5","3":"NO","4":"YES","5":"120","6":"76","7":"YES","8":"25","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"80","7":"NO","8":"57","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"78","7":"YES","8":"59","9":"Married","10":"YES"},{"1":"10.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"106","7":"YES","8":"55","9":"Widowed","10":"YES"},{"1":"4.5","2":"7.0","3":"NO","4":"NA","5":"NA","6":"70","7":"YES","8":"32","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"54","7":"YES","8":"70","9":"Married","10":"YES"},{"1":"6.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"58","7":"NO","8":"77","9":"Divorced","10":"YES"},{"1":"9.0","2":"8.0","3":"NO","4":"YES","5":"360","6":"76","7":"NO","8":"24","9":"Married","10":"YES"},{"1":"8.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"49","9":"Divorced","10":"YES"},{"1":"7.0","2":"8.0","3":"YES","4":"NO","5":"15","6":"58","7":"NO","8":"28","9":"Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NO","5":"30","6":"90","7":"NO","8":"52","9":"Married","10":"YES"},{"1":"5.0","2":"4.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"30","9":"Never Married","10":"YES"},{"1":"7.0","2":"9.0","3":"NO","4":"YES","5":"120","6":"58","7":"NO","8":"27","9":"Married","10":"YES"},{"1":"4.5","2":"6.5","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"36","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"NO","5":"30","6":"84","7":"NO","8":"76","9":"Married","10":"YES"},{"1":"9.0","2":"7.5","3":"YES","4":"NA","5":"NA","6":"62","7":"NO","8":"61","9":"Married","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"YES","5":"140","6":"62","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"8.0","2":"10.0","3":"NO","4":"YES","5":"75","6":"60","7":"NO","8":"24","9":"Live with Partner","10":"YES"},{"1":"7.5","2":"6.5","3":"NO","4":"NO","5":"30","6":"76","7":"NO","8":"31","9":"Married","10":"YES"},{"1":"7.0","2":"6.5","3":"YES","4":"YES","5":"120","6":"76","7":"NO","8":"43","9":"Married","10":"NO"},{"1":"8.5","2":"8.5","3":"YES","4":"NA","5":"NA","6":"78","7":"NO","8":"65","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"75","6":"78","7":"NO","8":"23","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"8.5","3":"NO","4":"NO","5":"60","6":"52","7":"NO","8":"72","9":"Married","10":"YES"},{"1":"8.0","2":"9.0","3":"YES","4":"NO","5":"60","6":"76","7":"NO","8":"30","9":"Divorced","10":"YES"},{"1":"7.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"52","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"3.0","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"73","9":"Widowed","10":"YES"},{"1":"4.5","2":"5.5","3":"YES","4":"YES","5":"110","6":"58","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"11.0","2":"11.0","3":"YES","4":"NO","5":"60","6":"88","7":"NO","8":"57","9":"Live with Partner","10":"YES"},{"1":"10.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"88","7":"NO","8":"67","9":"Widowed","10":"NO"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"64","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"30","6":"58","7":"NO","8":"48","9":"Married","10":"NO"},{"1":"11.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"71","9":"Divorced","10":"YES"},{"1":"NA","2":"NA","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"71","9":"Divorced","10":"YES"},{"1":"5.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"47","9":"Married","10":"NO"},{"1":"6.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"94","7":"NO","8":"77","9":"Married","10":"YES"},{"1":"7.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"57","9":"Married","10":"NO"},{"1":"8.0","2":"8.0","3":"YES","4":"NO","5":"60","6":"68","7":"NO","8":"47","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"YES","5":"120","6":"66","7":"NO","8":"44","9":"Married","10":"YES"},{"1":"11.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"126","7":"NO","8":"39","9":"Live with Partner","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NO","5":"60","6":"54","7":"NO","8":"56","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"86","7":"NO","8":"56","9":"Never Married","10":"YES"},{"1":"7.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"66","7":"NO","8":"41","9":"Married","10":"NO"},{"1":"6.0","2":"9.0","3":"NO","4":"YES","5":"150","6":"70","7":"YES","8":"29","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"60","7":"YES","8":"56","9":"Divorced","10":"YES"},{"1":"8.5","2":"7.0","3":"NO","4":"YES","5":"90","6":"76","7":"YES","8":"33","9":"Married","10":"YES"},{"1":"8.0","2":"8.5","3":"NO","4":"NO","5":"60","6":"72","7":"NO","8":"32","9":"Never Married","10":"YES"},{"1":"8.0","2":"11.0","3":"YES","4":"NA","5":"NA","6":"66","7":"YES","8":"62","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"10.0","3":"NO","4":"NO","5":"60","6":"110","7":"NO","8":"27","9":"Never Married","10":"YES"},{"1":"11.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"86","7":"YES","8":"41","9":"Divorced","10":"YES"},{"1":"7.0","2":"7.5","3":"NO","4":"NA","5":"NA","6":"62","7":"NO","8":"47","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"YES","5":"90","6":"74","7":"NO","8":"56","9":"Never Married","10":"YES"},{"1":"9.5","2":"9.5","3":"NO","4":"NO","5":"30","6":"60","7":"NO","8":"60","9":"Never Married","10":"YES"},{"1":"9.0","2":"12.0","3":"NO","4":"NA","5":"NA","6":"82","7":"YES","8":"29","9":"Never Married","10":"YES"},{"1":"7.0","2":"9.0","3":"NO","4":"YES","5":"90","6":"62","7":"NO","8":"35","9":"Married","10":"YES"},{"1":"7.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"66","7":"YES","8":"69","9":"Widowed","10":"YES"},{"1":"5.5","2":"10.0","3":"YES","4":"NA","5":"NA","6":"86","7":"NO","8":"53","9":"Never Married","10":"YES"},{"1":"10.0","2":"10.0","3":"NO","4":"NO","5":"60","6":"70","7":"NO","8":"36","9":"Never Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"45","6":"78","7":"NO","8":"71","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"86","7":"YES","8":"67","9":"Divorced","10":"YES"},{"1":"10.0","2":"11.0","3":"NO","4":"NO","5":"60","6":"86","7":"NO","8":"26","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"8.5","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"73","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"90","7":"YES","8":"47","9":"Married","10":"YES"},{"1":"9.0","2":"8.5","3":"NO","4":"NO","5":"60","6":"68","7":"NO","8":"71","9":"Married","10":"YES"},{"1":"5.5","2":"5.0","3":"YES","4":"NA","5":"NA","6":"58","7":"YES","8":"67","9":"Divorced","10":"YES"},{"1":"10.0","2":"11.0","3":"YES","4":"NA","5":"NA","6":"72","7":"YES","8":"43","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"10.0","3":"NO","4":"NO","5":"60","6":"64","7":"NO","8":"28","9":"Married","10":"YES"},{"1":"7.5","2":"9.0","3":"YES","4":"NO","5":"60","6":"70","7":"NO","8":"30","9":"Married","10":"YES"},{"1":"5.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"62","7":"NO","8":"61","9":"Married","10":"YES"},{"1":"6.5","2":"9.0","3":"YES","4":"NO","5":"60","6":"90","7":"NO","8":"61","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"80","7":"NO","8":"27","9":"Married","10":"NO"},{"1":"6.0","2":"9.0","3":"NO","4":"NO","5":"30","6":"90","7":"YES","8":"31","9":"Never Married","10":"YES"},{"1":"7.0","2":"6.0","3":"NO","4":"NO","5":"60","6":"52","7":"NO","8":"61","9":"Live with Partner","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"YES","5":"210","6":"72","7":"YES","8":"40","9":"Married","10":"NO"},{"1":"9.0","2":"10.0","3":"YES","4":"NO","5":"30","6":"68","7":"NO","8":"30","9":"Never Married","10":"YES"},{"1":"6.5","2":"6.5","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"56","9":"Married","10":"YES"},{"1":"10.5","2":"10.5","3":"NO","4":"NO","5":"60","6":"60","7":"NO","8":"55","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"88","7":"YES","8":"48","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"58","9":"Married","10":"YES"},{"1":"7.5","2":"8.0","3":"YES","4":"NA","5":"NA","6":"64","7":"YES","8":"51","9":"Divorced","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"120","6":"74","7":"NO","8":"47","9":"Married","10":"YES"},{"1":"7.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"33","9":"Married","10":"YES"},{"1":"5.0","2":"8.0","3":"NO","4":"YES","5":"120","6":"78","7":"NO","8":"52","9":"Never Married","10":"YES"},{"1":"7.0","2":"3.0","3":"NO","4":"NA","5":"NA","6":"112","7":"NO","8":"44","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"YES","5":"150","6":"68","7":"YES","8":"25","9":"Never Married","10":"YES"},{"1":"8.5","2":"8.5","3":"YES","4":"YES","5":"120","6":"112","7":"NO","8":"52","9":"Never Married","10":"YES"},{"1":"7.5","2":"6.0","3":"NO","4":"NO","5":"30","6":"66","7":"YES","8":"52","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"YES","5":"100","6":"58","7":"YES","8":"28","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"8.5","3":"YES","4":"NO","5":"25","6":"72","7":"NO","8":"79","9":"Divorced","10":"YES"},{"1":"10.5","2":"10.0","3":"NO","4":"NO","5":"60","6":"80","7":"YES","8":"40","9":"Divorced","10":"YES"},{"1":"5.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"36","9":"Married","10":"YES"},{"1":"5.0","2":"8.0","3":"YES","4":"YES","5":"120","6":"66","7":"NO","8":"36","9":"Married","10":"NO"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"30","6":"60","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"5.5","2":"13.0","3":"NO","4":"NO","5":"60","6":"100","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"9.5","2":"10.5","3":"YES","4":"NO","5":"10","6":"78","7":"NO","8":"63","9":"Widowed","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"YES","5":"120","6":"74","7":"NO","8":"27","9":"Never Married","10":"YES"},{"1":"6.5","2":"7.0","3":"NO","4":"NO","5":"45","6":"60","7":"YES","8":"67","9":"Separated","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NO","5":"30","6":"64","7":"NO","8":"79","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NO","5":"60","6":"70","7":"NO","8":"24","9":"Live with Partner","10":"YES"},{"1":"4.0","2":"5.0","3":"YES","4":"NA","5":"NA","6":"82","7":"YES","8":"27","9":"Separated","10":"NO"},{"1":"7.5","2":"8.5","3":"NO","4":"YES","5":"65","6":"74","7":"NO","8":"65","9":"Divorced","10":"NO"},{"1":"6.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"72","9":"Divorced","10":"YES"},{"1":"7.0","2":"11.0","3":"YES","4":"NA","5":"NA","6":"68","7":"NO","8":"65","9":"Widowed","10":"YES"},{"1":"8.5","2":"7.5","3":"NO","4":"NO","5":"45","6":"76","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"7.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"92","7":"YES","8":"43","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NO","5":"60","6":"72","7":"NO","8":"36","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"60","6":"62","7":"NO","8":"42","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"45","9":"Live with Partner","10":"YES"},{"1":"4.5","2":"8.0","3":"NO","4":"NO","5":"60","6":"60","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"11.5","2":"10.5","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"31","9":"Married","10":"NO"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"63","9":"Married","10":"YES"},{"1":"8.0","2":"7.5","3":"NO","4":"NO","5":"30","6":"72","7":"NO","8":"32","9":"Married","10":"NO"},{"1":"8.0","2":"8.5","3":"NO","4":"YES","5":"120","6":"72","7":"YES","8":"42","9":"Separated","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"118","7":"YES","8":"65","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NO","5":"60","6":"56","7":"NO","8":"48","9":"NA","10":"NA"},{"1":"5.0","2":"9.5","3":"YES","4":"YES","5":"480","6":"78","7":"NO","8":"33","9":"Married","10":"YES"},{"1":"9.5","2":"9.5","3":"YES","4":"NO","5":"60","6":"66","7":"NO","8":"75","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"67","9":"Widowed","10":"NO"},{"1":"8.0","2":"7.0","3":"NO","4":"NO","5":"60","6":"60","7":"YES","8":"28","9":"Never Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"50","7":"NO","8":"54","9":"Married","10":"YES"},{"1":"11.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"90","7":"NO","8":"25","9":"Live with Partner","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"NO","5":"45","6":"82","7":"NO","8":"73","9":"Married","10":"YES"},{"1":"7.5","2":"7.5","3":"YES","4":"NO","5":"60","6":"66","7":"NO","8":"71","9":"Widowed","10":"YES"},{"1":"6.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"98","7":"YES","8":"60","9":"Married","10":"YES"},{"1":"9.0","2":"8.0","3":"YES","4":"NO","5":"30","6":"52","7":"NO","8":"76","9":"Divorced","10":"YES"},{"1":"8.0","2":"7.5","3":"NO","4":"YES","5":"75","6":"72","7":"NO","8":"25","9":"Never Married","10":"YES"},{"1":"4.0","2":"4.0","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"75","9":"Separated","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"59","9":"Never Married","10":"YES"},{"1":"2.0","2":"2.0","3":"YES","4":"NA","5":"NA","6":"108","7":"YES","8":"56","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"YES","5":"180","6":"62","7":"YES","8":"31","9":"Never Married","10":"YES"},{"1":"7.5","2":"7.0","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"65","9":"Married","10":"NO"},{"1":"3.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"33","9":"Never Married","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"66","7":"YES","8":"52","9":"Divorced","10":"NO"},{"1":"9.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NO","5":"30","6":"82","7":"NO","8":"77","9":"Divorced","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"58","7":"YES","8":"47","9":"Married","10":"NO"},{"1":"8.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"74","7":"YES","8":"35","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NO","5":"15","6":"58","7":"NO","8":"60","9":"Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"72","7":"YES","8":"46","9":"Married","10":"YES"},{"1":"7.5","2":"7.5","3":"YES","4":"NA","5":"NA","6":"60","7":"NO","8":"52","9":"Married","10":"YES"},{"1":"5.5","2":"9.0","3":"NO","4":"NA","5":"NA","6":"82","7":"NO","8":"30","9":"Live with Partner","10":"YES"},{"1":"3.5","2":"4.5","3":"NO","4":"NA","5":"NA","6":"62","7":"YES","8":"52","9":"Married","10":"YES"},{"1":"8.0","2":"9.0","3":"NO","4":"YES","5":"180","6":"72","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"11.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"70","7":"YES","8":"22","9":"Live with Partner","10":"YES"},{"1":"11.0","2":"11.0","3":"NO","4":"NO","5":"30","6":"102","7":"NO","8":"34","9":"Married","10":"YES"},{"1":"6.5","2":"9.0","3":"YES","4":"NA","5":"NA","6":"82","7":"NO","8":"41","9":"Married","10":"YES"},{"1":"11.0","2":"11.0","3":"YES","4":"NA","5":"NA","6":"82","7":"YES","8":"20","9":"Never Married","10":"YES"},{"1":"8.0","2":"9.0","3":"NO","4":"YES","5":"120","6":"64","7":"NO","8":"30","9":"Married","10":"NO"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"43","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"YES","5":"75","6":"72","7":"NO","8":"72","9":"Divorced","10":"YES"},{"1":"5.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"43","9":"Divorced","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"52","7":"NO","8":"66","9":"Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"YES","5":"300","6":"66","7":"NO","8":"25","9":"Never Married","10":"YES"},{"1":"6.5","2":"6.5","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"64","9":"Married","10":"YES"},{"1":"10.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"38","9":"Never Married","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"65","9":"Married","10":"YES"},{"1":"5.0","2":"5.5","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"40","9":"Married","10":"YES"},{"1":"7.5","2":"10.0","3":"YES","4":"NO","5":"60","6":"94","7":"NO","8":"37","9":"Live with Partner","10":"YES"},{"1":"5.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"84","7":"YES","8":"58","9":"Divorced","10":"NO"},{"1":"7.5","2":"9.0","3":"YES","4":"NA","5":"NA","6":"48","7":"YES","8":"78","9":"Widowed","10":"YES"},{"1":"9.0","2":"10.0","3":"NO","4":"YES","5":"180","6":"62","7":"NO","8":"50","9":"Married","10":"NO"},{"1":"7.5","2":"6.5","3":"NO","4":"NA","5":"NA","6":"64","7":"YES","8":"44","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"55","9":"Married","10":"YES"},{"1":"8.0","2":"10.0","3":"NO","4":"NO","5":"60","6":"78","7":"NO","8":"28","9":"Never Married","10":"NO"},{"1":"8.0","2":"8.0","3":"NO","4":"NO","5":"30","6":"68","7":"NO","8":"70","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NO","5":"60","6":"60","7":"YES","8":"58","9":"Married","10":"YES"},{"1":"8.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"24","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NO","5":"30","6":"68","7":"YES","8":"51","9":"Married","10":"YES"},{"1":"9.5","2":"9.5","3":"YES","4":"NA","5":"NA","6":"74","7":"NO","8":"63","9":"Divorced","10":"YES"},{"1":"7.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"78","7":"YES","8":"41","9":"Widowed","10":"YES"},{"1":"8.5","2":"7.0","3":"NO","4":"NO","5":"30","6":"88","7":"NO","8":"33","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"82","7":"YES","8":"63","9":"Married","10":"YES"},{"1":"11.0","2":"11.0","3":"NO","4":"YES","5":"300","6":"90","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"8.0","2":"7.5","3":"YES","4":"NO","5":"30","6":"80","7":"NO","8":"26","9":"Never Married","10":"YES"},{"1":"7.5","2":"9.0","3":"NO","4":"NA","5":"NA","6":"70","7":"YES","8":"42","9":"Live with Partner","10":"NO"},{"1":"7.5","2":"8.5","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"35","9":"Never Married","10":"YES"},{"1":"8.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"46","9":"Married","10":"NO"},{"1":"8.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"31","9":"Married","10":"NO"},{"1":"6.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"90","7":"NO","8":"25","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"106","7":"NO","8":"39","9":"Separated","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"YES","5":"120","6":"84","7":"YES","8":"36","9":"Married","10":"NO"},{"1":"8.0","2":"8.0","3":"NO","4":"YES","5":"180","6":"64","7":"NO","8":"27","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"77","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"71","9":"Separated","10":"NO"},{"1":"6.0","2":"6.0","3":"NO","4":"NO","5":"60","6":"90","7":"YES","8":"28","9":"Never Married","10":"YES"},{"1":"4.5","2":"4.5","3":"YES","4":"NA","5":"NA","6":"60","7":"NO","8":"71","9":"Married","10":"YES"},{"1":"5.5","2":"8.0","3":"NO","4":"YES","5":"120","6":"70","7":"NO","8":"22","9":"Never Married","10":"YES"},{"1":"7.0","2":"9.0","3":"NO","4":"YES","5":"180","6":"66","7":"YES","8":"32","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"50","9":"Married","10":"YES"},{"1":"8.0","2":"10.0","3":"NO","4":"YES","5":"180","6":"76","7":"NO","8":"26","9":"Married","10":"YES"},{"1":"12.0","2":"12.0","3":"NO","4":"YES","5":"300","6":"60","7":"YES","8":"79","9":"Married","10":"YES"},{"1":"8.5","2":"9.0","3":"YES","4":"NO","5":"10","6":"86","7":"NO","8":"47","9":"Married","10":"YES"},{"1":"8.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"57","9":"Divorced","10":"YES"},{"1":"7.0","2":"9.0","3":"YES","4":"YES","5":"120","6":"72","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"54","7":"NO","8":"43","9":"Widowed","10":"YES"},{"1":"8.5","2":"8.5","3":"NO","4":"YES","5":"120","6":"50","7":"NO","8":"72","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"62","7":"NO","8":"61","9":"Never Married","10":"YES"},{"1":"8.5","2":"8.5","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"51","9":"Live with Partner","10":"NO"},{"1":"9.0","2":"9.0","3":"YES","4":"NO","5":"20","6":"70","7":"NO","8":"32","9":"Married","10":"YES"},{"1":"3.0","2":"4.0","3":"NO","4":"YES","5":"360","6":"60","7":"NO","8":"43","9":"Married","10":"YES"},{"1":"10.5","2":"10.5","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"62","9":"Separated","10":"YES"},{"1":"7.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"41","9":"Married","10":"NO"},{"1":"9.0","2":"9.5","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"30","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"YES","4":"NA","5":"NA","6":"64","7":"YES","8":"61","9":"Widowed","10":"YES"},{"1":"10.0","2":"10.0","3":"NO","4":"YES","5":"120","6":"62","7":"YES","8":"40","9":"Never Married","10":"YES"},{"1":"5.0","2":"3.5","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"21","9":"Never Married","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"82","7":"NO","8":"27","9":"Never Married","10":"NO"},{"1":"8.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"73","9":"Married","10":"YES"},{"1":"10.0","2":"8.5","3":"NO","4":"NO","5":"30","6":"50","7":"NO","8":"74","9":"Divorced","10":"YES"},{"1":"10.0","2":"13.0","3":"NO","4":"NA","5":"NA","6":"86","7":"YES","8":"37","9":"Never Married","10":"YES"},{"1":"6.0","2":"7.5","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"37","9":"Married","10":"NO"},{"1":"7.5","2":"8.5","3":"YES","4":"NO","5":"20","6":"80","7":"NO","8":"47","9":"Never Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"66","7":"NO","8":"70","9":"Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"27","9":"Never Married","10":"YES"},{"1":"7.5","2":"9.0","3":"YES","4":"NO","5":"60","6":"82","7":"YES","8":"54","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"41","9":"Married","10":"NO"},{"1":"8.5","2":"9.5","3":"YES","4":"YES","5":"150","6":"72","7":"YES","8":"28","9":"Separated","10":"YES"},{"1":"NA","2":"NA","3":"NO","4":"NA","5":"NA","6":"82","7":"NO","8":"38","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"YES","5":"180","6":"102","7":"YES","8":"25","9":"Never Married","10":"YES"},{"1":"9.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"54","7":"NO","8":"21","9":"Never Married","10":"YES"},{"1":"8.5","2":"8.5","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"79","9":"Divorced","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"66","7":"YES","8":"55","9":"Married","10":"YES"},{"1":"7.5","2":"9.0","3":"NO","4":"NO","5":"30","6":"68","7":"NO","8":"60","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"60","7":"NO","8":"45","9":"Never Married","10":"YES"},{"1":"11.5","2":"12.0","3":"NO","4":"NA","5":"NA","6":"66","7":"YES","8":"71","9":"Widowed","10":"YES"},{"1":"5.5","2":"8.0","3":"NO","4":"YES","5":"180","6":"74","7":"NO","8":"55","9":"Married","10":"YES"},{"1":"9.5","2":"8.0","3":"YES","4":"NO","5":"60","6":"80","7":"YES","8":"23","9":"Never Married","10":"YES"},{"1":"7.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"76","7":"YES","8":"62","9":"Never Married","10":"YES"},{"1":"4.0","2":"5.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"64","9":"Married","10":"YES"},{"1":"12.0","2":"13.0","3":"YES","4":"NO","5":"20","6":"84","7":"YES","8":"22","9":"Never Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"82","7":"YES","8":"42","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"60","7":"YES","8":"29","9":"Never Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NO","5":"20","6":"62","7":"YES","8":"46","9":"Married","10":"YES"},{"1":"5.5","2":"12.0","3":"YES","4":"NO","5":"30","6":"82","7":"NO","8":"41","9":"Married","10":"YES"},{"1":"2.0","2":"2.0","3":"YES","4":"NA","5":"NA","6":"74","7":"NO","8":"61","9":"Never Married","10":"YES"},{"1":"5.0","2":"8.0","3":"NO","4":"NO","5":"10","6":"78","7":"NO","8":"51","9":"Divorced","10":"YES"},{"1":"9.0","2":"8.5","3":"NO","4":"NA","5":"NA","6":"74","7":"YES","8":"56","9":"Widowed","10":"NO"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"66","7":"YES","8":"39","9":"Married","10":"NO"},{"1":"7.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"44","9":"Married","10":"NO"},{"1":"4.0","2":"9.0","3":"NO","4":"NO","5":"30","6":"66","7":"NO","8":"36","9":"Separated","10":"NO"},{"1":"8.0","2":"8.5","3":"NO","4":"NO","5":"60","6":"74","7":"NO","8":"26","9":"Never Married","10":"YES"},{"1":"5.0","2":"4.5","3":"YES","4":"NO","5":"60","6":"58","7":"NO","8":"58","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"57","9":"Widowed","10":"YES"},{"1":"3.0","2":"6.0","3":"NO","4":"YES","5":"180","6":"70","7":"NO","8":"26","9":"Live with Partner","10":"YES"},{"1":"5.0","2":"5.0","3":"YES","4":"NA","5":"NA","6":"102","7":"YES","8":"54","9":"Married","10":"YES"},{"1":"9.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"62","7":"YES","8":"52","9":"Never Married","10":"YES"},{"1":"9.5","2":"11.0","3":"YES","4":"NA","5":"NA","6":"82","7":"NO","8":"60","9":"Divorced","10":"YES"},{"1":"8.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"25","9":"Divorced","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"52","7":"YES","8":"63","9":"Married","10":"YES"},{"1":"7.5","2":"9.5","3":"YES","4":"NA","5":"NA","6":"54","7":"YES","8":"55","9":"Never Married","10":"YES"},{"1":"9.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"75","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"39","9":"Married","10":"YES"},{"1":"7.0","2":"7.5","3":"NO","4":"YES","5":"180","6":"64","7":"NO","8":"42","9":"Married","10":"YES"},{"1":"5.0","2":"8.5","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"38","9":"Married","10":"YES"},{"1":"7.0","2":"6.0","3":"YES","4":"YES","5":"240","6":"70","7":"YES","8":"39","9":"Divorced","10":"YES"},{"1":"6.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"102","7":"YES","8":"29","9":"Live with Partner","10":"YES"},{"1":"8.0","2":"NA","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"73","9":"Separated","10":"YES"},{"1":"9.0","2":"7.0","3":"NO","4":"YES","5":"120","6":"58","7":"NO","8":"64","9":"Widowed","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"YES","5":"150","6":"70","7":"NO","8":"33","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"42","9":"Divorced","10":"YES"},{"1":"6.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"37","9":"Married","10":"NO"},{"1":"8.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"84","7":"YES","8":"21","9":"Never Married","10":"YES"},{"1":"9.0","2":"8.0","3":"NO","4":"YES","5":"65","6":"60","7":"NO","8":"62","9":"Divorced","10":"YES"},{"1":"5.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"25","9":"Never Married","10":"YES"},{"1":"6.5","2":"6.5","3":"NO","4":"YES","5":"120","6":"100","7":"NO","8":"28","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"54","7":"NO","8":"79","9":"Widowed","10":"YES"},{"1":"6.5","2":"6.5","3":"YES","4":"NA","5":"NA","6":"64","7":"NO","8":"73","9":"Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"76","7":"YES","8":"61","9":"Married","10":"YES"},{"1":"9.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"26","9":"Married","10":"YES"},{"1":"6.5","2":"8.0","3":"NO","4":"NO","5":"60","6":"84","7":"YES","8":"59","9":"Married","10":"YES"},{"1":"8.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"80","7":"NO","8":"21","9":"Never Married","10":"YES"},{"1":"6.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"86","7":"YES","8":"38","9":"Married","10":"YES"},{"1":"8.0","2":"10.0","3":"NO","4":"YES","5":"120","6":"84","7":"NO","8":"30","9":"Live with Partner","10":"NO"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"72","9":"Widowed","10":"YES"},{"1":"10.0","2":"8.5","3":"NO","4":"NO","5":"60","6":"58","7":"NO","8":"43","9":"Married","10":"YES"},{"1":"11.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"78","9":"Divorced","10":"NO"},{"1":"6.0","2":"5.5","3":"NO","4":"NA","5":"NA","6":"90","7":"NO","8":"44","9":"Widowed","10":"YES"},{"1":"7.5","2":"7.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"44","9":"Married","10":"NO"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"76","7":"YES","8":"37","9":"Married","10":"NO"},{"1":"8.5","2":"10.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"38","9":"Married","10":"NO"},{"1":"8.0","2":"7.0","3":"NO","4":"NA","5":"NA","6":"58","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"70","7":"YES","8":"61","9":"Widowed","10":"YES"},{"1":"8.0","2":"8.0","3":"YES","4":"NO","5":"15","6":"60","7":"NO","8":"78","9":"Widowed","10":"YES"},{"1":"10.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"68","7":"NO","8":"35","9":"Live with Partner","10":"YES"},{"1":"8.5","2":"4.5","3":"NO","4":"NA","5":"NA","6":"62","7":"NO","8":"55","9":"Divorced","10":"YES"},{"1":"9.0","2":"9.0","3":"YES","4":"NA","5":"NA","6":"62","7":"NO","8":"69","9":"Married","10":"YES"},{"1":"9.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"77","9":"Married","10":"YES"},{"1":"8.0","2":"7.0","3":"NO","4":"NO","5":"60","6":"48","7":"NO","8":"68","9":"Married","10":"YES"},{"1":"8.0","2":"10.0","3":"YES","4":"NO","5":"60","6":"60","7":"YES","8":"37","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"NO","4":"YES","5":"180","6":"58","7":"NO","8":"27","9":"Never Married","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"57","9":"Married","10":"NO"},{"1":"12.0","2":"12.0","3":"YES","4":"NA","5":"NA","6":"74","7":"NO","8":"22","9":"Never Married","10":"YES"},{"1":"3.0","2":"3.0","3":"YES","4":"NA","5":"NA","6":"74","7":"YES","8":"60","9":"Never Married","10":"YES"},{"1":"9.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"76","7":"NO","8":"62","9":"Widowed","10":"YES"},{"1":"6.5","2":"8.5","3":"NO","4":"NA","5":"NA","6":"100","7":"NO","8":"78","9":"Divorced","10":"YES"},{"1":"8.0","2":"6.0","3":"YES","4":"YES","5":"120","6":"70","7":"YES","8":"71","9":"Married","10":"YES"},{"1":"10.0","2":"10.0","3":"YES","4":"NA","5":"NA","6":"66","7":"YES","8":"59","9":"Never Married","10":"YES"},{"1":"7.5","2":"9.5","3":"NO","4":"NA","5":"NA","6":"80","7":"NO","8":"72","9":"Live with Partner","10":"NO"},{"1":"8.0","2":"11.0","3":"NO","4":"NA","5":"NA","6":"72","7":"NO","8":"27","9":"Live with Partner","10":"YES"},{"1":"5.5","2":"12.0","3":"NO","4":"YES","5":"150","6":"70","7":"YES","8":"31","9":"Divorced","10":"YES"},{"1":"6.5","2":"9.5","3":"NO","4":"YES","5":"90","6":"80","7":"NO","8":"42","9":"Married","10":"YES"},{"1":"9.0","2":"8.5","3":"NO","4":"YES","5":"120","6":"58","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"5.5","2":"6.0","3":"NO","4":"YES","5":"120","6":"80","7":"NO","8":"42","9":"Live with Partner","10":"YES"},{"1":"5.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"78","7":"YES","8":"54","9":"Married","10":"YES"},{"1":"8.0","2":"8.5","3":"YES","4":"NA","5":"NA","6":"90","7":"NO","8":"62","9":"Widowed","10":"YES"},{"1":"5.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"82","7":"YES","8":"41","9":"Separated","10":"YES"},{"1":"8.0","2":"8.5","3":"NO","4":"NA","5":"NA","6":"84","7":"NO","8":"33","9":"Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"60","7":"NO","8":"79","9":"Widowed","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"78","7":"NO","8":"79","9":"Married","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"33","9":"Married","10":"YES"},{"1":"9.0","2":"10.0","3":"NO","4":"NO","5":"60","6":"60","7":"NO","8":"56","9":"Married","10":"YES"},{"1":"9.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"74","7":"YES","8":"26","9":"Never Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NO","5":"60","6":"58","7":"YES","8":"28","9":"Married","10":"YES"},{"1":"9.0","2":"8.0","3":"YES","4":"NA","5":"NA","6":"74","7":"YES","8":"58","9":"Never Married","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"50","9":"Live with Partner","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"NA","5":"NA","6":"86","7":"NO","8":"68","9":"Married","10":"YES"},{"1":"9.5","2":"9.5","3":"NO","4":"NO","5":"60","6":"56","7":"NO","8":"63","9":"Married","10":"YES"},{"1":"10.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"64","7":"NO","8":"66","9":"Divorced","10":"YES"},{"1":"6.0","2":"5.0","3":"NO","4":"NA","5":"NA","6":"72","7":"YES","8":"39","9":"Live with Partner","10":"YES"},{"1":"5.0","2":"5.0","3":"NO","4":"NO","5":"20","6":"86","7":"YES","8":"51","9":"Divorced","10":"YES"},{"1":"7.5","2":"7.5","3":"NO","4":"NO","5":"20","6":"48","7":"NO","8":"75","9":"Married","10":"YES"},{"1":"6.0","2":"6.0","3":"NO","4":"YES","5":"240","6":"80","7":"NO","8":"27","9":"Married","10":"YES"},{"1":"9.0","2":"11.0","3":"YES","4":"NA","5":"NA","6":"54","7":"YES","8":"34","9":"Never Married","10":"YES"},{"1":"7.5","2":"8.5","3":"NO","4":"NO","5":"10","6":"78","7":"NO","8":"60","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"70","7":"NO","8":"67","9":"Live with Partner","10":"YES"},{"1":"5.0","2":"5.0","3":"NO","4":"NA","5":"NA","6":"68","7":"NO","8":"60","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"62","7":"NO","8":"79","9":"Married","10":"YES"},{"1":"8.0","2":"8.0","3":"NO","4":"NA","5":"NA","6":"74","7":"NO","8":"51","9":"Widowed","10":"NO"},{"1":"7.0","2":"6.0","3":"NO","4":"NA","5":"NA","6":"66","7":"NO","8":"57","9":"Never Married","10":"YES"},{"1":"7.5","2":"8.0","3":"NO","4":"NA","5":"NA","6":"80","7":"YES","8":"41","9":"Divorced","10":"YES"},{"1":"8.5","2":"8.0","3":"NO","4":"NO","5":"30","6":"78","7":"NO","8":"41","9":"Divorced","10":"YES"},{"1":"5.0","2":"10.0","3":"NO","4":"NA","5":"NA","6":"76","7":"NO","8":"37","9":"Married","10":"YES"},{"1":"9.0","2":"9.0","3":"NO","4":"YES","5":"180","6":"84","7":"NO","8":"20","9":"Never Married","10":"YES"},{"1":"7.0","2":"7.0","3":"YES","4":"NA","5":"NA","6":"68","7":"YES","8":"55","9":"Married","10":"YES"},{"1":"8.5","2":"9.5","3":"YES","4":"YES","5":"90","6":"50","7":"YES","8":"66","9":"Married","10":"YES"},{"1":"9.0","2":"9.5","3":"NO","4":"NA","5":"NA","6":"60","7":"NO","8":"33","9":"Married","10":"YES"},{"1":"7.0","2":"8.0","3":"NO","4":"NO","5":"45","6":"60","7":"NO","8":"75","9":"Divorced","10":"YES"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><br></p>
+<!-- ### References -->
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

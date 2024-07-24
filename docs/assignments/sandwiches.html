@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>EPsy 5261 - sandwiches.csv</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../assets/sticky-notes.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">EPsy 5261</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html" rel="" target="">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments.html" rel="" target="">
+ <span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data.html" rel="" target="">
+ <span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">Instructor &amp; TA</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../mission-statements.html" rel="" target="">
+ <span class="menu-text">Mission Statements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../umn-policies.html" rel="" target="">
+ <span class="menu-text">University Policies</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preview" id="toc-preview" class="nav-link active" data-scroll-target="#preview">Preview</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">sandwiches.csv</h1>
+<p class="subtitle lead">DATA CODEBOOK</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>The data in <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/sandwiches.csv">sandwiches.csv</a> includes nutrition information for <span class="math inline">\(n=40\)</span> sandwiches. The 40 sandwiches were randomly sampled from all sandwiches available from the Erbert &amp; Gerbert’s, Firehouse, Jimmy Johns, Potbelly, Subway, and Quiznos menus (as of August 28, 2023). All nutrition information was computed for a six inch sandwich. The attributes are:</p>
+<ul>
+<li><code>restaurant</code>: Name of the restaurant</li>
+<li><code>sandwich</code>: Name of the sandwich</li>
+<li><code>calories</code>: Calories</li>
+<li><code>fat</code>: Fat (g)</li>
+<li><code>sat_fat</code>: Saturated fat (g)</li>
+<li><code>trans_fat</code>: Trans fat (g)</li>
+<li><code>chol</code>: Cholesterol (mg)</li>
+<li><code>sodium</code>: Sodium (mg)</li>
+<li><code>carbs</code>: Carbohydrates (g)</li>
+<li><code>fiber</code>: Dietary Fiber (g)</li>
+<li><code>sugars</code>: Sugars (g)</li>
+<li><code>protein</code>: Protein (g)</li>
+</ul>
+<p><br></p>
+<section id="preview" class="level3">
+<h3 class="anchored" data-anchor-id="preview">Preview</h3>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sandwiches <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/barbieland/main/data/sandwiches.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>sandwiches</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["...1"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["restaurant"],"name":[2],"type":["chr"],"align":["left"]},{"label":["sandwich"],"name":[3],"type":["chr"],"align":["left"]},{"label":["calories"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["fat"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["sat_fat"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["trans_fat"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["chol"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["sodium"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["carbs"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["fiber"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["sugar"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["protein"],"name":[13],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"Subway","3":"Roast beef Wrap","4":"500.0","5":"14.00","6":"3.000","7":"0.0","8":"75.00","9":"1440.0","10":"58.00","11":"3.00","12":"7.00","13":"38.00"},{"1":"2","2":"Erbert & Gerbert's","3":"Tappy (Honey Wheat Bread)","4":"778.0","5":"41.00","6":"11.000","7":"0.0","8":"53.00","9":"1574.0","10":"71.00","11":"5.00","12":"6.00","13":"30.00"},{"1":"3","2":"Subway","3":"Italian B.M.T.","4":"240.0","5":"15.00","6":"5.000","7":"0.0","8":"50.00","9":"880.0","10":"12.00","11":"4.00","12":"5.00","13":"14.00"},{"1":"4","2":"Potbelly","3":"Pizza Melt","4":"750.0","5":"35.00","6":"14.000","7":"0.0","8":"90.00","9":"2200.0","10":"70.00","11":"4.00","12":"7.00","13":"39.00"},{"1":"5","2":"Subway","3":"Veggie Delite","4":"50.0","5":"1.00","6":"0.000","7":"0.0","8":"0.00","9":"75.0","10":"9.00","11":"4.00","12":"5.00","13":"3.00"},{"1":"6","2":"Erbert & Gerbert's","3":"Tappy (French Bread)","4":"758.0","5":"40.00","6":"11.000","7":"0.0","8":"53.00","9":"1544.0","10":"71.00","11":"3.00","12":"4.00","13":"31.00"},{"1":"7","2":"Potbelly","3":"Ham, Mushroom, Egg & Swiss","4":"720.0","5":"27.00","6":"12.000","7":"0.0","8":"340.00","9":"2210.0","10":"67.00","11":"3.00","12":"6.00","13":"51.00"},{"1":"8","2":"Jimmy Johns","3":"The Veggie (#6)","4":"502.5","5":"29.25","6":"9.750","7":"0.0","8":"48.75","9":"810.0","10":"48.00","11":"4.50","12":"1.50","13":"25.50"},{"1":"9","2":"Erbert & Gerbert's","3":"327","4":"206.0","5":"10.00","6":"0.000","7":"117.0","8":"1537.00","9":"63.0","10":"5.00","11":"23.00","12":"43.00","13":"10.00"},{"1":"10","2":"Jimmy Johns","3":"Country Club (#11)","4":"585.0","5":"23.25","6":"6.000","7":"0.0","8":"75.00","9":"1485.0","10":"48.75","11":"3.75","12":"2.25","13":"38.25"},{"1":"11","2":"Subway","3":"Meatball  Marinara Wrap","4":"780.0","5":"38.00","6":"14.000","7":"2.0","8":"75.00","9":"2010.0","10":"76.00","11":"7.00","12":"11.00","13":"34.00"},{"1":"12","2":"Subway","3":"Buffalo Chicken with Grilled Chicken","4":"380.0","5":"12.00","6":"3.000","7":"0.0","8":"55.00","9":"1380.0","10":"42.00","11":"3.00","12":"6.00","13":"25.00"},{"1":"13","2":"Subway","3":"Steak (Includes American Cheese)","4":"210.0","5":"9.00","6":"4.000","7":"0.0","8":"65.00","9":"740.0","10":"12.00","11":"4.00","12":"6.00","13":"22.00"},{"1":"14","2":"Quiznos","3":"Honey Bourbon Wheat Wrap","4":"470.0","5":"12.00","6":"3.500","7":"0.2","8":"45.00","9":"1100.0","10":"66.00","11":"7.00","12":"15.00","13":"25.00"},{"1":"15","2":"Quiznos","3":"Meatball Sub","4":"530.0","5":"24.00","6":"10.000","7":"0.5","8":"55.00","9":"1280.0","10":"54.00","11":"4.00","12":"6.00","13":"26.00"},{"1":"16","2":"Firehouse","3":"Hero","4":"600.0","5":"28.50","6":"6.000","7":"NA","8":"67.50","9":"1755.0","10":"47.25","11":"3.00","12":"11.25","13":"36.00"},{"1":"17","2":"Quiznos","3":"Chipotle Steak and Cheddar Wheat Wrap","4":"680.0","5":"37.00","6":"10.000","7":"0.5","8":"65.00","9":"1550.0","10":"57.00","11":"7.00","12":"4.00","13":"29.00"},{"1":"18","2":"Subway","3":"Turkey Cali Club with Smashed Avocado (#12)","4":"600.0","5":"34.00","6":"10.000","7":"0.0","8":"70.00","9":"1310.0","10":"43.00","11":"6.00","12":"7.00","13":"33.00"},{"1":"19","2":"Potbelly","3":"Roast Beef & Provolone","4":"610.0","5":"21.00","6":"9.000","7":"0.0","8":"80.00","9":"1300.0","10":"63.00","11":"2.00","12":"4.00","13":"42.00"},{"1":"20","2":"Jimmy Johns","3":"Slim 4","4":"315.0","5":"2.25","6":"0.000","7":"0.0","8":"22.50","9":"697.5","10":"44.25","11":"3.00","12":"0.00","13":"22.50"},{"1":"21","2":"Jimmy Johns","3":"Slim 1","4":"405.0","5":"9.75","6":"4.500","7":"0.0","8":"37.50","9":"1207.5","10":"51.75","11":"3.00","12":"0.75","13":"24.75"},{"1":"22","2":"Jimmy Johns","3":"Bootlegger Club (#14)","4":"510.0","5":"17.25","6":"2.625","7":"0.0","8":"67.50","9":"1177.5","10":"46.50","11":"3.75","12":"1.50","13":"35.25"},{"1":"23","2":"Subway","3":"Veggie Patty","4":"390.0","5":"11.00","6":"1.000","7":"0.0","8":"0.00","9":"690.0","10":"56.00","11":"13.00","12":"8.00","13":"16.00"},{"1":"24","2":"Erbert & Gerbert's","3":"Neuron (French Bread)","4":"654.0","5":"23.00","6":"10.000","7":"1.0","8":"70.00","9":"2034.0","10":"82.00","11":"5.00","12":"22.00","13":"36.00"},{"1":"25","2":"Subway","3":"Italian B.M.T.","4":"400.0","5":"16.00","6":"6.000","7":"0.0","8":"50.00","9":"1180.0","10":"43.00","11":"3.00","12":"6.00","13":"19.00"},{"1":"26","2":"Firehouse","3":"Engineer","4":"517.5","5":"26.25","6":"6.000","7":"NA","8":"48.75","9":"1522.5","10":"44.25","11":"4.50","12":"6.75","13":"27.75"},{"1":"27","2":"Erbert & Gerbert's","3":"Vesuvius (Honey Wheat Bread)","4":"752.0","5":"20.00","6":"11.000","7":"0.0","8":"117.00","9":"1737.0","10":"89.00","11":"5.00","12":"24.00","13":"50.00"},{"1":"28","2":"Erbert & Gerbert's","3":"Saturn (Honey Wheat Bread)","4":"948.0","5":"51.00","6":"18.000","7":"0.0","8":"128.00","9":"2519.0","10":"73.00","11":"6.00","12":"8.00","13":"43.00"},{"1":"29","2":"Quiznos","3":"Chipotle Steak and Cheddar Sub","4":"580.0","5":"30.00","6":"8.000","7":"0.5","8":"70.00","9":"1450.0","10":"51.00","11":"4.00","12":"5.00","13":"28.00"},{"1":"30","2":"Subway","3":"The Philly (#1)","4":"500.0","5":"25.00","6":"9.000","7":"1.0","8":"85.00","9":"1310.0","10":"41.00","11":"2.00","12":"5.00","13":"28.00"},{"1":"31","2":"Erbert & Gerbert's","3":"Girf (Gluten Free Bread)","4":"759.0","5":"43.00","6":"10.000","7":"0.0","8":"93.00","9":"1986.0","10":"62.00","11":"8.00","12":"7.00","13":"33.00"},{"1":"32","2":"Potbelly","3":"Wrecking Ball","4":"840.0","5":"41.00","6":"16.000","7":"0.0","8":"125.00","9":"2460.0","10":"72.00","11":"7.00","12":"7.00","13":"50.00"},{"1":"33","2":"Quiznos","3":"Signature Tuna Wheat Wrap","4":"630.0","5":"32.00","6":"9.000","7":"0.5","8":"25.00","9":"1370.0","10":"58.00","11":"7.00","12":"6.00","13":"28.00"},{"1":"34","2":"Quiznos","3":"Beef & Swiss Melt Wheat Wrap","4":"660.0","5":"34.00","6":"9.000","7":"0.5","8":"60.00","9":"1390.0","10":"57.00","11":"6.00","12":"5.00","13":"30.00"},{"1":"35","2":"Subway","3":"The Beast (#30)","4":"730.0","5":"44.00","6":"14.000","7":"1.0","8":"115.00","9":"2080.0","10":"45.00","11":"3.00","12":"7.00","13":"40.00"},{"1":"36","2":"Subway","3":"Oven Roasted Turkey &  Ham Wrap","4":"440.0","5":"11.00","6":"2.000","7":"0.0","8":"50.00","9":"1560.0","10":"56.00","11":"3.00","12":"5.00","13":"30.00"},{"1":"37","2":"Subway","3":"Black Forest Ham Wrap","4":"440.0","5":"11.00","6":"2.000","7":"0.0","8":"55.00","9":"1570.0","10":"58.00","11":"3.00","12":"6.00","13":"28.00"},{"1":"38","2":"Erbert & Gerbert's","3":"Northern Cheesesteak (French Bread)","4":"670.0","5":"32.00","6":"8.000","7":"0.0","8":"61.00","9":"1435.0","10":"66.00","11":"3.00","12":"4.00","13":"35.00"},{"1":"39","2":"Potbelly","3":"Steakhouse Beef","4":"790.0","5":"37.00","6":"15.000","7":"0.0","8":"110.00","9":"1760.0","10":"64.00","11":"2.00","12":"4.00","13":"49.00"},{"1":"40","2":"Subway","3":"Buffalo Chicken Wrap (with Grilled Chicken)","4":"560.0","5":"19.00","6":"4.000","7":"0.0","8":"110.00","9":"1800.0","10":"56.00","11":"3.00","12":"5.00","13":"42.00"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><br></p>
+<!-- ### References -->
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

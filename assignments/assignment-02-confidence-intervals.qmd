@@ -1,0 +1,112 @@
+---
+title: "Assignment 02"
+subtitle: "COMPUTING AND INTERPRETING CONFIDENCE INTERVALS"
+description: The goal of this assignment is to give you experience computing and interpreting confidence intervals. This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted.
+format: html
+date: today
+---
+
+<!-- Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions.  -->
+
+<!-- The goal of this assignment is to give you experience fitting and interpreting simple regression models. In this assignment, you will use the data from the file *state-education.csv* to examine the relationship between teacher salaries and student total SAT scores at the state level. -->
+
+
+
+<!-- - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv) -->
+<!-- - [[Data Codebook]](https://zief0002.github.io/rustic-penguin/codebooks/state-education.html) -->
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-02.png")
+```
+
+## Instructions
+
+Submit a PDF document of your responses to the following questions. Please adhere to the following guidelines for further formatting your assignment:
+
+- All plots should be resized so that they do not take up more room than necessary. 
+- All figures and tables should have a name (e.g., Figure 1) *and* an appropriate caption.
+
+
+<br />
+
+
+
+## Part I: Creating and Interpreting Confidence Intervals
+
+A social scientist is interested in answering the following two research questions:
+
+- **Research Question 1:** How much time, on average, do adults in the U.S. in 2017 spend doing a moderate/vigorous amount of activity at work daily (in minutes)?
+- **Research Question 2:** What is the difference in the average time spent doing moderate/vigorous activity at work for adults in 2017 U.S. households between those who have reported sleep trouble and those who have not? 
+
+
+
+1. Use the NHANES data set to produce a 95% confidence interval for the `modVigWork` variable using R. Then interpret this interval to answer Research Question 1. **(6pts.)**
+
+To fully answer this question, you must:
+
+- Include the syntax you used to create the interval.
+- State the lower and upper limits of the confidence interval.
+- Include an interpretation of the confidence interval in context.
+
+
+2. The NHANES data also includes whether or not participants had told a doctor or other health professional that they had trouble sleeping (`SleepTrouble`; `Yes` if they had, and `No` if they had not). Use this variable along with the `modVigWork` variable to produce and interpret a 95% confidence interval to answer Research Question 2. **(6pts.)**
+
+To fully answer this question, you must:
+
+- Include the syntax you used to create the interval.
+- State the lower and upper limits of the confidence interval.
+- Include an interpretation of the confidence interval in context.
+
+<br />
+
+
+## Part II: Multiple Choice Questions
+
+Please indicate your answer clearly by including the letter for your response.
+
+3. If the sample size was increased, all else being the same, how would the widths of the confidence intervals in questions #1 and #2 change? **(2pts.)**
+
+    a. The interval widths would both decrease.
+    b. The interval widths would both increase.
+    c. The interval widths would both stay the same.
+    d. One of the interval widths would decrease, the other would increase.
+
+4. If the confidence level was increased to 98%, all else being the same, how would the widths of the confidence intervals in questions #1 and #2 change? **(2pts.)**
+
+    a. The interval widths would both decrease.
+    b. The interval widths would both increase.
+    c. The interval widths would both stay the same.
+    d. One of the interval widths would decrease, the other would increase.
+
+
+Now, suppose a confidence interval is created to estimate the mean number of hours per weekend night adults in U.S. households in 2017 slept (`SleepWkEnd`). A 90% confidence interval was created, and the resulting interval was from 8.05 and 8.31 hrs. Questions 5--8 each give a potential interpretation of this interval. For each of these questions, indicate whether the interpretation provided is correct or incorrect. (You do NOT need to explain why.)
+
+5. There is a 90% chance the confidence interval includes the sample mean number of hours per weekend night adults in U.S. households in 2017 slept. 
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+6. I am 90% confident the interval from 8.05 to 8.31 hrs will include the value of the mean number of hours per weekend night adults in U.S. households in 2017 slept.
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+  
+7. About 90% of adults in U.S. households in 2017 slept between 8.05 and 8.31 hrs per weekend night.
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+8. The probability that the population parameter is in this particular 90% confidence interval is 0.90.
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+
+<br />
+
+
+
