@@ -5,22 +5,22 @@ $font-weight-base: 400 !default;
 
 
 // Links
-$link-color: #da1884;
+$link-color: #FE5F55;
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color(#fe59ae, 100%) !default;
+$link-hover-color: shift-color(#b86121, 100%) !default;
 $link-hover-decoration: underline !default;
 
 // Top Navigation
-$nav-link-color: #610032;
-$nav-link-hover-color: #1B2A41;
-$navbar-bg: #ffc8e4;
+$nav-link-color: #f9ce2b;
+$nav-link-hover-color: #b86121;
+$navbar-bg: #90bfe6;
 
 /*-- scss:rules --*/
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  color: #da1884;
+  color: #4695d6;
 }
 
 .header-section-number {

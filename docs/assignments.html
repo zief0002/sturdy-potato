@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EPsy 5261 - Assignment Due Dates</title>
+<title>EPsy 5261 - Assignment and Grading</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -69,9 +76,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">EPsy 5261</span>
     </a>
@@ -83,37 +90,41 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html" rel="" target="">
- <span class="menu-text">Schedule</span></a>
+    <a class="nav-link" href="./schedule.html"> 
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignments.html" rel="" target="" aria-current="page">
- <span class="menu-text">Assignments</span></a>
+    <a class="nav-link active" href="./assignments.html" aria-current="page"> 
+<span class="menu-text">Assignments &amp; Grading</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./data.html" rel="" target="">
- <span class="menu-text">Data</span></a>
+    <a class="nav-link" href="./data.html"> 
+<span class="menu-text">Data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">Instructor &amp; TA</span></a>
+    <a class="nav-link" href="./class-policies.html"> 
+<span class="menu-text">Class Policies</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mission-statements.html" rel="" target="">
- <span class="menu-text">Mission Statements</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">Instructor &amp; TA</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./umn-policies.html" rel="" target="">
- <span class="menu-text">University Policies</span></a>
+    <a class="nav-link" href="./mission-statements.html"> 
+<span class="menu-text">Mission Statements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./umn-policies.html"> 
+<span class="menu-text">University Policies</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -126,7 +137,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#faqs" id="toc-faqs" class="nav-link active" data-scroll-target="#faqs">FAQs</a></li>
+  <li><a href="#course-requirements" id="toc-course-requirements" class="nav-link active" data-scroll-target="#course-requirements">Course Requirements</a>
+  <ul class="collapse">
+  <li><a href="#lab-assignments" id="toc-lab-assignments" class="nav-link" data-scroll-target="#lab-assignments">Lab Assignments</a></li>
+  <li><a href="#exit-tickets" id="toc-exit-tickets" class="nav-link" data-scroll-target="#exit-tickets">Exit Tickets</a></li>
+  </ul></li>
+  <li><a href="#lab-assignment-due-dates" id="toc-lab-assignment-due-dates" class="nav-link" data-scroll-target="#lab-assignment-due-dates">Lab Assignment Due Dates</a>
+  <ul class="collapse">
+  <li><a href="#stress-management" id="toc-stress-management" class="nav-link" data-scroll-target="#stress-management">Stress Management</a></li>
+  </ul></li>
+  <li><a href="#evaluation-of-student-performance" id="toc-evaluation-of-student-performance" class="nav-link" data-scroll-target="#evaluation-of-student-performance">Evaluation of Student Performance</a>
+  <ul class="collapse">
+  <li><a href="#extra-credit-policy" id="toc-extra-credit-policy" class="nav-link" data-scroll-target="#extra-credit-policy">Extra Credit Policy</a></li>
+  <li><a href="#incomplete" id="toc-incomplete" class="nav-link" data-scroll-target="#incomplete">Incomplete</a></li>
+  <li><a href="#accessing-course-grades" id="toc-accessing-course-grades" class="nav-link" data-scroll-target="#accessing-course-grades">Accessing Course Grades</a></li>
+  </ul></li>
+  <li><a href="#assignment-faqs" id="toc-assignment-faqs" class="nav-link" data-scroll-target="#assignment-faqs">Assignment FAQs</a></li>
   </ul>
 </nav>
     </div>
@@ -135,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment Due Dates</h1>
+<h1 class="title">Assignment and Grading</h1>
 </div>
 
 
@@ -148,11 +174,31 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<p>Below are the due dates for the assignments, as well as links to each assignment. <em>All assignments are due by 11:59 PM on the due date.</em> The due dates may change at the instructor’s discretion. Any revised due dates will be announced in class and posted to the website.</p>
-<p><br></p>
 
+<section id="course-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="course-requirements">Course Requirements</h2>
+<p>There are two components that make up your grade:lab assignments, and daily exit tickets. You need to complete all of the lab assignments to receive a grade in the course. <em>Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.</em></p>
+<p><br></p>
+<section id="lab-assignments" class="level3">
+<h3 class="anchored" data-anchor-id="lab-assignments">Lab Assignments</h3>
+<p>There will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day).</p>
+<p>As a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.</p>
+<p><br></p>
+</section>
+<section id="exit-tickets" class="level3">
+<h3 class="anchored" data-anchor-id="exit-tickets">Exit Tickets</h3>
+<p>Exit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The “ticket” consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually. The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.</p>
+<p>If you miss class for a University approved reason (see <em>Policy for Missing Class and Making up Missed/Late Work</em>), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor.</p>
+<p><br></p>
+</section>
+</section>
+<section id="lab-assignment-due-dates" class="level2">
+<h2 class="anchored" data-anchor-id="lab-assignment-due-dates">Lab Assignment Due Dates</h2>
+<p>Below are the due dates for the lab assignments, as well as links to each assignment. <em>All assignments are due by 11:59 PM on the due date.</em> The due dates may change at the instructor’s discretion. Any revised due dates will be announced in class and posted to the website.</p>
+<p><br></p>
 <table class="table">
 <thead>
 <tr>
@@ -237,20 +283,138 @@ Dec.&nbsp;14
 </td>
 </tr>
 </tbody>
-
 </table>
 <p><br></p>
-<section id="faqs" class="level2">
-<h2 class="anchored" data-anchor-id="faqs">FAQs</h2>
+<section id="stress-management" class="level3 stress">
+<h3 class="anchored" data-anchor-id="stress-management">Stress Management</h3>
+<p>Stress management is an important piece of the skill set needed for success in graduate school. Pet Away Worry &amp; Stress (PAWS) is one of the many resources available to students. Find out more at <a href="https://boynton.umn.edu/paws">https://boynton.umn.edu/paws</a>.</p>
+<p style="font-size:70%;">
+You can follow Tilly the Therapy Chicken on Twitter (<span class="citation" data-cites="TherapyChicken">@TherapyChicken</span>).
+</p>
+</section>
+<p><br></p>
+</section>
+<section id="evaluation-of-student-performance" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-of-student-performance">Evaluation of Student Performance</h2>
+<p>You will be evaluated on the basis of your performance on the assignments and exit tickets outlined above. Your course grade will be computed as a weighted average of:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Individual or Group?</th>
+<th>Percent of Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lab Assignments</td>
+<td>Individual or Group</td>
+<td>80%</td>
+</tr>
+<tr class="even">
+<td>Exit Tickets</td>
+<td>Individual</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
+<p>This overall percentage in the class will then be converted to a final course grade using:</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 11%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cutoff</th>
+<th>Grade</th>
+<th>Definition for Graduate Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>93%–100%</td>
+<td>A</td>
+<td>For exceptional work, well above the minimum criteria</td>
+</tr>
+<tr class="even">
+<td>90%–92%</td>
+<td>A–</td>
+<td>For outstanding work, well above the minimum criteria</td>
+</tr>
+<tr class="odd">
+<td>87%–89%</td>
+<td>B+</td>
+<td>For excellent work, significant above the minimum criteria</td>
+</tr>
+<tr class="even">
+<td>83%–86%</td>
+<td>B</td>
+<td>For work above the minimum criteria</td>
+</tr>
+<tr class="odd">
+<td>80%–82%</td>
+<td>B–</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>77%–79%</td>
+<td>C+</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>73%–76%</td>
+<td>C</td>
+<td>For work which meets the course requirements in every respect</td>
+</tr>
+<tr class="even">
+<td>70%–72%</td>
+<td>C–</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>63%–69%</td>
+<td>D</td>
+<td>Worthy of credit even though it fails to meet the course requirements</td>
+</tr>
+<tr class="even">
+<td>0%–62%</td>
+<td>F</td>
+<td>Failed to meet minimum course requirements</td>
+</tr>
+</tbody>
+</table>
+<p>If you are taking the course S/N, the minimum criterion to receive an S is 80% (the equivalent of a B– letter grade). The S grade does not carry grade points and is not part of the GPA calculation, but the credits will count toward the student’s degree program if allowed by the college, campus, or program.</p>
+<p><em>Any student who does not complete all lab assignments by the time the final lab assignment is due without making prior arrangements with the instructor will receive a grade of F/N.</em></p>
+<p><br></p>
+<section id="extra-credit-policy" class="level3">
+<h3 class="anchored" data-anchor-id="extra-credit-policy">Extra Credit Policy</h3>
+<p>Extra credit <em>may</em> be offered throughout the semester, but is not guaranteed.</p>
+<p><br></p>
+</section>
+<section id="incomplete" class="level3">
+<h3 class="anchored" data-anchor-id="incomplete">Incomplete</h3>
+<p>Instructors may assign the registration symbol “I” for Incomplete if, at the time the incomplete is requested: (1) the student has successfully completed a substantial portion of the work of the course; and (2) due to extraordinary circumstances (<em>as determined by the instructor</em>), the student was prevented from completing the work of the course on time. The assignment of an “I” requires a written agreement with the student specifying the time and manner in which the student will complete the course requirements. For more information see <a href="https://policy.umn.edu/education/gradingtranscripts">Grading and Transcripts</a>.</p>
+<p><br></p>
+</section>
+<section id="accessing-course-grades" class="level3">
+<h3 class="anchored" data-anchor-id="accessing-course-grades">Accessing Course Grades</h3>
+<p>Shortly after the course, you may access your grades online at <a href="http://myu.umn.edu">myU</a>. Assignments will be handed back in class or during office hours. Uncollected assignments will be retained for six weeks after the course and then discarded.</p>
+<p><br></p>
+</section>
+</section>
+<section id="assignment-faqs" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-faqs">Assignment FAQs</h2>
 <p><strong>How do I submit the assignment?</strong></p>
 <p>Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:</p>
 <ul class="task-list">
-<li><input type="checkbox">All group members’ names are on the assignment.</li>
-<li><input type="checkbox">All tables are numbered and have a caption.</li>
-<li><input type="checkbox">All figures are numbered and have a caption.</li>
-<li><input type="checkbox">All figures are re-sized to not take up more page space than is necessary to read them.</li>
-<li><input type="checkbox">No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).</li>
-<li><input type="checkbox">Do not submit the script file you used unless the directions specifically ask you to submit it.</li>
+<li><label><input type="checkbox">All group members’ names are on the assignment.</label></li>
+<li><label><input type="checkbox">All tables are numbered and have a caption.</label></li>
+<li><label><input type="checkbox">All figures are numbered and have a caption.</label></li>
+<li><label><input type="checkbox">All figures are re-sized to not take up more page space than is necessary to read them.</label></li>
+<li><label><input type="checkbox">No R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).</label></li>
+<li><label><input type="checkbox">Do not submit the script file you used unless the directions specifically ask you to submit it.</label></li>
 </ul>
 <p><strong>Do I need to turn in the script file?</strong></p>
 <p>No…unless the directions specifically ask you to submit the script file. The script file is for your reference. Future assignments will sometimes have questions that reference older assignments, so an organized and well-commented script file is a good idea. Moreover, the TA or myself may ask you to submit your syntax after you submit the assignment to help us interpret mistakes you made on the assignment so that we can provide more thorough feedback.</p>
@@ -346,10 +510,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -359,8 +522,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -373,6 +545,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -416,6 +707,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -441,6 +733,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -501,6 +819,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

@@ -3,92 +3,92 @@ title: "Data"
 ---
 
 
-Below are the links to the data sets and data codebooks used in the notes, scripts, and assignments. 
+All of the data sets and data codebooks used in the notes, scripts, and lab assignments are linked in the textbook: <https://zief0002.github.io/epsy-5261/>
+
+<!-- <br /> -->
+
+<!-- <table class="table"> -->
+
+<!-- <thead> -->
+<!-- <tr> -->
+<!-- <th style="width:50%;">Name</th> -->
+<!-- <th style="width:25%;text-align:center;">Data</th> -->
+<!-- <th style="width:25%;text-align:center;">Codebook</th> -->
+<!-- </tr> -->
+<!-- </thead> -->
+
+
+<!-- <tbody> -->
+
+<!-- <tr> -->
+<!-- <td>cereal.csv</td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/cereal.csv"> -->
+<!--     <span class="fas fa-file-csv" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="assignments/cereal.html" target="_blank"> -->
+<!--     <span class="fas fa-book-open" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- </tr> -->
+
+<!-- <tr> -->
+<!-- <td>films.csv</td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/films.csv"> -->
+<!--     <span class="fas fa-file-csv" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="assignments/films.html" target="_blank"> -->
+<!--     <span class="fas fa-book-open" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- </tr> -->
+
+<!-- <tr> -->
+<!-- <td>nhanes.csv</td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/nhanes.csv"> -->
+<!--     <span class="fas fa-file-csv" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="assignments/nhanes.html" target="_blank"> -->
+<!--     <span class="fas fa-book-open" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- </tr> -->
+
+<!-- <tr> -->
+<!-- <td>sandwiches.csv</td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/sandwiches.csv"> -->
+<!--     <span class="fas fa-file-csv" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <a href="assignments/sandwiches.html" target="_blank"> -->
+<!--     <span class="fas fa-book-open" style="font-size: 20px;"></span> -->
+<!--   </a> -->
+<!-- </td> -->
+<!-- </tr> -->
+
+
+
+
+
+<!-- </tbody> -->
+<!-- </table> -->
 
 <br />
 
-<table class="table">
 
-<thead>
-<tr>
-<th style="width:50%;">Name</th>
-<th style="width:25%;text-align:center;">Data</th>
-<th style="width:25%;text-align:center;">Codebook</th>
-</tr>
-</thead>
+<!-- ## How to Download a CSV File to Your Computer -->
 
+<!-- To download a data (CSV) file, click on the data set. Then click the `RAW` button. Now you should be able to right-click the dataset and save it. If you are using Safari on a Mac, make sure that the downloaded data does not have an extra *.txt* appended to it when it downloads. If it does, just delete the extra *.txt* suffix. -->
 
-<tbody>
-
-<tr>
-<td>cereal.csv</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/cereal.csv">
-    <span class="fas fa-file-csv" style="font-size: 20px;"></span>
-  </a>
-</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="assignments/cereal.html" target="_blank">
-    <span class="fas fa-book-open" style="font-size: 20px;"></span>
-  </a>
-</td>
-</tr>
-
-<tr>
-<td>films.csv</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/films.csv">
-    <span class="fas fa-file-csv" style="font-size: 20px;"></span>
-  </a>
-</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="assignments/films.html" target="_blank">
-    <span class="fas fa-book-open" style="font-size: 20px;"></span>
-  </a>
-</td>
-</tr>
-
-<tr>
-<td>nhanes.csv</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/nhanes.csv">
-    <span class="fas fa-file-csv" style="font-size: 20px;"></span>
-  </a>
-</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="assignments/nhanes.html" target="_blank">
-    <span class="fas fa-book-open" style="font-size: 20px;"></span>
-  </a>
-</td>
-</tr>
-
-<tr>
-<td>sandwiches.csv</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="https://raw.githubusercontent.com/zief0002/barbieland/main/data/sandwiches.csv">
-    <span class="fas fa-file-csv" style="font-size: 20px;"></span>
-  </a>
-</td>
-<td align="center" style="vertical-align:middle;">
-  <a href="assignments/sandwiches.html" target="_blank">
-    <span class="fas fa-book-open" style="font-size: 20px;"></span>
-  </a>
-</td>
-</tr>
-
-
-
-
-
-</tbody>
-</table>
-
-<br />
-
-
-## How to Download a CSV File to Your Computer
-
-To download a data (CSV) file, click on the data set. Then click the `RAW` button. Now you should be able to right-click the dataset and save it. If you are using Safari on a Mac, make sure that the downloaded data does not have an extra *.txt* appended to it when it downloads. If it does, just delete the extra *.txt* suffix.
-
-<br />
+<!-- <br /> -->
 

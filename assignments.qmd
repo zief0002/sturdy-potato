@@ -1,9 +1,35 @@
 ---
-title: "Assignment Due Dates"
+title: "Assignment and Grading"
 ---
 
+## Course Requirements
 
-Below are the due dates for the assignments, as well as links to each assignment. *All assignments are due by 11:59 PM on the due date.* The due dates may change at the instructor's discretion. Any revised due dates will be announced in class and posted to the website. 
+There are two components that make up your grade:lab assignments, and daily exit tickets. You need to complete all of the lab assignments to receive a grade in the course. *Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.*
+
+<br />
+
+
+### Lab Assignments
+
+There will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day). 
+
+As a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.
+
+<br />
+
+
+### Exit Tickets
+
+Exit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The "ticket" consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually.  The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket. 
+
+If you miss class for a University approved reason (see *Policy for Missing Class and Making up Missed/Late Work*), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor.
+
+<br />
+
+
+## Lab Assignment Due Dates
+
+Below are the due dates for the lab assignments, as well as links to each assignment. *All assignments are due by 11:59 PM on the due date.* The due dates may change at the instructor's discretion. Any revised due dates will be announced in class and posted to the website. 
 
 <br />
 
@@ -93,7 +119,70 @@ Below are the due dates for the assignments, as well as links to each assignment
 <br />
 
 
-## FAQs
+:::stress
+### Stress Management
+
+Stress management is an important piece of the skill set needed for success in graduate school. Pet Away Worry & Stress (PAWS) is one of the many resources available to students. Find out more at [https://boynton.umn.edu/paws](https://boynton.umn.edu/paws). 
+
+<p style="font-size:70%;">You can follow Tilly the Therapy Chicken on Twitter (@TherapyChicken).</p>
+:::
+
+<br />
+
+
+## Evaluation of Student Performance
+
+You will be evaluated on the basis of your performance on the assignments and exit tickets outlined above. Your course grade will be computed as a weighted average of: 
+
+Type            | Individual or Group? | Percent of Grade |
+--------------- | -------------------- | ---------------- |
+Lab Assignments | Individual or Group  | 80%              |
+Exit Tickets    | Individual           | 20%              |
+
+This overall percentage in the class will then be converted to a final course grade using:
+
+Cutoff    | Grade | Definition for Graduate Credit |
+--------- | ----- | ------------------------------ |
+93%--100% | A     | For exceptional work, well above the minimum criteria | 
+90%--92%  | A--   | For outstanding work, well above the minimum criteria | 
+87%--89%  | B+    | For excellent work, significant above the minimum criteria | 
+83%--86%  | B     | For work above the minimum criteria |
+80%--82%  | B--   | |
+77%--79%  | C+    | |
+73%--76%  | C     | For work which meets the course requirements in every respect |
+70%--72%  | C--   | |
+63%--69%  | D     | Worthy of credit even though it fails to meet the course requirements |
+0%--62%   | F     | Failed to meet minimum course requirements |
+
+If you are taking the course S/N, the minimum criterion to receive an S is 80% (the equivalent of a B-- letter grade). The S grade does not carry grade points and is not part of the GPA calculation, but the credits will count toward the student's degree program if allowed by the college, campus, or program.
+
+*Any student who does not complete all lab assignments by the time the final lab assignment is due without making prior arrangements with the instructor will receive a grade of F/N.*
+
+<br />
+
+
+### Extra Credit Policy
+
+Extra credit *may* be offered throughout the semester, but is not guaranteed. 
+
+<br />
+
+
+### Incomplete
+
+Instructors may assign the registration symbol "I" for Incomplete if, at the time the incomplete is requested: (1) the student has successfully completed a substantial portion of the work of the course; and (2) due to extraordinary circumstances (*as determined by the instructor*), the student was prevented from completing the work of the course on time. The assignment of an "I" requires a written agreement with the student specifying the time and manner in which the student will complete the course requirements. For more information see [Grading and Transcripts](https://policy.umn.edu/education/gradingtranscripts).
+
+<br />
+
+
+### Accessing Course Grades
+
+Shortly after the course, you may access your grades online at [myU](http://myu.umn.edu). Assignments will be handed back in class or during office hours. Uncollected assignments will be retained for six weeks after the course and then discarded.
+
+<br />
+
+
+## Assignment FAQs
 
 **How do I submit the assignment?**
 
