@@ -1,0 +1,127 @@
+---
+title: "Day 02<br />Introduction to Coding"
+title-slide-attributes:
+  data-background-image: "figs/title-bg.png"
+  data-background-size: contain
+subtitle: "<br /><br />EPSY 5261 : Introductory Statistical Methods"
+format:
+  revealjs: 
+    theme: ["assets/epsy-5261-theme.scss"]
+    chalkboard: true
+highlight-style: dracula
+code-line-numbers: false
+---
+
+## Learning Goals
+
+At the end of this lesson, you should be able to ...
+
+- Read basic code
+- Write basic code
+- Explain the structure of a function for coding
+
+
+## Grilled Cheese Activity
+
+Complete Part 1 of the activity.
+
+
+## Introduction to Coding {.center background-image="figs/section-bg.png" background-size=contain}
+
+## Coding
+
+- Computers understand code
+- It only understands certain things
+- To write code for the computer to “run” or “execute” we write functions
+
+
+## Functions
+
+Functions are like verbs.
+
+- We use them to tell the computer what we want to do.
+
+
+## Example Function
+
+For creating a grilled cheese we want to start by buttering the bread. For this we could use the following function:
+
+<br /><br />
+
+```{r}
+#| eval: false
+#| echo: true
+butter_bread()
+```
+
+<br /><br />
+
+This function allows us to (figuratively) butter some bread.
+
+
+## Arguments
+
+Functions require arguments to help specify what we want to do. For example we want to tell the computer what type of bread to butter:
+
+<br /><br />
+
+```{r}
+#| eval: false
+#| echo: true
+butter_bread(type = "wheat")
+```
+
+
+## Notice!
+
+- Functions have a specific structure
+- If the structure isn’t correct, the computer won’t give you the right output - it might give you nothing!
+- In the example below notice that:
+  + There is an underscore in the function name
+  + The argument is in quotation marks to specify the type of bread
+  + The argument is enclosed in parenthesis
+  
+
+```{r}
+#| eval: false
+#| echo: true
+butter_bread(type = "wheat")
+```
+
+
+## Notice!
+
+- Parenthesis matter.
+- Capitalization matters.
+- Quotes must be used correctly (need both opening and closing quotes, having them only where needed).
+- Order matters.
+
+
+## Using Multiple Functions
+
+Functions can be chained together so that the output of one function is sent to another function.
+
+<br /><br />
+
+```{r}
+#| eval: false
+#| echo: true
+butter_bread(type = "wheat") +
+add_cheese(flavor = "colby") +
+fry_sandwich(time = 6)
+```
+
+
+## Grilled Cheese Activity (cntd.)
+
+Complete Parts 2 and 3 of the activity.
+
+
+## Looking Ahead
+
+- We will write functions like this in class.
+- We will use R Studio for writing and analyzing code.
+- You will always be given functions.
+- You will need to be precise when writing code and checking for bugs.
+  + Bugs are a normal part of the coding process!
+

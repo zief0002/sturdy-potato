@@ -4,7 +4,7 @@ title: "Assignment and Grading"
 
 ## Course Requirements
 
-There are two components that make up your grade:lab assignments, and daily exit tickets. You need to complete all of the lab assignments to receive a grade in the course. *Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.*
+There are two components that make up your grade: lab assignments (80%), and daily exit tickets (20%). You need to complete all of the lab assignments to receive a grade in the course. *Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.*
 
 <br />
 

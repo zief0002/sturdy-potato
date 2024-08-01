@@ -193,14 +193,14 @@
     "href": "assignments.html",
     "title": "Assignment and Grading",
     "section": "",
-    "text": "There are two components that make up your grade:lab assignments, and daily exit tickets. You need to complete all of the lab assignments to receive a grade in the course. Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.\n\n\n\nThere will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day).\nAs a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.\n\n\n\n\nExit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The “ticket” consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually. The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.\nIf you miss class for a University approved reason (see Policy for Missing Class and Making up Missed/Late Work), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor."
+    "text": "There are two components that make up your grade: lab assignments (80%), and daily exit tickets (20%). You need to complete all of the lab assignments to receive a grade in the course. Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.\n\n\n\nThere will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day).\nAs a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.\n\n\n\n\nExit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The “ticket” consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually. The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.\nIf you miss class for a University approved reason (see Policy for Missing Class and Making up Missed/Late Work), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor."
   },
   {
     "objectID": "assignments.html#course-requirements",
     "href": "assignments.html#course-requirements",
     "title": "Assignment and Grading",
     "section": "",
-    "text": "There are two components that make up your grade:lab assignments, and daily exit tickets. You need to complete all of the lab assignments to receive a grade in the course. Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.\n\n\n\nThere will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day).\nAs a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.\n\n\n\n\nExit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The “ticket” consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually. The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.\nIf you miss class for a University approved reason (see Policy for Missing Class and Making up Missed/Late Work), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor."
+    "text": "There are two components that make up your grade: lab assignments (80%), and daily exit tickets (20%). You need to complete all of the lab assignments to receive a grade in the course. Any student who does not complete all the lab assignments without making prior arrangements with the instructor will receive a grade of F/N.\n\n\n\nThere will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day).\nAs a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.\n\n\n\n\nExit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The “ticket” consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually. The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.\nIf you miss class for a University approved reason (see Policy for Missing Class and Making up Missed/Late Work), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor."
   },
   {
     "objectID": "assignments.html#lab-assignment-due-dates",
@@ -361,6 +361,90 @@
     "href": "schedule.html",
     "title": "Calendar",
     "section": "",
-    "text": "The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor’s discretion.\n\n\n\n\n\n\n\n\nDay\n\nDate\n\n\nReading\n\n\nTopic/Slides\n\n\nMaterials\n\n\n\n\n\n\n\n\n \n\n\n1\n\n\nSept. 05\n\n\n\n\nWelcome to EPsy 5261\n\n\n \n\n\n\n\n\nUnit 01: Statistical Computation\n\n\n\n\n \n\n\n2\n\n\nSept. 07\n\n\n\n\nIntroduction to Coding\n\n\n\n\n\n\n\n \n\n\n3\n\n\nSept. 12\n\n\nCh. 1–2\n\n\nIntroduction to R and RStudio\n\n\n\n\n\n\n\n\nUnit 02: Summarizing and Visualizing Data\n\n\n\n\n \n\n\n4\n\n\nSept. 14\n\n\nCh. 4–6\n\n\nVisualization and Numerical Summaries\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n5\n\n\nSept. 19\n\n\n\n\nVisualization and Numerical Summaries\n\n\n\n\n\n\n\n \n\n\n6\n\n\nSept. 21\n\n\n\n\nVisualization and Numerical Summaries\n\n\n\n\n\n\n\n\nUnit 03: Hypothesis Testing\n\n\n\n\n \n\n\n7\n\n\nSept. 26\n\n\nCh. 7–8\n\n\nEstimating Uncertainty\n\n\n\n\n\n\n\n \n\n\n8\n\n\nSept. 28\n\n\n\n\nIntroduction to Hypothesis Testing\n\n\n\n\n\n\n\n \n\n\n9\n\n\nOct. 03\n\n\n\n\nSimulation-Based Hypothesis Testing\n\n\n\n\n\n\n\n \n\n\n10\n\n\nOct. 05\n\n\nCh. 9–11\n\n\nHypothesis Testing with the t-distribution\n\n\n\n\n\n\n\n \n\n\n11\n\n\nOct. 10\n\n\nCh. 12\n\n\nHypothesis Testing for Proportions\n\n\n\n\n\n\n\n \n\n\n12\n\n\nOct. 12\n\n\nCh. 13–14\n\n\nHypothesis Testing for Comparing Two Means\n\n\n\n\n\n\n\n \n\n\n13\n\n\nOct. 17\n\n\nCh. 15\n\n\nHypothesis Testing for Comparing Two Proportions\n\n\n\n\n\n\n\n \n\n\n14\n\n\nOct. 19\n\n\nCh. 17\n\n\nStudy Design: Generalizability\n\n\n\n\n\n\n\n \n\n\n15\n\n\nOct. 24\n\n\nCh. 18\n\n\nStudy Design: Causal Claims\n\n\n\n\n\n\n\n \n\n\n16\n\n\nOct. 26\n\n\n\n\nNO CLASS—Mental Health Day 🛌 🍷\n\n\n\n\n\n\n\nUnit 04: Effect Size\n\n\n\n\n \n\n\n17\n\n\nOct. 31\n\n\nCh. 19–21\n\n\nIntroduction to Confidence Intervals\n\n\n\n\n\n\n\n \n\n\n18\n\n\nNov. 02\n\n\n\n\nConfidence Intervals for a Single Mean\n\n\n\n\n\n\n\n \n\n\n19\n\n\nNov. 07\n\n\n\n\n\nConfidence Intervals for a Single Proportion\n\n\n\n\n\n\n\n \n\n\n20\n\n\nNov. 09\n\n\n\n\n\nConfidence Intervals for Comparing Two Means\n\n\n\n\n\n\n\n \n\n\n20\n\n\nNov. 09\n\n\n\n\n\nConfidence Intervals for Comparing Two Proportions\n\n\n\n\n\n\n\n \n\n\n21\n\n\nNov. 14\n\n\n\n\nMore Confidence Intervals\n\n\n\n\n\n\n\n \n\n\n22\n\n\nNov. 16\n\n\nCh. 22–23\n\n\n\nStandardized Effect Size\n\n\n\n\n\n\n\n \n\n\n23\n\n\nNov. 21\n\n\n\n\nNO CLASS—Mental Health Day 🛌 🍷\n\n\n\n\n\n\n \n\n\n24\n\n\nNov. 23\n\n\n\n\nNO CLASS—Thanksgiving Break 🦃 🌽 🥧\n\n\n\n\n\n\n\nUnit 05: Correlation and Regression\n\n\n\n\n \n\n\n25\n\n\nNov. 28\n\n\nCh. 24\n\n\nIntroduction to Correlation\n\n\n\n\n\n\n\n \n\n\n26\n\n\nNov. 30\n\n\nCh. 25\n\n\nIntroduction to Simple Linear Regression\n\n\n\n\n\n\n\n \n\n\n27\n\n\nDec. 05\n\n\nCh. 26\n\n\nSimple Linear Regression (Continued)\n\n\n\n\n\n\n\n \n\n\n28\n\n\nDec. 07\n\n\nCh. 27\n\n\nSimple Linear Regression (Continued)\n\n\n\n\n\n\n\n \n\n\n29\n\n\nDec. 12\n\n\nTBD\n\n\nReview Day"
+    "text": "The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor’s discretion.\n\n\n\n\n\n\n\n\nDay\n\nDate\n\n\nReading\n\n\nTopic/Slides\n\n\nMaterials\n\n\n\n\n\n\n\n\n \n\n\n1\n\n\nSept. 03\n\n\n\n\nWelcome to EPsy 5261\n\n\n \n\n\n\n\n\nUnit 01: Statistical Computation\n\n\n\n\n \n\n\n2\n\n\nSept. 05\n\n\n\n\nIntroduction to Coding\n\n\n\n\n\n\n\n \n\n\n3\n\n\nSept. 10\n\n\nCh. 1–2\n\n\nIntroduction to R and RStudio\n\n\n\n\n\n\n\n \n\n\n4\n\n\nSept. 12\n\n\nCh. 4\n\n\nData and Codebooks\n\n\n\n\n\n\n\n\nUnit 02: Visualizing and Summarizing Data\n\n\n\n\n \n\n\n5\n\n\nSept. 17\n\n\nCh. 5–6\n\n\nVariables and Graphs\n\n\n\n\n\n\n\n \n\n\n6\n\n\nSept. 19\n\n\n\n\nDescribing Distributions\n\n\n\n\n\n\n\n\nUnit 03: Comparing Data to a Standard\n\n\n\n\n \n\n\n7\n\n\nSept. 24\n\n\nCh. 7–8\n\n\nEstimating Uncertainty\n\n\n\n\n\n\n\n \n\n\n8\n\n\nSept. 26\n\n\n\n\nIntroduction to Hypothesis Testing\n\n\n\n\n\n\n\n \n\n\n9\n\n\nOct. 01\n\n\n\n\nHypothesis Testing with Simulation\n\n\n\n\n\n\n\n \n\n\n10\n\n\nOct. 03\n\n\nCh. 17\n\n\nSampling and Generalizations\n\n\n\n\n\n\n\n \n\n\n11\n\n\nOct. 08\n\n\nCh. 9–11\n\n\nIntroduction to Hypothesis Testing with the t-Distribution\n\n\n\n\n\n\n\n \n\n\n12\n\n\nOct. 10\n\n\nCh. 12\n\n\nIntroduction to Hypothesis Testing with the z-Distribution\n\n\n\n\n\n\n\n\nUnit 04: Comparing Two Groups\n\n\n\n\n \n\n\n13\n\n\nOct. 15\n\n\nCh. 18\n\n\nRandom Assignment and Causal Inference\n\n\n\n\n\n\n\n \n\n\n14\n\n\nOct. 17\n\n\nCh. 13–14\n\n\nIntroduction to Hypothesis Testing: Comparing Two Means\n\n\n\n\n\n\n\n \n\n\n15\n\n\nOct. 22\n\n\nCh. 15\n\n\nIntroduction to Hypothesis Testing: Comparing Two Proportions\n\n\n\n\n\n\n\n \n\n\n16\n\n\nOct. 24\n\n\n\n\nNO CLASS—Mental Health Day 🛌 🍷\n\n\n\n\n\n\n\nUnit 05: Effect Size\n\n\n\n\n\n \n\n\n17\n\n\nOct. 29\n\n\nCh. 19–21\n\n\nIntroduction to Confidence Intervals\n\n\n\n\n\n\n\n \n\n\n18\n\n\nOct. 31\n\n\n\n\nConfidence Intervals for a Single Mean\n\n\n\n\n\n\n\n \n\n\n19\n\n\nNov. 05\n\n\n\n\n\nConfidence Intervals for a Single Proportion\n\n\n\n\n\n\n\n \n\n\n20\n\n\nNov. 07\n\n\n\n\nConfidence Intervals for Comparing Two Groups\n\n\n\n\n\n\n\n \n\n\n21\n\n\nNov. 12\n\n\n\n\n\nPractice with Confidence Intervals\n\n\n\n\n\n\n\n \n\n\n22\n\n\nNov. 14\n\n\nCh. 22–23\n\n\nExploring Effect Size\n\n\n\n\n\n\n\n\nUnit 06: Correlation and Regression\n\n\n\n\n \n\n\n23\n\n\nNov. 19\n\n\nCh. 24\n\n\nIntroduction to Correlation\n\n\n\n\n\n\n\n \n\n\n24\n\n\nNov. 21\n\n\nCh. 25–26\n\n\nIntroduction to Linear Regression\n\n\n\n\n\n\n\n \n\n\n25\n\n\nNov. 26\n\n\nCh. 27\n\n\nHypothesis Test for the Slope\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n26\n\n\nNov. 28\n\n\n\n\nNO CLASS—Thanksgiving Break 🦃 🌽 🥧\n\n\n\n\n\n\n \n\n\n27\n\n\nDec. 03\n\n\n\n\nAssumptions for Linear Regression\n\n\n\n\n\n\n\n \n\n\n28\n\n\nDec. 05\n\n\n\n\nLinear Regression: Practice\n\n\n\n\n\n\n\n \n\n\n29\n\n\nDec. 10\n\n\n\n\nTBD"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#learning-goals",
+    "href": "files/slides/D2-Introduction-to-Coding.html#learning-goals",
+    "title": "Day 02Introduction to Coding",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nAt the end of this lesson, you should be able to …\n\nRead basic code\nWrite basic code\nExplain the structure of a function for coding"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity",
+    "href": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity",
+    "title": "Day 02Introduction to Coding",
+    "section": "Grilled Cheese Activity",
+    "text": "Grilled Cheese Activity\nComplete Part 1 of the activity."
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#introduction-to-coding",
+    "href": "files/slides/D2-Introduction-to-Coding.html#introduction-to-coding",
+    "title": "Day 02Introduction to Coding",
+    "section": "Introduction to Coding",
+    "text": "Introduction to Coding"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#coding",
+    "href": "files/slides/D2-Introduction-to-Coding.html#coding",
+    "title": "Day 02Introduction to Coding",
+    "section": "Coding",
+    "text": "Coding\n\nComputers understand code\nIt only understands certain things\nTo write code for the computer to “run” or “execute” we write functions"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#functions",
+    "href": "files/slides/D2-Introduction-to-Coding.html#functions",
+    "title": "Day 02Introduction to Coding",
+    "section": "Functions",
+    "text": "Functions\nFunctions are like verbs.\n\nWe use them to tell the computer what we want to do."
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#example-function",
+    "href": "files/slides/D2-Introduction-to-Coding.html#example-function",
+    "title": "Day 02Introduction to Coding",
+    "section": "Example Function",
+    "text": "Example Function\nFor creating a grilled cheese we want to start by buttering the bread. For this we could use the following function:\n\n\nbutter_bread()\n\n\nThis function allows us to (figuratively) butter some bread."
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#arguments",
+    "href": "files/slides/D2-Introduction-to-Coding.html#arguments",
+    "title": "Day 02Introduction to Coding",
+    "section": "Arguments",
+    "text": "Arguments\nFunctions require arguments to help specify what we want to do. For example we want to tell the computer what type of bread to butter:\n\n\nbutter_bread(type = \"wheat\")"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#notice",
+    "href": "files/slides/D2-Introduction-to-Coding.html#notice",
+    "title": "Day 02Introduction to Coding",
+    "section": "Notice!",
+    "text": "Notice!\n\nFunctions have a specific structure\nIf the structure isn’t correct, the computer won’t give you the right output - it might give you nothing!\nIn the example below notice that:\n\nThere is an underscore in the function name\nThe argument is in quotation marks to specify the type of bread\nThe argument is enclosed in parenthesis\n\n\n\nbutter_bread(type = \"wheat\")"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#notice-1",
+    "href": "files/slides/D2-Introduction-to-Coding.html#notice-1",
+    "title": "Day 02Introduction to Coding",
+    "section": "Notice!",
+    "text": "Notice!\n\nParenthesis matter.\nCapitalization matters.\nQuotes must be used correctly (need both opening and closing quotes, having them only where needed).\nOrder matters."
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#using-multiple-functions",
+    "href": "files/slides/D2-Introduction-to-Coding.html#using-multiple-functions",
+    "title": "Day 02Introduction to Coding",
+    "section": "Using Multiple Functions",
+    "text": "Using Multiple Functions\nFunctions can be chained together so that the output of one function is sent to another function.\n\n\nbutter_bread(type = \"wheat\") +\nadd_cheese(flavor = \"colby\") +\nfry_sandwich(time = 6)"
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity-cntd.",
+    "href": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity-cntd.",
+    "title": "Day 02Introduction to Coding",
+    "section": "Grilled Cheese Activity (cntd.)",
+    "text": "Grilled Cheese Activity (cntd.)\nComplete Parts 2 and 3 of the activity."
+  },
+  {
+    "objectID": "files/slides/D2-Introduction-to-Coding.html#looking-ahead",
+    "href": "files/slides/D2-Introduction-to-Coding.html#looking-ahead",
+    "title": "Day 02Introduction to Coding",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\n\nWe will write functions like this in class.\nWe will use R Studio for writing and analyzing code.\nYou will always be given functions.\nYou will need to be precise when writing code and checking for bugs.\n\nBugs are a normal part of the coding process!"
   }
 ]
