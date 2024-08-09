@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-07-25">
+<meta name="dcterms.date" content="2024-08-09">
 <meta name="description" content="This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted.   Copyright EPSY 5261, 2023">
 
 <title>EPsy 5261 - Assignment 05</title>
@@ -140,9 +140,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
-  <li><a href="#part-1-investigating-research-question-1" id="toc-part-1-investigating-research-question-1" class="nav-link" data-scroll-target="#part-1-investigating-research-question-1">Part 1: Investigating Research Question 1</a></li>
-  <li><a href="#part-2-investigating-research-question-2" id="toc-part-2-investigating-research-question-2" class="nav-link" data-scroll-target="#part-2-investigating-research-question-2">Part 2: Investigating Research Question 2</a></li>
-  <li><a href="#part-3-multiple-choice-questions" id="toc-part-3-multiple-choice-questions" class="nav-link" data-scroll-target="#part-3-multiple-choice-questions">Part 3: Multiple Choice Questions</a>
+  <li><a href="#part-1-describing-the-sample-relationship" id="toc-part-1-describing-the-sample-relationship" class="nav-link" data-scroll-target="#part-1-describing-the-sample-relationship">Part 1: Describing the Sample Relationship</a></li>
+  <li><a href="#part-2-simple-linear-regression-model" id="toc-part-2-simple-linear-regression-model" class="nav-link" data-scroll-target="#part-2-simple-linear-regression-model">Part 2: Simple Linear Regression Model</a></li>
+  <li><a href="#part-3-more-summary-values-for-our-model" id="toc-part-3-more-summary-values-for-our-model" class="nav-link" data-scroll-target="#part-3-more-summary-values-for-our-model">Part 3: More Summary Values for our Model</a>
   <ul class="collapse">
   <li><a href="#how-do-i-submit-the-assignment" id="toc-how-do-i-submit-the-assignment" class="nav-link" data-scroll-target="#how-do-i-submit-the-assignment">How do I submit the assignment?</a></li>
   </ul></li>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Assignment 05</h1>
-<p class="subtitle lead">CONFIDENCE INTERVALS</p>
+<p class="subtitle lead">SIMPLE LINEAR REGRESSION</p>
 </div>
 
 <div>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 25, 2024</p>
+      <p class="date">August 9, 2024</p>
     </div>
   </div>
   
@@ -194,70 +194,43 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="instructions" class="level2">
 <h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
-<p>You will use the <em>nhanes.csv</em> data set to answer questions in this lab. The <a href="https://zief0002.github.io/barbieland/assignments/nhanes.html">data codebook</a> includes a description of how the data were collected and of each of the attributes included in the data.</p>
-<p>Use the code chunks in the <em>assignment05.qmd</em> file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment.</p>
+<p>You will use the <em>nhanes.csv</em> data set to answer questions in this lab. The data file and data codebook are available in the <a href="https://zief0002.github.io/epsy-5261/09-00-data-codebooks.html">textbook</a>. Submit a PDF document of your responses to the questions in this assignment.</p>
 <p>A social scientist is interested in answering the following two research questions:</p>
 <blockquote class="blockquote">
-<p><strong>Research Question 1:</strong> What proportion of adults in the U.S. in 2017 report having sleep trouble?</p>
-<p><strong>Research Question 2:</strong> What is the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not?</p>
+<p><strong>Research Question 1:</strong> Among adults in the U.S. in 2017, is the number of hours slept on a weeknight a predictor of the number of hours a person sleeps on the weekend?</p>
 </blockquote>
-<p>You will use the <code>recent_depression</code> and <code>trouble_sleeping</code> variables from the <em>nhanes.csv</em> data to compute confidence intervals to answer these research questions.</p>
+<p>You will use the <code>sleep_weeknight</code> and <code>sleep_weekend</code> attributes from the <em>nhanes.csv</em> data to fit a regression model that you will use to answer these research questions.</p>
 </section>
-<section id="part-1-investigating-research-question-1" class="level1">
-<h1>Part 1: Investigating Research Question 1</h1>
+<section id="part-1-describing-the-sample-relationship" class="level1">
+<h1>Part 1: Describing the Sample Relationship</h1>
 <ol type="1">
-<li><p><strong>(5pts.)</strong> Compute and report a 95% confidence interval to estimate the proportion of adults in the U.S. in 2017 report having sleep trouble. Then interpret this interval to answer Research Question 1. To fully answer this question, you must:</p>
-<ul>
-<li>Include the syntax you used to create the interval.</li>
-<li>Include an interpretation of the confidence interval in context.</li>
-</ul></li>
-<li><p><strong>(3pts.)</strong> Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here.</p></li>
+<li><p><strong>(2pts.)</strong> Create a scatterplot of the number of weeknight hours slept versus the number of weekend hours slept for the sample participants. Be sure the predictor and response attributes (based on the research question) are on the appropriate axes. Include appropriate axis labels.</p></li>
+<li><p>Based on the scatterplot, describe the relationship between these variables. Be sure to refer to all four characteristics in your description.</p></li>
+<li><p>Based on your description of the relationship, in particular, the functional form, is the correlation coefficient an appropriate numerical summary measure to quantify this relationship? Explain.</p></li>
+<li><p>Regardless of your answer to the previous question, compute and report the correlation coefficient. Note that there is some missing data in these variables, so you will need to add the argument <code>use="complete.obs"</code> to the <code>cor()</code> function.</p></li>
 </ol>
 <p><br></p>
 </section>
-<section id="part-2-investigating-research-question-2" class="level1">
-<h1>Part 2: Investigating Research Question 2</h1>
-<ol start="3" type="1">
-<li><p><strong>(5pts.)</strong> Compute and report a 95% confidence interval to estimate the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not. Then interpret this interval to answer Research Question 2. To fully answer this question, you must:</p>
-<ul>
-<li>Include the syntax you used to create the interval.</li>
-<li>Include an interpretation of the confidence interval in context.</li>
-</ul></li>
-<li><p><strong>(3pts.)</strong> Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here.</p></li>
-</ol>
-<p><br></p>
-</section>
-<section id="part-3-multiple-choice-questions" class="level1">
-<h1>Part 3: Multiple Choice Questions</h1>
-<p><em>Please indicate your answer to each question clearly. (You do NOT need to explain your choice.)</em></p>
+<section id="part-2-simple-linear-regression-model" class="level1">
+<h1>Part 2: Simple Linear Regression Model</h1>
 <ol start="5" type="1">
-<li><p>If the sample size was increased, all else being the same, how would the widths of the confidence intervals in Questions #1 and #2 change?</p>
-<ol type="a">
-<li>The interval widths would both decrease.</li>
-<li>The interval widths would both increase.</li>
-<li>The interval widths would both stay the same.</li>
-<li>One of the interval widths would decrease, the other would increase.</li>
-</ol></li>
-<li><p>If the confidence level was increased to 98%, all else being the same, how would the widths of the confidence intervals in Questions #1 and #2 change?</p>
-<ol type="a">
-<li>The interval widths would both decrease.</li>
-<li>The interval widths would both increase.</li>
-<li>The interval widths would both stay the same.</li>
-<li>One of the interval widths would decrease, the other would increase.</li>
-</ol></li>
+<li><p>Fit a simple linear regression model to the data that will help you answer the research question. Report the fitted equation based on the regression output in context. (There is no need to include your output here.)</p></li>
+<li><p>Interpret the value of the intercept from your fitted equation using the context of the research question.</p></li>
+<li><p>Interpret the value of the slope from your fitted equation using the context of the research question.</p></li>
+<li><p>What is the predicted number of hours slept on the weekend for the first person included in the NHANES data set? Be sure to show your work.</p></li>
+<li><p>What is the residual value for the first person included in the NHANES data set? Be sure to show your work.</p></li>
+<li><p>Report and interpret the R2 value in context.</p></li>
 </ol>
-<p>Suppose a researcher computed a 90% confidence interval to estimate the mean number of hours per weekend night adults in U.S. households in 2017 slept. This interval was reported as 90% CI = [8.05, 8.31]. Questions 7–8 each give a potential interpretation of this interval. <em>For each of these questions, indicate whether the interpretation provided is correct or incorrect. (You do NOT need to explain why.)</em></p>
-<ol start="7" type="1">
-<li><p>There is a 90% chance the confidence interval includes the sample mean number of hours per weekend night adults in U.S. households in 2017 slept.</p>
-<ol type="a">
-<li>Correct interpretation</li>
-<li>Incorrect interpretation</li>
-</ol></li>
-<li><p>About 90% of adults in U.S. households in 2017 slept between 8.05 and 8.31 hrs per weekend night.</p>
-<ol type="a">
-<li>Correct interpretation</li>
-<li>Incorrect interpretation</li>
-</ol></li>
+<p><br></p>
+</section>
+<section id="part-3-more-summary-values-for-our-model" class="level1">
+<h1>Part 3: More Summary Values for our Model</h1>
+<ol start="11" type="1">
+<li><p>What are the null and alternative hypotheses for testing the slope coefficient?</p></li>
+<li><p><strong>(2pts.)</strong> Conduct a hypothesis test on the slope. Based on the <em>p</em>-value for this test, answer the research question in context.</p></li>
+<li><p>Create and include a histogram of the response variable.</p></li>
+<li><p>Also create and include a scatterplot of the residual values versus the predicted values.</p></li>
+<li><p><strong>(4pts.)</strong> Evaluate all four of the assumptions underlying the use of the simple regression model. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed.</p></li>
 </ol>
 <p><br></p>
 <section id="how-do-i-submit-the-assignment" class="level2">

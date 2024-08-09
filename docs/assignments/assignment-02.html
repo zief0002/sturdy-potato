@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-07-25">
-<meta name="description" content="This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted.   Copyright EPSY 5261, 2023">
+<meta name="dcterms.date" content="2024-08-09">
+<meta name="description" content="This assignment is worth 18 points. Each question is worth 1 point unless otherwise noted.   Copyright EPSY 5261, 2023">
 
 <title>EPsy 5261 - Assignment 02</title>
 <style>
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -140,7 +174,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
+  <li><a href="#part-1-visualizing-summarizing-and-describing-the-sample-data" id="toc-part-1-visualizing-summarizing-and-describing-the-sample-data" class="nav-link" data-scroll-target="#part-1-visualizing-summarizing-and-describing-the-sample-data">Part 1: Visualizing, Summarizing, and Describing the Sample Data</a></li>
+  <li><a href="#part-2-estimating-uncertainty" id="toc-part-2-estimating-uncertainty" class="nav-link" data-scroll-target="#part-2-estimating-uncertainty">Part 2: Estimating Uncertainty</a></li>
+  <li><a href="#part-3-hypothesis-test-to-compare-data-to-a-standard" id="toc-part-3-hypothesis-test-to-compare-data-to-a-standard" class="nav-link" data-scroll-target="#part-3-hypothesis-test-to-compare-data-to-a-standard">Part 3: Hypothesis Test to Compare Data to a Standard</a>
   <ul class="collapse">
   <li><a href="#how-do-i-submit-the-assignment" id="toc-how-do-i-submit-the-assignment" class="nav-link" data-scroll-target="#how-do-i-submit-the-assignment">How do I submit the assignment?</a></li>
   </ul></li>
@@ -153,12 +189,12 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Assignment 02</h1>
-<p class="subtitle lead">VISUALIZING AND SUMMARIZING DATA</p>
+<p class="subtitle lead">VISUALIZING AND SUMMARIZING DATA/ESTIMATING UNCERTAINTY</p>
 </div>
 
 <div>
   <div class="description">
-    This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted. <br><br> <em>Copyright EPSY 5261, 2023</em>
+    This assignment is worth 18 points. Each question is worth 1 point unless otherwise noted. <br><br> <em>Copyright EPSY 5261, 2023</em>
   </div>
 </div>
 
@@ -169,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 25, 2024</p>
+      <p class="date">August 9, 2024</p>
     </div>
   </div>
   
@@ -187,31 +223,74 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../img/assign-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+<p><img src="../img/assign-03.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 <section id="instructions" class="level2">
 <h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
-<p>You will use the <em>nhanes.csv</em> data set to answer questions in this lab. The <a href="https://zief0002.github.io/barbieland/assignments/nhanes.html">data codebook</a> includes a description of how the data were collected and of each of the attributes included in the data.</p>
-<p>Use the code chunks in the <em>assignment02.qmd</em> file to load packages, import the data, and carry out any R computations. You will use the <code>sleep_weeknight</code> and <code>sleep_weekend</code> attributes from the <em>nhanes.csv</em> data to compute graphical and numerical summaries to answer the following research question:</p>
-<blockquote class="blockquote">
-<p><strong>Research Question</strong>: How does the distribution of hours of sleep on the weekend compare to that for hours of sleep during the week for American adults who responded to the NHANES 2017 survey?</p>
-</blockquote>
+<p>Submit a PDF document of your responses to the following questions.</p>
 <p><br></p>
 </section>
-<section id="questions" class="level1">
-<h1>Questions</h1>
-<p>Submit a PDF document of your responses to the following questions.</p>
+<section id="part-1-visualizing-summarizing-and-describing-the-sample-data" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-visualizing-summarizing-and-describing-the-sample-data">Part 1: Visualizing, Summarizing, and Describing the Sample Data</h2>
+<p>You will use the <em>sandwiches.csv</em> data set to answer questions in this part of the lab. The data file and data codebook are available in the <a href="https://zief0002.github.io/epsy-5261/09-00-data-codebooks.html">textbook</a>.</p>
 <ol type="1">
-<li><p>Create a histogram of the distribution of weeknight hours slept. Change the color and fill arguments from the default colors. Include appropriate axis labels. <strong>(3pts.)</strong></p></li>
-<li><p>Based on the shape of the distribution from Question 1, compute and report a set of <strong>appropriate</strong> numerical summaries for the center and variation of the distribution of weeknight hours slept. (Note: You should only have two numerical summaries—one to summarize the center and one to summarize the variation.) Your answer does not need a description; you only need to include the statistics and the graphs. <strong>(2pts.)</strong></p></li>
-<li><p>Use your results from Questions 1 and 2 to write a couple of sentences describing the shape, center, and variation of the distribution using the context of weeknight hours slept. <strong>(3pts.)</strong></p></li>
-<li><p>Create a density plot of the distribution of weekend hours slept. Change the color and fill arguments from the default colors. Include appropriate axis labels. <strong>(3pts.)</strong></p></li>
-<li><p>Based on the shape of the distribution from Question 3, compute and report a set of <strong>appropriate</strong> numerical summaries for the center and variation of the distribution of weekend hours slept. (Note: You should only have two numerical summaries—one to summarize the center and one to summarize the variation.) Your answer does not need a description; you only need to include the statistics and the graphs. <strong>(2pts.)</strong></p></li>
-<li><p>Use your results from Questions 4 and 5 to write a couple of sentences describing the shape, center, and variation of the distribution using the context of weekend hours slept. <strong>(3pts.)</strong></p></li>
-<li><p>Using no more than 200 words, answer the research question. To do this, your response should compare and contrast each of the different features of the two distributions (shape, center, and variability). It should also include any conclusions about how sleep on weekends and weeknights differs (or is similar) for adult Americans in 2017. These conclusions should be understandable by someone who does not have a strong background in statistics. <strong>(4pts.)</strong></p></li>
+<li><p>Create a histogram for the <code>sugar</code> attribute. Be sure to update the labels and add a color of your choice. Include your histogram in your document.</p></li>
+<li><p>Use the <code>df_stats()</code> function to compute a set of numerical summary measures for the <code>sugar</code> attribute. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).</p></li>
+<li><p><strong>(3pts.)</strong> Write a couple of sentences describing the shape, center, and variation of the distribution using the context of the sugar content in sub shop sandwiches.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="part-2-estimating-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-estimating-uncertainty">Part 2: Estimating Uncertainty</h2>
+<p>Suppose a social scientist carried out a bootstrap simulation (used the <code>do()</code> function similar to how we did in the Day 5 activity) to estimate the standard error of the sample mean amount of sugar. The resulting histogram and summary statistics of this simulation are shown below:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-bootstrap-dist" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bootstrap-dist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/lab-03-hist.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bootstrap-dist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distribution of 1000 bootstrapped means.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-highlight-style="atom-one">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">df_stats</span>(<span class="sc">~</span>result, <span class="at">data =</span> bootstrap_means)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  response   min       Q1  median    Q3   max     mean        sd    n missing</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   result <span class="fl">6.592</span> <span class="fl">7.260375</span> <span class="fl">7.49725</span> <span class="fl">7.735</span> <span class="fl">8.775</span> <span class="fl">7.502887</span> <span class="fl">0.3305093</span> <span class="dv">1000</span>       <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<ol start="4" type="1">
+<li><p>Explain why we expect the mean of this distribution of sample means to be 7.50 (even before we run the simulation and see the histogram).</p></li>
+<li><p>What is the estimated standard error of the means?</p></li>
+<li><p>Explain what the standard error measures using the context.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="part-3-hypothesis-test-to-compare-data-to-a-standard" class="level1">
+<h1>Part 3: Hypothesis Test to Compare Data to a Standard</h1>
+<p>The <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much">American Heart Association</a> recommends on average no more than ~30g of sugar per day. If we divide this up across three meals a day, the recommended amount for breakfast is 10g. You will use the <code>sugar</code> attribute from the <em>sandwiches.csv</em> data to carry out a hypothesis test to answer the following research question:</p>
+<blockquote class="blockquote">
+<p><strong>Research Question:</strong> Is the average amount of sugar in sub shop sandwiches different from the recommended amount of 10g (for a single meal)?</p>
+</blockquote>
+<ol start="7" type="1">
+<li><p>Given the research question, please write out the appropriate null and alternative hypotheses that will be tested in words.</p></li>
+<li><p>Given the research question, please write out the appropriate null and alternative hypotheses that will be tested using mathematical symbols.</p></li>
+<li><p><strong>(5pts.)</strong> Conduct a hypothesis test using R that allows you to answer the research question. Please be sure to state your conclusions in reference to the hypotheses you wrote out in response to Question 1. To fully answer this question you must:</p>
+<ul>
+<li>Include the R syntax you used to carry out the test.</li>
+<li>State the observed sample statistic.</li>
+<li>State the <em>p</em>-value.</li>
+<li>State your conclusion and answer the research question (in context).</li>
+</ul></li>
+<li><p><strong>(3pts.)</strong> Evaluate all of the assumptions underlying the test. For each assumption: (a) include any graphical or numerical evidence you use to help evaluate the assumption, (b) clearly state whether the assumption is tenable or not, and (c) explain why you believe the assumption is tenable or not by referring to the evidence you included.</p></li>
 </ol>
 <p><br></p>
 <section id="how-do-i-submit-the-assignment" class="level2">

@@ -1,6 +1,6 @@
 ---
 title: "Assignment 05"
-subtitle: "CONFIDENCE INTERVALS"
+subtitle: "SIMPLE LINEAR REGRESSION"
 description: This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
 format:
   html:
@@ -21,79 +21,63 @@ knitr::include_graphics("../img/assign-02.png")
 
 ## Instructions
 
-You will use the *nhanes.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/nhanes.html) includes a description of how the data were collected and of each of the attributes included in the data. 
-
-Use the code chunks in the *assignment05.qmd* file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment. 
+You will use the *nhanes.csv* data set to answer questions in this lab. The data file and data codebook are available in the [textbook](https://zief0002.github.io/epsy-5261/09-00-data-codebooks.html). Submit a PDF document of your responses to the questions in this assignment. 
 
 A social scientist is interested in answering the following two research questions:
 
-> **Research Question 1:** What proportion of adults in the U.S. in 2017 report having sleep trouble?
->
-> **Research Question 2:** What is the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not?
-
-You will use the `recent_depression` and `trouble_sleeping` variables from the *nhanes.csv* data to compute confidence intervals to answer these research questions.
+> **Research Question 1:** Among adults in the U.S. in 2017, is the number of hours slept on a weeknight a predictor of the number of hours a person sleeps on the weekend?
 
 
+You will use the `sleep_weeknight` and `sleep_weekend` attributes from the *nhanes.csv* data to fit a regression model that you will use to answer these research questions.
 
-# Part 1: Investigating Research Question 1
 
-1. **(5pts.)** Compute and report a 95% confidence interval to estimate the proportion of adults in the U.S. in 2017 report having sleep trouble. Then interpret this interval to answer Research Question 1. To fully answer this question, you must:
 
-    + Include the syntax you used to create the interval.
-    + Include an interpretation of the confidence interval in context.
+# Part 1: Describing the Sample Relationship
+
+1. **(2pts.)** Create a scatterplot of the number of weeknight hours slept versus the number of weekend hours slept for the sample participants. Be sure the predictor and response attributes (based on the research question) are on the appropriate axes. Include appropriate axis labels.
  
 
-2. **(3pts.)** Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here. 
+2. Based on the scatterplot, describe the relationship between these variables. Be sure to refer to all four characteristics in your description.  
+
+3. Based on your description of the relationship, in particular, the functional form, is the correlation coefficient an appropriate numerical summary measure to quantify this relationship? Explain. 
+
+4. Regardless of your answer to the previous question, compute and report the correlation coefficient. Note that there is some missing data in these variables, so you will need to add the argument `use="complete.obs"` to the `cor()` function.
 
 <br />
 
 
-# Part 2: Investigating Research Question 2
+# Part 2: Simple Linear Regression Model
 
-3. **(5pts.)** Compute and report a 95% confidence interval to estimate the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not. Then interpret this interval to answer Research Question 2. To fully answer this question, you must:
-
-    + Include the syntax you used to create the interval.
-    + Include an interpretation of the confidence interval in context.
+5. Fit a simple linear regression model to the data that will help you answer the research question. Report the fitted equation based on the regression output in context. (There is no need to include your output here.)
 
 
+6. Interpret the value of the intercept from your fitted equation using the context of the research question.
 
-4. **(3pts.)** Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here.
+7. Interpret the value of the slope from your fitted equation using the context of the research question.
+
+8. What is the predicted number of hours slept on the weekend for the first person included in the NHANES data set? Be sure to show your work. 
+
+9. What is the residual value for the first person included in the NHANES data set? Be sure to show your work. 
+
+10. Report and interpret the R2 value in context. 
+
 
 <br />
 
 
-# Part 3: Multiple Choice Questions
+# Part 3: More Summary Values for our Model
 
-*Please indicate your answer to each question clearly. (You do NOT need to explain your choice.)*
+11. What are the null and alternative hypotheses for testing the slope coefficient?
 
+12. **(2pts.)** Conduct a hypothesis test on the slope. Based on the *p*-value for this test, answer the research question in context. 
 
-5. If the sample size was increased, all else being the same, how would the widths of the confidence intervals in Questions \#1 and \#2 change?
+13. Create and include a histogram of the response variable.
 
-    a. The interval widths would both decrease.
-    b. The interval widths would both increase.
-    c. The interval widths would both stay the same.
-    d. One of the interval widths would decrease, the other would increase.
- 
+14. Also create and include a scatterplot of the residual values versus the predicted values.
 
-6. If the confidence level was increased to 98%, all else being the same, how would the widths of the confidence intervals in Questions \#1 and \#2 change?
-
-    a. The interval widths would both decrease.
-    b. The interval widths would both increase.
-    c. The interval widths would both stay the same.
-    d. One of the interval widths would decrease, the other would increase.
+15. **(4pts.)** Evaluate all four of the assumptions underlying the use of the simple regression model. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed.
 
 
-Suppose a researcher computed a 90% confidence interval to estimate the mean number of hours per weekend night adults in U.S. households in 2017 slept. This interval was reported as 90% CI = [8.05, 8.31]. Questions 7--8 each give a potential interpretation of this interval. *For each of these questions, indicate whether the interpretation provided is correct or incorrect. (You do NOT need to explain why.)*
-
-7. There is a 90% chance the confidence interval includes the sample mean number of hours per weekend night adults in U.S. households in 2017 slept. 
-
-    a. Correct interpretation
-    b. Incorrect interpretation
-
-8. About 90% of adults in U.S. households in 2017 slept between 8.05 and 8.31 hrs per weekend night.
-
-    a. Correct interpretation
-    b. Incorrect interpretation
 
 <br />
 

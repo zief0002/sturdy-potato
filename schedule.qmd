@@ -56,7 +56,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Sept. 05</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Introduction to Coding](https://docs.google.com/presentation/d/1V_E7u6VrPlJMNxhGFkAHDcn510j837DpsQEOghqWBvA/edit?usp=sharing)
+  [Introduction to Coding](https://zief0002.github.io/slides/d02-introduction-to-coding.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines"></span>](https://docs.google.com/document/d/1UtUi8VrrP_o2vIiWJ-7EehTynZ7SmQjl8MhIvCLjbt8/edit?usp=sharing)
@@ -72,7 +72,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 1--2](https://zief0002.github.io/epsy-5261/01-01-r-and-rstudio-installation.html)
 </td>
 <td>
-  [Introduction to R and RStudio](https://docs.google.com/presentation/d/1RcOd1ic2i5zZQf9GM4Yl5pU1K465rFggFzP0Hipthdc/edit?usp=sharing)
+  [Introduction to R and RStudio](https://zief0002.github.io/slides/d03-introduction-to-r-and-rstudio.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines"></span>](https://docs.google.com/document/d/1MkciLSJRREZ60Pm2TMkeGDZLFR4E7tcwz9J8uE2xP0w/edit?usp=sharing)
@@ -88,7 +88,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 4](https://zief0002.github.io/epsy-5261/02-00-data.html)
 </td>
 <td>
-  [Data and Codebooks](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-04.pdf)
+  Data and Codebooks
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines"></span>](https://docs.google.com/document/d/1GLKCpirEcdupTeyWCt4XOS-82tCS7ybgiB_ZE_0s3NQ/edit?usp=sharing)
@@ -110,7 +110,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 5--6](https://zief0002.github.io/epsy-5261/03-00-exploring-and-describing-data.html)
 </td>
 <td>
-  [Variables and Graphs](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-04.pdf)
+  [Variables and Graphs](https://zief0002.github.io/slides/d05-variables-and-graphs.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines"></span>](https://docs.google.com/document/d/1Dlw340KE1dW1PcEhYy-UQ8jNbFxS1S9gTceVIS7m5xk/edit?usp=sharing)
@@ -123,7 +123,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Sept. 19</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Describing Distributions](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-05.pdf)
+  [Describing Distributions](https://zief0002.github.io/slides/d06-describing-distributions.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1V4K0wb3F-tUAflKlCk8oxsiCzPcPurIZDSQ4Ztxn1eA/edit?usp=sharing)
@@ -147,7 +147,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 7--8](https://zief0002.github.io/epsy-5261/04-00-comparing-to-a-standard.html)
 </td>
 <td>
-  [Estimating Uncertainty](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-06.pdf)
+  [Estimating Uncertainty](https://zief0002.github.io/slides/d07-estimating-uncertainty.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1mj6nNc3TgHCDLsVz34r3WPt4wToDmAH1c4HlhSH3ktM/edit?usp=sharing)
@@ -161,7 +161,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Sept. 26</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Introduction to Hypothesis Testing](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-07.pdf)
+  [Introduction to Hypothesis Testing](https://zief0002.github.io/slides/d08-introduction-to-hypothesis-testing.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1l5_sCH4tEetLjgQp794IM7CMiq_4iWHMGSU7EgL35dc/edit?usp=sharing)
@@ -175,7 +175,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Oct. 01</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Hypothesis Testing with Simulation](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-08.pdf)
+  [Hypothesis Testing with Simulation](https://zief0002.github.io/slides/d09-simulation-based-hypothesis-testing.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1BtqnaKPX4z3Vi1WneBhQ3szZ3IN8TzhFY-l8f4y0Hzc/edit?usp=sharing)
@@ -191,7 +191,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 17](https://zief0002.github.io/epsy-5261/06-01-generalization.html)
 </td>
 <td>
-  [Sampling and Generalizations](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-09.pdf)
+  [Study Design: Generalizations](https://zief0002.github.io/slides/d10-study-design-generalizability.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1Yg2ngMHEc1t0GXpm9PXsCYxaiQ7Rx9zvuZ6CxOCT2Yc/edit?usp=sharing)
@@ -207,7 +207,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 9--11](https://zief0002.github.io/epsy-5261/04-03-one-sample-test.html)
 </td>
 <td>
-  [Introduction to Hypothesis Testing with the *t*-Distribution](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-09.pdf)
+  [Introduction to Hypothesis Testing with the *t*-Distribution](https://zief0002.github.io/slides/d11-hypothesis-testing-with-the-t-distribution.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1XKDInpEEclP2Xg6_R5WtKqOKRDHjTh0nK60Rx7r5b8E/edit?usp=sharing)
@@ -223,7 +223,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 12](https://zief0002.github.io/epsy-5261/04-06-one-sample-test-proportions.html)
 </td>
 <td>
-  [Introduction to Hypothesis Testing with the *z*-Distribution](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-10.pdf)
+  [Introduction to Hypothesis Testing with the *z*-Distribution](https://zief0002.github.io/slides/d12-hypothesis-testing-for-proportions.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1hmxrvxC44zGcAmsEeED5lV8LobQ0pNZKzt-6UvrY-NU/edit?usp=sharing)
@@ -246,7 +246,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 18](https://zief0002.github.io/epsy-5261/06-02-cause-and-effect.html)
 </td>
 <td>
-  [Random Assignment and Causal Inference](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-11.pdf)
+  [Study Design: Causal Claims](https://zief0002.github.io/slides/d13-study-design-causal-claims.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1tMVSpad7xrDu2C3EL5FSDAjzlMeW61ZheP2nsLbxU_0/edit?usp=sharing)
@@ -263,7 +263,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 13--14](https://zief0002.github.io/epsy-5261/05-01-two-sample-t-test.html)
 </td>
 <td>
-  [Introduction to Hypothesis Testing: Comparing Two Means](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-11.pdf)
+  [Introduction to Hypothesis Testing: Comparing Two Means](https://zief0002.github.io/slides/d14-hypothesis-testing-for-comparing-two-means.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1n0jhSWsDaw2jekeEMcSBsbtShLbrrkspxrEVReKjJaY/edit?usp=sharing)
@@ -279,7 +279,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 15](https://zief0002.github.io/epsy-5261/05-03-two-sample-test-proportions.html)
 </td>
 <td>
-  [Introduction to Hypothesis Testing: Comparing Two Proportions](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-12.pdf)
+  [Introduction to Hypothesis Testing: Comparing Two Proportions](https://zief0002.github.io/slides/d15-hypothesis-testing-for-comparing-two-proportions.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/16UOmsD1x_f3PuoISDACcTBHFlA0VNABlKCpG8OS0DEM/edit?usp=sharing)
@@ -313,7 +313,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 19--21](https://zief0002.github.io/epsy-5261/07-00-effect-size.html)
 </td>
 <td>
-  [Introduction to Confidence Intervals](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-16.pdf)
+  [Introduction to Confidence Intervals](https://zief0002.github.io/slides/d17-introduction-to-confidence-intervals.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/14TAjxPQ207cD2eIs-mUnCDU8p-e1FBhUY0w7xPJmFFM/edit?usp=sharing)
@@ -327,7 +327,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Oct. 31</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Confidence Intervals for a Single Mean](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-17.pdf)
+  [Confidence Intervals for a Single Mean](https://zief0002.github.io/slides/d18-confidence-interval-for-a-single-mean.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1Vuko7V6zTlSa2L_j3-Wd4KjU8RD_OqiO7E9nVFXvoUY/edit?usp=sharing)
@@ -342,7 +342,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td align="center" style="vertical-align:middle;"></td>
 <td>
   <!-- Confidence Intervals for a Single Proportion -->
-  [Confidence Intervals for a Single Proportion](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-18.pdf)
+  [Confidence Intervals for a Single Proportion](https://zief0002.github.io/slides/d19-confidence-interval-for-a-single-proportion.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/13XY4LgiScfgXRSdiKKCmrRcfjZmvaMN-nDcQ3ZD2GZ0/edit?usp=sharing)
@@ -356,7 +356,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Nov. 07</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Confidence Intervals for Comparing Two Groups](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-19.pdf)
+  [Confidence Intervals for Comparing Two Groups](https://zief0002.github.io/slides/d20-confidence-interval-for-comparing-two-groups.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1BQUpHZiUmxUmR_h-vJsQef_NaqL9rg6pP_h5G-SLkA0/edit?usp=sharing)
@@ -371,7 +371,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td align="center" style="vertical-align:middle;"></td>
 <td>
 <!-- Confidence Intervals for Comparing Two Proportions -->
-  [Practice with Confidence Intervals](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-20.pdf)
+  [Practice with Confidence Intervals](https://zief0002.github.io/slides/d21-practice-confidence-intervals.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1e1O94_ffK8XDwfNLUO7Zjf5y1TyZsgfEZPhoDNC9H88/edit?usp=sharing)
@@ -387,7 +387,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 22--23](https://zief0002.github.io/epsy-5261/07-04-standardized-effects-means.html)
 </td>
 <td>
-  [Exploring Effect Size](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-22.pdf)
+  [Exploring Effect Size](https://zief0002.github.io/slides/d22-exploring-effect-size.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/14y_iMAm1L39MI8sqV6GrSF0iyfUmGvt3RiJcyNNonew/edit?usp=sharing)
@@ -410,7 +410,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 24](https://zief0002.github.io/epsy-5261/08-01-scatterplot-correlation.html)
 </td>
 <td>
-  [Introduction to Correlation](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-25.pdf)
+  [Introduction to Correlation](https://zief0002.github.io/slides/d23-introduction-to-correlation.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1pexBnC74XcTUuQvahea9ZGe9sxJPKiFDCmLNaogOkXU/edit?usp=sharing)
@@ -426,7 +426,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 25--26](https://zief0002.github.io/epsy-5261/08-02-linear-regression-description.html)
 </td>
 <td>
-  [Introduction to Linear Regression](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-26.pdf)
+  [Introduction to Linear Regression](https://zief0002.github.io/slides/d24-introduction-to-linear-regression.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1Rq0zPyVaqgda8iQzfOM4v3nGlYgqYYSI2I-1DSnhUiw/edit?usp=sharing)
@@ -442,7 +442,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
   [Ch. 27](https://zief0002.github.io/epsy-5261/08-04-regression-inference.html)
 </td>
 <td>
-  [Hypothesis Test for the Slope](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-27.pdf)
+  [Hypothesis Test for the Slope](https://zief0002.github.io/slides/d25-hypothesis-test-for-a-slope.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/12LFw_scE-dp58GBjBXQI43AEm3o6E2kUlHjFbY1uu8s/edit?usp=sharing)
@@ -476,7 +476,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Dec. 03</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Assumptions for Linear Regression](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-27.pdf)
+  [Assumptions for Linear Regression](https://zief0002.github.io/slides/d27-assumptions-for-linear-regression.html)
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1GJb_hy4Mht87S2sIYpS4OO1ZLY-3iDc83utN6ODFLkw/edit?usp=sharing)
@@ -490,7 +490,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td style="vertical-align:middle;">Dec. 05</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td>
-  [Linear Regression: Practice](https://raw.githubusercontent.com/zief0002/sturdy-potato/main/files/slides/day-28.pdf)
+  Linear Regression: Practice
 </td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1jtP87DCGf4qnbzDOIySjCa-4N0X7ssJp6ydIu4PI9w8/edit?usp=sharing)
@@ -505,7 +505,7 @@ The calendar below lists the tentative course topics. The dates listed are subje
 <td align="center" style="vertical-align:middle;"></td>
 <td>
   TBD
-  <!-- [Review Day](files/slides/day29.pdf) -->
+  <!-- [Review Day](https://zief0002.github.io/slides/d29-review.html) -->
 </td>
 <td align="center" style="vertical-align:middle;">
   <!-- [<span class="fa-solid fa-file-lines">](https://docs.google.com/document/d/1hmxrvxC44zGcAmsEeED5lV8LobQ0pNZKzt-6UvrY-NU/edit?usp=sharing) -->

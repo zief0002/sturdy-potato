@@ -11,7 +11,7 @@ There are two components that make up your grade: lab assignments (80%), and dai
 
 ### Lab Assignments
 
-There will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day). 
+There will be 5 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via email to the instructor before the end of the day that they are due (i.e., by 11:59 PM that day). 
 
 As a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.
 
@@ -50,7 +50,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 <td>
   [Lab Assignment \#1](assignments/assignment-01.html) 
 </td>
-<td>Sept. 14</td>
+<td>Sept. 26</td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-01.zip)
 </td>
@@ -62,7 +62,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 <td>
   [Lab Assignment \#2](assignments/assignment-02.html)
 </td>
-<td>Sept. 28</td>
+<td>Oct. 17</td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-02.zip)
 </td>
@@ -73,7 +73,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 <td>
   [Lab Assignment \#3](assignments/assignment-03.html)
 </td>
-<td>Oct. 12</td>
+<td>Oct. 31</td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-03.zip)
 </td>
@@ -84,7 +84,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 <td>
   [Lab Assignment \#4](assignments/assignment-04.html)
 </td>
-<td>Oct. 26</td>
+<td>Nov. 14</td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-04.zip)
 </td>
@@ -94,7 +94,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 <td>
   [Lab Assignment \#5](assignments/assignment-05.html)
 </td>
-<td>Nov. 16</td>
+<td>Dec. 12</td>
 <td align="center" style="vertical-align:middle;">
   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-05.zip)
 </td>
@@ -139,6 +139,14 @@ Type            | Individual or Group? | Percent of Grade |
 Lab Assignments | Individual or Group  | 80%              |
 Exit Tickets    | Individual           | 20%              |
 
+
+The formula to do this will be:
+
+$$
+\text{Percentage} = 0.8 \bigg(\frac{\text{Points earned on all labs}}{\text{Total points on all labs}}\bigg) + 0.2\bigg(\frac{\text{Number of Exit Tickets completed}}{\text{Total number of Exit Tickets}}\bigg)
+$$
+
+
 This overall percentage in the class will then be converted to a final course grade using:
 
 Cutoff    | Grade | Definition for Graduate Credit |
@@ -163,7 +171,7 @@ If you are taking the course S/N, the minimum criterion to receive an S is 80% (
 
 ### Extra Credit Policy
 
-Extra credit *may* be offered throughout the semester, but is not guaranteed. 
+There is no extra credit in this course. 
 
 <br />
 

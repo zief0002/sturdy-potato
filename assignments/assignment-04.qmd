@@ -1,7 +1,7 @@
 ---
 title: "Assignment 04"
-subtitle: "STUDY DESIGN AND HYPOTHESIS TESTS FOR COMPARING GROUPS"
-description: This assignment is worth 19 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+subtitle: "CONFIDENCE INTERVALS"
+description: This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
 format:
   html:
    css: "../assets/sticky-notes.css"
@@ -16,87 +16,85 @@ date: today
 #| echo: false
 #| fig-align: center
 #| out-width: "60%"
-knitr::include_graphics("../img/assign-04.jpg")
+knitr::include_graphics("../img/assign-02.png")
 ```
 
 ## Instructions
 
-You will use the *nhanes.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/nhanes.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+You will use the *nhanes.csv* data set to answer questions in this lab. The data file and data codebook are available in the [textbook](https://zief0002.github.io/epsy-5261/09-00-data-codebooks.html). Submit a PDF document of your responses to the questions in this assignment. 
 
-Use the code chunks in the *assignment04.qmd* file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment. 
+A social scientist is interested in answering the following two research questions:
 
+> **Research Question 1:** What proportion of adults in the U.S. in 2017 report having sleep trouble?
+>
+> **Research Question 2:** What is the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not?
 
-
-# Part 1: Study Design
-
-*You do not need to analyze any of the data in the nhanes.csv file to answer the questions in this section.*
-
-Suppose that it is found in an analysis of the NHANES data that people who are more physically active tend to be statistically significantly less likely to have depression.
-
-1. **(2pts.)** Given how the data were collected, can we generalize this result to a larger population? If so, describe the population that we can generalize to. If not, explain why not. 
-
-2. **(2pts.)** Given how the study was designed, can we conclude that physical activity causes a lower likelihood of depression? If so, explain why? If not, explain why not?  
-
-<br />
+You will use the `recent_depression` and `trouble_sleeping` variables from the *nhanes.csv* data to compute confidence intervals to answer these research questions.
 
 
-# Part 2: Investigating Research Question 1
 
-A social scientist is interested in answering the following research question:
+# Part 1: Investigating Research Question 1
 
-> Is there a difference in the average amount of exercise American adults get between those that have trouble sleeping and those that do not?
+1. **(5pts.)** Compute and report a 95% confidence interval to estimate the proportion of adults in the U.S. in 2017 report having sleep trouble. Then interpret this interval to answer Research Question 1. To fully answer this question, you must:
 
-You will use the `vigorous_exercise` and `trouble_sleeping` variables from the *nhanes.csv* data to carry out hypothesis tests to answer this research question.  
+    + Include the syntax you used to create the interval.
+    + Include an interpretation of the confidence interval in context.
+ 
 
-3. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested *in words*.
-
-4. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested *using mathematical symbols*.
-
-5. **(5pts.)** Conduct a hypothesis test using R that allows you to answer the research question. Please be sure to state your conclusions in reference to the hypotheses you wrote out in response to Question 1. To fully answer this question you must:
-
-    - Include the R syntax you used to carry out the test.
-    - State the observed sample statistic.
-    - State the p-value.
-    - State your decision about the null hypothesis (reject or fail to reject)
-    - Answer the research question (in context).
-
-6. **(2pts.)** Based on the conclusion you drew in Question 5, indicate the type of statistical error you may have made (type I error, or type II error), and explain what this type of error would mean in the context of this research question. 
-
-7. **(3pts.)** Evaluate all three of the assumptions underlying the hypothesis test. For each assumption (a) include any graphical or numerical evidence you use to help evaluate the assumption, (b) clearly state whether the assumption is tenable or not, and (c) explain why you believe the assumption is tenable or not by referring to the evidence you included. 
+2. **(3pts.)** Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here. 
 
 <br />
 
 
-# Part 3: Investigating Research Question 2
+# Part 2: Investigating Research Question 2
 
-A social scientist is interested in answering the following research question:
+3. **(5pts.)** Compute and report a 95% confidence interval to estimate the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not. Then interpret this interval to answer Research Question 2. To fully answer this question, you must:
 
-> Is there a difference in the proportion of American adults that indicated they were feeling down, depressed, or hopeless between those that have trouble sleeping and those that do not?
+    + Include the syntax you used to create the interval.
+    + Include an interpretation of the confidence interval in context.
 
 
-They collect data and carry out a two-sample *z*-test to evaluate the differences in proportions. The results in R are given below:
 
-```
---------------------------------------------------
-2-sample test for equality of proportions without continuity correction
---------------------------------------------------
-
-H[0]: pi_1 = pi_2
-H[A]: pi_1 ≠ pi_2
-z = -4.700815
-p = 2.591249e-06
-
---------------------------------------------------
-```
-
-8. **(3pts.)** Sketch a picture of the *z*-distribution based on the null hypothesis being true. To fully answer this question include the following in your sketch:
-    
-    + Label the x-axis.
-    + Clearly indicate the observed z-value(s) in the sketch (based on the output) and draw vertical line(s) at the observed z-value(s).
-    + Shade the area under the curve associated with the p-value based on the alternative hypothesis (from the output).
-
+4. **(3pts.)** Evaluate all three of the assumptions underlying the use of this confidence interval. For each assumption: clearly state whether the assumption is tenable or not and explain why you believe the assumption is tenable or not by referring to the evidence you computed. Be sure to also include any evidence/calculations you are using here.
 
 <br />
+
+
+# Part 3: Multiple Choice Questions
+
+*Please indicate your answer to each question clearly. (You do NOT need to explain your choice.)*
+
+
+5. If the sample size was increased, all else being the same, how would the widths of the confidence intervals in Questions \#1 and \#2 change?
+
+    a. The interval widths would both decrease.
+    b. The interval widths would both increase.
+    c. The interval widths would both stay the same.
+    d. One of the interval widths would decrease, the other would increase.
+ 
+
+6. If the confidence level was increased to 98%, all else being the same, how would the widths of the confidence intervals in Questions \#1 and \#2 change?
+
+    a. The interval widths would both decrease.
+    b. The interval widths would both increase.
+    c. The interval widths would both stay the same.
+    d. One of the interval widths would decrease, the other would increase.
+
+
+Suppose a researcher computed a 90% confidence interval to estimate the mean number of hours per weekend night adults in U.S. households in 2017 slept. This interval was reported as 90% CI = [8.05, 8.31]. Questions 7--8 each give a potential interpretation of this interval. *For each of these questions, indicate whether the interpretation provided is correct or incorrect. (You do NOT need to explain why.)*
+
+7. There is a 90% chance the confidence interval includes the sample mean number of hours per weekend night adults in U.S. households in 2017 slept. 
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+8. About 90% of adults in U.S. households in 2017 slept between 8.05 and 8.31 hrs per weekend night.
+
+    a. Correct interpretation
+    b. Incorrect interpretation
+
+<br />
+
 
 
 ## How do I submit the assignment?

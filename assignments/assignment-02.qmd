@@ -1,7 +1,7 @@
 ---
 title: "Assignment 02"
-subtitle: "VISUALIZING AND SUMMARIZING DATA"
-description: This assignment is worth 20 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
+subtitle: "VISUALIZING AND SUMMARIZING DATA/ESTIMATING UNCERTAINTY"
+description: This assignment is worth 18 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 5261, 2023*
 format:
   html:
    css: "../assets/sticky-notes.css"
@@ -22,39 +22,91 @@ date: today
 #| echo: false
 #| fig-align: center
 #| out-width: "60%"
-knitr::include_graphics("../img/assign-02.png")
+knitr::include_graphics("../img/assign-03.jpeg")
 ```
-
 
 
 ## Instructions
 
-You will use the *nhanes.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/nhanes.html) includes a description of how the data were collected and of each of the attributes included in the data. 
+Submit a PDF document of your responses to the following questions.
 
-Use the code chunks in the *assignment02.qmd* file to load packages, import the data, and carry out any R computations. You will use the `sleep_weeknight` and `sleep_weekend` attributes from the *nhanes.csv* data to compute graphical and numerical summaries to answer the following research question:
 
-> **Research Question**: How does the distribution of hours of sleep on the weekend compare to that for hours of sleep during the week for American adults who responded to the NHANES 2017 survey?
+<br />
+
+## Part 1: Visualizing, Summarizing, and Describing the Sample Data
+
+You will use the *sandwiches.csv* data set to answer questions in this part of the lab. The data file and data codebook are available in the [textbook](https://zief0002.github.io/epsy-5261/09-00-data-codebooks.html).
+
+1. Create a histogram for the `sugar` attribute. Be sure to update the labels and add a color of your choice. Include your histogram in your document.
+ 
+2. Use the `df_stats()` function to compute a set of numerical summary measures for the `sugar` attribute. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).
+
+3. **(3pts.)** Write a couple of sentences describing the shape, center, and variation of the distribution using the context of the sugar content in sub shop sandwiches.
 
 <br />
 
 
-# Questions
+## Part 2: Estimating Uncertainty
 
-Submit a PDF document of your responses to the following questions. 
+Suppose a social scientist carried out a bootstrap simulation (used the `do()` function similar to how we did in the Day 5 activity) to estimate the standard error of the sample mean amount of sugar. The resulting histogram and summary statistics of this simulation are shown below: 
 
-1. Create a histogram of the distribution of weeknight hours slept. Change the color and fill arguments from the default colors. Include appropriate axis labels. **(3pts.)**
+```{r}
+#| label: fig-bootstrap-dist
+#| fig-cap: "Distribution of 1000 bootstrapped means."
+#| out-width: "80%"
+#| echo: false
 
-2. Based on the shape of the distribution from Question 1, compute and report a set of **appropriate** numerical summaries for the center and variation of the distribution of weeknight hours slept. (Note: You should only have two numerical summaries—one to summarize the center and one to summarize the variation.) Your answer does not need a description; you only need to include the statistics and the graphs. **(2pts.)**
+knitr::include_graphics("../img/lab-03-hist.png")
+```
 
-3. Use your results from Questions 1 and 2 to write a couple of sentences describing the shape, center, and variation of the distribution using the context of weeknight hours slept. **(3pts.)**
 
-4. Create a density plot of the distribution of weekend hours slept. Change the color and fill arguments from the default colors. Include appropriate axis labels. **(3pts.)**
 
-5. Based on the shape of the distribution from Question 3, compute and report a set of **appropriate** numerical summaries for the center and variation of the distribution of weekend hours slept. (Note: You should only have two numerical summaries—one to summarize the center and one to summarize the variation.) Your answer does not need a description; you only need to include the statistics and the graphs. **(2pts.)**
+```{r}
+#| eval: false
+#| highlight-style: atom-one
+> df_stats(~result, data = bootstrap_means)
 
-6. Use your results from Questions 4 and 5 to write a couple of sentences describing the shape, center, and variation of the distribution using the context of weekend hours slept. **(3pts.)**
+  response   min       Q1  median    Q3   max     mean        sd    n missing
+1   result 6.592 7.260375 7.49725 7.735 8.775 7.502887 0.3305093 1000       0
+```
 
-7. Using no more than 200 words, answer the research question. To do this, your response should compare and contrast each of the different features of the two distributions (shape, center, and variability). It should also include any conclusions about how sleep on weekends and weeknights differs (or is similar) for adult Americans in 2017. These conclusions should be understandable by someone who does not have a strong background in statistics. **(4pts.)**
+
+<br />
+
+4. Explain why we expect the mean of this distribution of sample means to be 7.50 (even before we run the simulation and see the histogram).
+
+5. What is the estimated standard error of the means?
+
+6. Explain what the standard error measures using the context.
+
+
+<br />
+
+
+# Part 3: Hypothesis Test to Compare Data to a Standard
+
+The [American Heart Association](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much) recommends on average no more than ~30g of sugar per day. If we divide this up across three meals a day, the recommended amount for breakfast is 10g. You will use the `sugar` attribute from the *sandwiches.csv* data to carry out a hypothesis test to answer the following research question:
+
+> **Research Question:** Is the average amount of sugar in sub shop sandwiches different from the recommended amount of 10g (for a single meal)?
+
+7. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested in words.
+
+8. Given the research question, please write out the appropriate null and alternative hypotheses that will be tested using mathematical symbols.
+
+9. **(5pts.)** Conduct a hypothesis test using R that allows you to answer the research question. Please be sure to state your conclusions in reference to the hypotheses you wrote out in response to Question 1. 
+To fully answer this question you must:
+  
+    - Include the R syntax you used to carry out the test.
+    - State the observed sample statistic.
+    - State the *p*-value.
+    - State your conclusion and answer the research question (in context).
+
+
+10. **(3pts.)** Evaluate all of the assumptions underlying the test. For each assumption: (a) include any graphical or numerical evidence you use to help evaluate the assumption, (b) clearly state whether the assumption is tenable or not, and (c) explain why you believe the assumption is tenable or not by referring to the evidence you included.
+
+
+
+
 
 <br />
 

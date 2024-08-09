@@ -21,18 +21,15 @@ date: today
 #| echo: false
 #| fig-align: center
 #| out-width: "60%"
-knitr::include_graphics("../img/assign-01.png")
+knitr::include_graphics("../img/assign-01.jpeg")
 ```
 
 
 
 ## Instructions
 
-Download the [assignment01.zip](files/assignments/lab-assignment-01.zip) folder and unzip it. This
+You will use the *films.csv* data set to answer questions in this lab. The data file and data codebook are available in the [textbook](https://zief0002.github.io/epsy-5261/09-00-data-codebooks.html). Open a new script file, import the dataset, and load any packages. Then you are ready to begin. (Reference code used in class to complete the assignment.)
 
-You will use the *films.csv* data set to answer questions in this lab. The [data codebook](https://zief0002.github.io/barbieland/assignments/films.html) includes a description of how the data were collected and of each of the attributes included in the data. 
-
-Use the code chunks in the *assignment01.qmd* file to load packages and import the data. (Reference the in-class activity from Day 3 if you need to remember how to do this.) You can also do any computations needed for the assignment in this QMD document. 
 
 <br />
 
@@ -43,7 +40,7 @@ Submit a PDF document of your responses to the following questions.
 
 1. Print the first 10 rows of the dataset to make sure it was imported correctly. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).
 
-2.  What does a row represent in this data set? 
+2. What does a row represent in this data set? 
 
 3. What type of attribute is `duration` (categorical or quantitative)? How can you tell?
 

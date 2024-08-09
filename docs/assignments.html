@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="assets/sticky-notes.css">
 </head>
@@ -184,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 <p><br></p>
 <section id="lab-assignments" class="level3">
 <h3 class="anchored" data-anchor-id="lab-assignments">Lab Assignments</h3>
-<p>There will be 6 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via the course website before the end of the day that they are due (i.e., by 11:59 PM that day).</p>
+<p>There will be 5 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via email to the instructor before the end of the day that they are due (i.e., by 11:59 PM that day).</p>
 <p>As a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.</p>
 <p><br></p>
 </section>
@@ -220,7 +249,7 @@ ZIP File
 <a href="assignments/assignment-01.html">Lab Assignment #1</a>
 </td>
 <td>
-Sept.&nbsp;14
+Sept.&nbsp;26
 </td>
 <td align="center" style="vertical-align:middle;">
 <a href="files/assignments/lab-assignment-01.zip"><span class="fa-solid fa-file-signature"></span></a>
@@ -231,7 +260,7 @@ Sept.&nbsp;14
 <a href="assignments/assignment-02.html">Lab Assignment #2</a>
 </td>
 <td>
-Sept.&nbsp;28
+Oct.&nbsp;17
 </td>
 <td align="center" style="vertical-align:middle;">
 <a href="files/assignments/lab-assignment-02.zip"><span class="fa-solid fa-file-signature"></span></a>
@@ -242,7 +271,7 @@ Sept.&nbsp;28
 <a href="assignments/assignment-03.html">Lab Assignment #3</a>
 </td>
 <td>
-Oct.&nbsp;12
+Oct.&nbsp;31
 </td>
 <td align="center" style="vertical-align:middle;">
 <a href="files/assignments/lab-assignment-03.zip"><span class="fa-solid fa-file-signature"></span></a>
@@ -253,7 +282,7 @@ Oct.&nbsp;12
 <a href="assignments/assignment-04.html">Lab Assignment #4</a>
 </td>
 <td>
-Oct.&nbsp;26
+Nov.&nbsp;14
 </td>
 <td align="center" style="vertical-align:middle;">
 <a href="files/assignments/lab-assignment-04.zip"><span class="fa-solid fa-file-signature"></span></a>
@@ -264,7 +293,7 @@ Oct.&nbsp;26
 <a href="assignments/assignment-05.html">Lab Assignment #5</a>
 </td>
 <td>
-Nov.&nbsp;16
+Dec.&nbsp;12
 </td>
 <td align="center" style="vertical-align:middle;">
 <a href="files/assignments/lab-assignment-05.zip"><span class="fa-solid fa-file-signature"></span></a>
@@ -318,6 +347,10 @@ You can follow Tilly the Therapy Chicken on Twitter (<span class="citation" data
 </tr>
 </tbody>
 </table>
+<p>The formula to do this will be:</p>
+<p><span class="math display">\[
+\text{Percentage} = 0.8 \bigg(\frac{\text{Points earned on all labs}}{\text{Total points on all labs}}\bigg) + 0.2\bigg(\frac{\text{Number of Exit Tickets completed}}{\text{Total number of Exit Tickets}}\bigg)
+\]</span></p>
 <p>This overall percentage in the class will then be converted to a final course grade using:</p>
 <table class="table">
 <colgroup>
@@ -390,7 +423,7 @@ You can follow Tilly the Therapy Chicken on Twitter (<span class="citation" data
 <p><br></p>
 <section id="extra-credit-policy" class="level3">
 <h3 class="anchored" data-anchor-id="extra-credit-policy">Extra Credit Policy</h3>
-<p>Extra credit <em>may</em> be offered throughout the semester, but is not guaranteed.</p>
+<p>There is no extra credit in this course.</p>
 <p><br></p>
 </section>
 <section id="incomplete" class="level3">
