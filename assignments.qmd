@@ -37,10 +37,10 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 <thead>
 <tr>
-<th style="width:50%;">Assignment</th>
+<th style="width:70%;">Assignment</th>
 <!-- <th style="width:15%;">Due Date (T/R)</th> -->
 <th style="width:30%;">Due Date</th>
-<th style="width:10%;text-align:center">ZIP File</th>
+<!-- <th style="width:10%;text-align:center">ZIP File</th> -->
 </tr>
 </thead>
 
@@ -51,9 +51,9 @@ Below are the due dates for the lab assignments, as well as links to each assign
   [Lab Assignment \#1](assignments/assignment-01.html) 
 </td>
 <td>Sept. 26</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-01.zip)
-</td>
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-01.zip) -->
+<!-- </td> -->
 </tr>
 
 
@@ -63,9 +63,9 @@ Below are the due dates for the lab assignments, as well as links to each assign
   [Lab Assignment \#2](assignments/assignment-02.html)
 </td>
 <td>Oct. 17</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-02.zip)
-</td>
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-02.zip) -->
+<!-- </td> -->
 </tr>
 
 
@@ -74,9 +74,9 @@ Below are the due dates for the lab assignments, as well as links to each assign
   [Lab Assignment \#3](assignments/assignment-03.html)
 </td>
 <td>Oct. 31</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-03.zip)
-</td>
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-03.zip) -->
+<!-- </td> -->
 </tr>
 
 
@@ -85,9 +85,9 @@ Below are the due dates for the lab assignments, as well as links to each assign
   [Lab Assignment \#4](assignments/assignment-04.html)
 </td>
 <td>Nov. 14</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-04.zip)
-</td>
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-04.zip) -->
+<!-- </td> -->
 </tr>
 
 <tr>
@@ -95,9 +95,9 @@ Below are the due dates for the lab assignments, as well as links to each assign
   [Lab Assignment \#5](assignments/assignment-05.html)
 </td>
 <td>Dec. 12</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-05.zip)
-</td>
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-05.zip) -->
+<!-- </td> -->
 </tr>
 
 
