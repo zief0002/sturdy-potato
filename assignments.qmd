@@ -102,16 +102,6 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 
 
-<tr>
-<td>[Lab Assignment \#6](assignments/assignment-06.html)</td>
-<!-- <td>Nov. 19</td> -->
-<td>Dec. 14</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa-solid fa-file-signature"></span>](files/assignments/lab-assignment-06.zip)
-</td>
-</tr>
-
-
 </tbody>
 </table>
 
