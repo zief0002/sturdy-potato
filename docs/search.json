@@ -133,60 +133,53 @@
     "text": "The data in films.csv includes measures collected from \\(n=3029\\) films released between 1937 and 2016. The data was scraped from various websites (e.g., IMdB). The variables are:\n\nmovie: Name of the film\nyear: Year the film was released in theaters\ngenre: Primary genre of the film (e.g., Adventure, Horror, Comedy)\ncolor: Was the film released in color or black-and-white?\nlanguage: The original language the film was originally released in.\ncountry: The first country the movie was originally released to\nrating: MPAA rating of the film (e.g., G, PG, R)\nduration: Duration (running time) of the film, in minutes\nbudget: The film’s budget (in U.S. dollars)\n\n\n\nPreview\n\n\nCode\n# Import Data\nfilms = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/barbieland/main/data/films.csv\")\n\n# View data\nfilms\n\n\n\n  \n\n\n\n\n\n\nReferences"
   },
   {
-    "objectID": "assignments/assignment-06.html#instructions",
-    "href": "assignments/assignment-06.html#instructions",
-    "title": "Assignment 06",
+    "objectID": "assignments/assignment-05.html#instructions",
+    "href": "assignments/assignment-05.html#instructions",
+    "title": "Assignment 05",
     "section": "Instructions",
-    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data codebook includes a description of how the data were collected and of each of the attributes included in the data.\nUse the code chunks in the assignment06.qmd file to load packages, import the data, and carry out any R computations. Submit a PDF document of your responses to the questions in this assignment.\nA social scientist is interested in answering the following two research questions:\n\nResearch Question 1: Among adults in the U.S. in 2017, is the number of hours slept on a weeknight a predictor of the number of hours a person sleeps on the weekend?\n\nYou will use the sleep_weeknight and sleep_weekend attributes from the nhanes.csv data to fit a regression model that you will use to answer these research questions."
+    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Submit a PDF document of your responses to the questions in this assignment.\nA social scientist is interested in answering the following two research questions:\n\nResearch Question 1: Among adults in the U.S. in 2017, is the number of hours slept on a weeknight a predictor of the number of hours a person sleeps on the weekend?\n\nYou will use the sleep_weeknight and sleep_weekend attributes from the nhanes.csv data to fit a regression model that you will use to answer these research questions."
   },
   {
-    "objectID": "assignments/assignment-06.html#how-do-i-submit-the-assignment",
-    "href": "assignments/assignment-06.html#how-do-i-submit-the-assignment",
-    "title": "Assignment 06",
+    "objectID": "assignments/assignment-05.html#how-do-i-submit-the-assignment",
+    "href": "assignments/assignment-05.html#how-do-i-submit-the-assignment",
+    "title": "Assignment 05",
     "section": "How do I submit the assignment?",
     "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it."
   },
   {
-    "objectID": "assignments/assignment-04.html#instructions",
-    "href": "assignments/assignment-04.html#instructions",
-    "title": "Assignment 04",
-    "section": "Instructions",
-    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Submit a PDF document of your responses to the questions in this assignment.\nA social scientist is interested in answering the following two research questions:\n\nResearch Question 1: What proportion of adults in the U.S. in 2017 report having sleep trouble?\nResearch Question 2: What is the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not?\n\nYou will use the recent_depression and trouble_sleeping variables from the nhanes.csv data to compute confidence intervals to answer these research questions."
-  },
-  {
-    "objectID": "assignments/assignment-04.html#how-do-i-submit-the-assignment",
-    "href": "assignments/assignment-04.html#how-do-i-submit-the-assignment",
-    "title": "Assignment 04",
-    "section": "How do I submit the assignment?",
-    "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it."
-  },
-  {
-    "objectID": "assignments/assignment-03-simple-regression-inference.html",
-    "href": "assignments/assignment-03-simple-regression-inference.html",
+    "objectID": "assignments/assignment-03.html#instructions",
+    "href": "assignments/assignment-03.html#instructions",
     "title": "Assignment 03",
-    "section": "",
-    "text": "Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions. Specifically, we will examine whether teacher salaries are related to SAT scores at the state level.\nThis goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file state-education.csv to examine the relationship between teacher salaries and student total SAT scores at the state level.\n\n[CSV]\n[Data Codebook]\n\n\n\n\n\n\n\n\n\n\n\nPart I: Unstandardized Regression\nBefore carrying out any analyses, create a predictor called salary_thousand that indicates the average state salary in thousands of dollars (e.g., if salary = 52143; salary_thousand = 52.143). This variable (not salary) should be used in all analyses for Part I. Fit a regression model using teacher salaries to predict SAT scores.\n\nUsing symbols, write the null hypothesis that is tested by the F-statistic in this analysis.\nWrite no more than three sentences (to be included in a publication) that summarizes the results of the omnibus analysis. A summary of the results includes a written description of what is being tested by the F-test and the statistical results. At a minimum report the F-statistic, df, and p-value. A summary should also indicate what the statistical results suggest about the compatibility of the empirical data to the null hypothesis and what this means about the potential relationship between states’ average teacher salaries and average SAT scores.\nUsing symbols, write the null hypothesis that is tested by the t-statistic for the slope.\nBased on the results of the t-test for the slope, are the empirical data consistent with the null hypothesis that the sample slope is entirely due to sampling error? Explain.\nCompute and interpret the 95% compatibility interval for the slope.\nCreate a plot that displays the regression line from the unstandardized regression analysis. This plot should also include a confidence envelope (uncertainty) for the regression line. Be sure to give your plot an appropriate caption.\n\n\n\nPart II: Centering a Predictor\nCenter the salary_thousand predictor by subtracting the mean teacher salary from each value. Call this new variable center_salary_thousand (e.g., centered_salary_thousand = salary_thousand - mean(salary_thousand)). This variable should be used in all analyses in Part II. Regress the SAT scores on the centered salaries.\n\nThe results of the F-test for this analysis are identical to the results of the F-test for the analysis in Part I. Explain why this is expected by referring to and comparing the hypothesis being tested in both sets of analyses.\nThe results of the t-test for the intercept in this analysis are different than the results of the t-test for the intercept in the analysis in Part I. Explain why this is expected by referring to and comparing the hypothesis being tested (and what that means) in both sets of analyses.\n\n\n\nPart III: Standardized Regression\nConvert the uncentered teacher salaries (salary_thousand) into z-scores by subtracting the mean salary and dividing by the standard deviation. Call this new variable z_salary (e.g., z_salary = (salary_thousand - mean(salary_thousand)) / sd(salary_thousand)). Also convert the SAT scores into z-scores and call that variable z_sat (e.g., z_sat = (sat - mean(sat)) / sd(sat)). Regress the SAT z-scores on the salary z-scores.\n\nThe p-value of the t-test for the intercept in this analysis is one. Explain why this is expected by referring to the hypothesis being tested in this analysis. (Hint: Think about what the intercept is and how that relates to what is being tested.)\n\n\n\nPart IV: Study Design and Causation\n\nThe test of the slope (regardless of analysis) suggests that teacher salaries seem to be related to SAT scores. Unfortunately this relationship is negative, indicating that higher teacher salaries are associated with lower SAT scores. A public-policy wonk wants to use this data to support the de-funding of public schools. Write a couple sentences that explain to this person why your analysis does not support this causal conclusion based on the study design. (Hint: Recall that inferring causation requires particular study designs. You may need to go back to your pre-requisite knowledge here.)"
-  },
-  {
-    "objectID": "assignments/assignment-02-confidence-intervals.html#instructions",
-    "href": "assignments/assignment-02-confidence-intervals.html#instructions",
-    "title": "Assignment 02",
     "section": "Instructions",
-    "text": "Instructions\nSubmit a PDF document of your responses to the following questions. Please adhere to the following guidelines for further formatting your assignment:\n\nAll plots should be resized so that they do not take up more room than necessary.\nAll figures and tables should have a name (e.g., Figure 1) and an appropriate caption."
+    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Submit a PDF document of your responses to the following questions."
   },
   {
-    "objectID": "assignments/assignment-02-confidence-intervals.html#part-i-creating-and-interpreting-confidence-intervals",
-    "href": "assignments/assignment-02-confidence-intervals.html#part-i-creating-and-interpreting-confidence-intervals",
-    "title": "Assignment 02",
-    "section": "Part I: Creating and Interpreting Confidence Intervals",
-    "text": "Part I: Creating and Interpreting Confidence Intervals\nA social scientist is interested in answering the following two research questions:\n\nResearch Question 1: How much time, on average, do adults in the U.S. in 2017 spend doing a moderate/vigorous amount of activity at work daily (in minutes)?\nResearch Question 2: What is the difference in the average time spent doing moderate/vigorous activity at work for adults in 2017 U.S. households between those who have reported sleep trouble and those who have not?\n\n\nUse the NHANES data set to produce a 95% confidence interval for the modVigWork variable using R. Then interpret this interval to answer Research Question 1. (6pts.)\n\nTo fully answer this question, you must:\n\nInclude the syntax you used to create the interval.\nState the lower and upper limits of the confidence interval.\nInclude an interpretation of the confidence interval in context.\n\n\nThe NHANES data also includes whether or not participants had told a doctor or other health professional that they had trouble sleeping (SleepTrouble; Yes if they had, and No if they had not). Use this variable along with the modVigWork variable to produce and interpret a 95% confidence interval to answer Research Question 2. (6pts.)\n\nTo fully answer this question, you must:\n\nInclude the syntax you used to create the interval.\nState the lower and upper limits of the confidence interval.\nInclude an interpretation of the confidence interval in context."
+    "objectID": "assignments/assignment-03.html#how-do-i-submit-the-assignment",
+    "href": "assignments/assignment-03.html#how-do-i-submit-the-assignment",
+    "title": "Assignment 03",
+    "section": "How do I submit the assignment?",
+    "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it."
   },
   {
-    "objectID": "assignments/assignment-02-confidence-intervals.html#part-ii-multiple-choice-questions",
-    "href": "assignments/assignment-02-confidence-intervals.html#part-ii-multiple-choice-questions",
-    "title": "Assignment 02",
-    "section": "Part II: Multiple Choice Questions",
-    "text": "Part II: Multiple Choice Questions\nPlease indicate your answer clearly by including the letter for your response.\n\nIf the sample size was increased, all else being the same, how would the widths of the confidence intervals in questions #1 and #2 change? (2pts.)\n\nThe interval widths would both decrease.\nThe interval widths would both increase.\nThe interval widths would both stay the same.\nOne of the interval widths would decrease, the other would increase.\n\nIf the confidence level was increased to 98%, all else being the same, how would the widths of the confidence intervals in questions #1 and #2 change? (2pts.)\n\nThe interval widths would both decrease.\nThe interval widths would both increase.\nThe interval widths would both stay the same.\nOne of the interval widths would decrease, the other would increase.\n\n\nNow, suppose a confidence interval is created to estimate the mean number of hours per weekend night adults in U.S. households in 2017 slept (SleepWkEnd). A 90% confidence interval was created, and the resulting interval was from 8.05 and 8.31 hrs. Questions 5–8 each give a potential interpretation of this interval. For each of these questions, indicate whether the interpretation provided is correct or incorrect. (You do NOT need to explain why.)\n\nThere is a 90% chance the confidence interval includes the sample mean number of hours per weekend night adults in U.S. households in 2017 slept.\n\nCorrect interpretation\nIncorrect interpretation\n\nI am 90% confident the interval from 8.05 to 8.31 hrs will include the value of the mean number of hours per weekend night adults in U.S. households in 2017 slept.\n\nCorrect interpretation\nIncorrect interpretation\n\nAbout 90% of adults in U.S. households in 2017 slept between 8.05 and 8.31 hrs per weekend night.\n\nCorrect interpretation\nIncorrect interpretation\n\nThe probability that the population parameter is in this particular 90% confidence interval is 0.90.\n\nCorrect interpretation\nIncorrect interpretation"
+    "objectID": "assignments/assignment-01.html#instructions",
+    "href": "assignments/assignment-01.html#instructions",
+    "title": "Assignment 01",
+    "section": "Instructions",
+    "text": "Instructions\nYou will use the films.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Open a new script file, import the dataset, and load any packages. Then you are ready to begin. (Reference code used in class to complete the assignment.)"
+  },
+  {
+    "objectID": "assignments/assignment-01.html#how-do-i-submit-the-assignment",
+    "href": "assignments/assignment-01.html#how-do-i-submit-the-assignment",
+    "title": "Assignment 01",
+    "section": "How do I submit the assignment?",
+    "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the QMD file you used unless the directions specifically ask you to submit it."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Instructor/TA",
+    "section": "",
+    "text": "Instructor: Andrew Zieffler  Email: zief0002@umn.edu  Office: Education Sciences Building 178  Office Hours: Tuesday 1:00 PM–2:00 PM; and by appointment  Virtual Office: If you want to meet virtually, send me a Google calendar invite and include a Zoom link in the invite."
   },
   {
     "objectID": "assignments.html",
@@ -224,32 +217,25 @@
     "text": "Assignment FAQs\nHow do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it.\n\nDo I need to turn in the script file?\nNo…unless the directions specifically ask you to submit the script file. The script file is for your reference. Future assignments will sometimes have questions that reference older assignments, so an organized and well-commented script file is a good idea. Moreover, the TA or myself may ask you to submit your syntax after you submit the assignment to help us interpret mistakes you made on the assignment so that we can provide more thorough feedback.\nWill you provide answer keys to the assignments?\nNo. You will get back several comments on your assignments that address what you did wrong. The educational research is pretty clear that feedback is more helpful to student learning than providing correct answers. If you have further questions or need additional clarification, you are welcome to come to office hours or make an appointment with the instructor or TA.\nWill you go over the answers in class?\nNo. I will address broad concepts if several students/groups made the same mistake, but otherwise, since each student/group makes unique mistakes going over the assignments more broadly is not a good use of our limited class time. The feedback should be helpful in understanding any mistakes you made, but if it isn’t, you are welcome to come to office hours or make an appointment with the instructor or TA.\nWill you look at our assignment prior to us submitting it?\nThe instructor or TA will not “pre-grade” your assignment. If there is a “Preparation” part of the assignment we can ensure that you did that part correctly, and we can also give you feedback about syntax, but we will not tell you if an answer is correct or not. We can also answer clarifying questions (e.g., ‘I know Question 8 is asking about […], but I’m not sure what this question is looking for. Is there another way to restate this question?’). If you completed the assignment without any trouble, then be confident in your work and simply submit the assignment! 😄 If you are unsure about something specific, then ask about that specific thing rather than a general ‘did I do this right’!\nWill we be able to re-do the assignment?\nGenerally no. Since you have the opportunity to work in groups on the assignments, you should be able offset any of the issues that come up that would necessitate a re-submission. The exception to this is that we may allow you to re-do Assignment 1. If we do this, we will send you an email requesting that you resubmit part, or all of Assignment 1. You will not receive much feedback on your assignment prior to your re-submission. This is because during the first assignment you are learning not only content, but also expectations around how to respond to the questions we ask."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Instructor/TA",
-    "section": "",
-    "text": "Instructor: Andrew Zieffler  Email: zief0002@umn.edu  Office: Education Sciences Building 178  Office Hours: Tuesday 1:00 PM–2:00 PM; and by appointment  Virtual Office: If you want to meet virtually, send me a Google calendar invite and include a Zoom link in the invite."
-  },
-  {
-    "objectID": "assignments/assignment-01.html#instructions",
-    "href": "assignments/assignment-01.html#instructions",
-    "title": "Assignment 01",
-    "section": "Instructions",
-    "text": "Instructions\nYou will use the films.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Open a new script file, import the dataset, and load any packages. Then you are ready to begin. (Reference code used in class to complete the assignment.)"
-  },
-  {
-    "objectID": "assignments/assignment-01.html#how-do-i-submit-the-assignment",
-    "href": "assignments/assignment-01.html#how-do-i-submit-the-assignment",
-    "title": "Assignment 01",
-    "section": "How do I submit the assignment?",
-    "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the QMD file you used unless the directions specifically ask you to submit it."
-  },
-  {
     "objectID": "assignments/assignment-02.html#instructions",
     "href": "assignments/assignment-02.html#instructions",
     "title": "Assignment 02",
     "section": "Instructions",
     "text": "Instructions\nSubmit a PDF document of your responses to the following questions."
+  },
+  {
+    "objectID": "assignments/assignment-02.html#part-1-visualizing-summarizing-and-describing-the-sample-data",
+    "href": "assignments/assignment-02.html#part-1-visualizing-summarizing-and-describing-the-sample-data",
+    "title": "Assignment 02",
+    "section": "Part 1: Visualizing, Summarizing, and Describing the Sample Data",
+    "text": "Part 1: Visualizing, Summarizing, and Describing the Sample Data\nYou will use the sandwiches.csv data set to answer questions in this part of the lab. The data file and data codebook are available in the textbook.\n\nCreate a histogram for the sugar attribute. Be sure to update the labels and add a color of your choice. Include your histogram in your document.\nUse the df_stats() function to compute a set of numerical summary measures for the sugar attribute. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).\n(3pts.) Write a couple of sentences describing the shape, center, and variation of the distribution using the context of the sugar content in sub shop sandwiches."
+  },
+  {
+    "objectID": "assignments/assignment-02.html#part-2-estimating-uncertainty",
+    "href": "assignments/assignment-02.html#part-2-estimating-uncertainty",
+    "title": "Assignment 02",
+    "section": "Part 2: Estimating Uncertainty",
+    "text": "Part 2: Estimating Uncertainty\nSuppose a social scientist carried out a bootstrap simulation (used the do() function similar to how we did in the Day 5 activity) to estimate the standard error of the sample mean amount of sugar. The resulting histogram and summary statistics of this simulation are shown below:\n\n\n\n\n\n\n\n\nFigure 1: Distribution of 1000 bootstrapped means.\n\n\n\n\n\n\n&gt; df_stats(~result, data = bootstrap_means)\n\n  response   min       Q1  median    Q3   max     mean        sd    n missing\n1   result 6.592 7.260375 7.49725 7.735 8.775 7.502887 0.3305093 1000       0\n\n\n\nExplain why we expect the mean of this distribution of sample means to be 7.50 (even before we run the simulation and see the histogram).\nWhat is the estimated standard error of the means?\nExplain what the standard error measures using the context."
   },
   {
     "objectID": "assignments/assignment-02.html#how-do-i-submit-the-assignment",
@@ -259,30 +245,16 @@
     "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it."
   },
   {
-    "objectID": "assignments/assignment-03.html#instructions",
-    "href": "assignments/assignment-03.html#instructions",
-    "title": "Assignment 03",
+    "objectID": "assignments/assignment-04.html#instructions",
+    "href": "assignments/assignment-04.html#instructions",
+    "title": "Assignment 04",
     "section": "Instructions",
-    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Submit a PDF document of your responses to the following questions."
+    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Submit a PDF document of your responses to the questions in this assignment.\nA social scientist is interested in answering the following two research questions:\n\nResearch Question 1: What proportion of adults in the U.S. in 2017 report having sleep trouble?\nResearch Question 2: What is the difference in the proportion of American adults in 2017 that are experiencing depression between those who have reported sleep trouble and those who have not?\n\nYou will use the recent_depression and trouble_sleeping variables from the nhanes.csv data to compute confidence intervals to answer these research questions."
   },
   {
-    "objectID": "assignments/assignment-03.html#how-do-i-submit-the-assignment",
-    "href": "assignments/assignment-03.html#how-do-i-submit-the-assignment",
-    "title": "Assignment 03",
-    "section": "How do I submit the assignment?",
-    "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it."
-  },
-  {
-    "objectID": "assignments/assignment-05.html#instructions",
-    "href": "assignments/assignment-05.html#instructions",
-    "title": "Assignment 05",
-    "section": "Instructions",
-    "text": "Instructions\nYou will use the nhanes.csv data set to answer questions in this lab. The data file and data codebook are available in the textbook. Submit a PDF document of your responses to the questions in this assignment.\nA social scientist is interested in answering the following two research questions:\n\nResearch Question 1: Among adults in the U.S. in 2017, is the number of hours slept on a weeknight a predictor of the number of hours a person sleeps on the weekend?\n\nYou will use the sleep_weeknight and sleep_weekend attributes from the nhanes.csv data to fit a regression model that you will use to answer these research questions."
-  },
-  {
-    "objectID": "assignments/assignment-05.html#how-do-i-submit-the-assignment",
-    "href": "assignments/assignment-05.html#how-do-i-submit-the-assignment",
-    "title": "Assignment 05",
+    "objectID": "assignments/assignment-04.html#how-do-i-submit-the-assignment",
+    "href": "assignments/assignment-04.html#how-do-i-submit-the-assignment",
+    "title": "Assignment 04",
     "section": "How do I submit the assignment?",
     "text": "How do I submit the assignment?\nCreate a PDF of your responses and submit the PDF via email to both the instructor and TA. Also cc any group members. Before you submit the assignment check that:\n\nAll group members’ names are on the assignment.\nAll tables are numbered and have a caption.\nAll figures are numbered and have a caption.\nAll figures are re-sized to not take up more page space than is necessary to read them.\nNo R syntax is included unless the question specifically asked for the syntax to be included. If there is R syntax included, be sure that it is typeset in a monospaced font (e.g., Courier, Inconsolata).\nDo not submit the script file you used unless the directions specifically ask you to submit it."
   },
@@ -362,103 +334,5 @@
     "title": "Calendar",
     "section": "",
     "text": "The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor’s discretion.\n\n\n\n\n\n\n\n\nDay\n\nDate\n\n\nReading\n\n\nTopic/Slides\n\n\nMaterials\n\n\n\n\n\n\n\n\n \n\n\n1\n\n\nSept. 03\n\n\n\n\nWelcome to EPsy 5261\n\n\n \n\n\n\n\n\nUnit 01: Statistical Computation\n\n\n\n\n \n\n\n2\n\n\nSept. 05\n\n\n\n\nIntroduction to Coding\n\n\n\n\n\n\n\n \n\n\n3\n\n\nSept. 10\n\n\nCh. 1–2\n\n\nIntroduction to R and RStudio\n\n\n\n\n\n\n\n \n\n\n4\n\n\nSept. 12\n\n\nCh. 4\n\n\nData and Codebooks\n\n\n\n\n\n\n\n\nUnit 02: Visualizing and Summarizing Data\n\n\n\n\n \n\n\n5\n\n\nSept. 17\n\n\nCh. 5–6\n\n\nVariables and Graphs\n\n\n\n\n\n\n\n \n\n\n6\n\n\nSept. 19\n\n\n\n\nDescribing Distributions\n\n\n\n\n\n\n\n\nUnit 03: Comparing Data to a Standard\n\n\n\n\n \n\n\n7\n\n\nSept. 24\n\n\nCh. 7–8\n\n\nEstimating Uncertainty\n\n\n\n\n\n\n\n \n\n\n8\n\n\nSept. 26\n\n\n\n\nIntroduction to Hypothesis Testing\n\n\n\n\n\n\n\n \n\n\n9\n\n\nOct. 01\n\n\n\n\nHypothesis Testing with Simulation\n\n\n\n\n\n\n\n \n\n\n10\n\n\nOct. 03\n\n\nCh. 17\n\n\nStudy Design: Generalizations\n\n\n\n\n\n\n\n \n\n\n11\n\n\nOct. 08\n\n\nCh. 9–11\n\n\nIntroduction to Hypothesis Testing with the t-Distribution\n\n\n\n\n\n\n\n \n\n\n12\n\n\nOct. 10\n\n\nCh. 12\n\n\nIntroduction to Hypothesis Testing with the z-Distribution\n\n\n\n\n\n\n\n\nUnit 04: Comparing Two Groups\n\n\n\n\n \n\n\n13\n\n\nOct. 15\n\n\nCh. 18\n\n\nStudy Design: Causal Claims\n\n\n\n\n\n\n\n \n\n\n14\n\n\nOct. 17\n\n\nCh. 13–14\n\n\nIntroduction to Hypothesis Testing: Comparing Two Means\n\n\n\n\n\n\n\n \n\n\n15\n\n\nOct. 22\n\n\nCh. 15\n\n\nIntroduction to Hypothesis Testing: Comparing Two Proportions\n\n\n\n\n\n\n\n \n\n\n16\n\n\nOct. 24\n\n\n\n\nNO CLASS—Mental Health Day 🛌 🍷\n\n\n\n\n\n\n\nUnit 05: Effect Size\n\n\n\n\n\n \n\n\n17\n\n\nOct. 29\n\n\nCh. 19–21\n\n\nIntroduction to Confidence Intervals\n\n\n\n\n\n\n\n \n\n\n18\n\n\nOct. 31\n\n\n\n\nConfidence Intervals for a Single Mean\n\n\n\n\n\n\n\n \n\n\n19\n\n\nNov. 05\n\n\n\n\n\nConfidence Intervals for a Single Proportion\n\n\n\n\n\n\n\n \n\n\n20\n\n\nNov. 07\n\n\n\n\nConfidence Intervals for Comparing Two Groups\n\n\n\n\n\n\n\n \n\n\n21\n\n\nNov. 12\n\n\n\n\n\nPractice with Confidence Intervals\n\n\n\n\n\n\n\n \n\n\n22\n\n\nNov. 14\n\n\nCh. 22–23\n\n\nExploring Effect Size\n\n\n\n\n\n\n\n\nUnit 06: Correlation and Regression\n\n\n\n\n \n\n\n23\n\n\nNov. 19\n\n\nCh. 24\n\n\nIntroduction to Correlation\n\n\n\n\n\n\n\n \n\n\n24\n\n\nNov. 21\n\n\nCh. 25–26\n\n\nIntroduction to Linear Regression\n\n\n\n\n\n\n\n \n\n\n25\n\n\nNov. 26\n\n\nCh. 27\n\n\nHypothesis Test for the Slope\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n26\n\n\nNov. 28\n\n\n\n\nNO CLASS—Thanksgiving Break 🦃 🌽 🥧\n\n\n\n\n\n\n \n\n\n27\n\n\nDec. 03\n\n\n\n\nAssumptions for Linear Regression\n\n\n\n\n\n\n\n \n\n\n28\n\n\nDec. 05\n\n\n\n\nLinear Regression: Practice\n\n\n\n\n\n\n\n \n\n\n29\n\n\nDec. 10\n\n\n\n\nTBD"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#learning-goals",
-    "href": "files/slides/D2-Introduction-to-Coding.html#learning-goals",
-    "title": "Day 02Introduction to Coding",
-    "section": "Learning Goals",
-    "text": "Learning Goals\nAt the end of this lesson, you should be able to …\n\nRead basic code\nWrite basic code\nExplain the structure of a function for coding"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity",
-    "href": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity",
-    "title": "Day 02Introduction to Coding",
-    "section": "Grilled Cheese Activity",
-    "text": "Grilled Cheese Activity\nComplete Part 1 of the activity."
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#introduction-to-coding",
-    "href": "files/slides/D2-Introduction-to-Coding.html#introduction-to-coding",
-    "title": "Day 02Introduction to Coding",
-    "section": "Introduction to Coding",
-    "text": "Introduction to Coding"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#coding",
-    "href": "files/slides/D2-Introduction-to-Coding.html#coding",
-    "title": "Day 02Introduction to Coding",
-    "section": "Coding",
-    "text": "Coding\n\nComputers understand code\nIt only understands certain things\nTo write code for the computer to “run” or “execute” we write functions"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#functions",
-    "href": "files/slides/D2-Introduction-to-Coding.html#functions",
-    "title": "Day 02Introduction to Coding",
-    "section": "Functions",
-    "text": "Functions\nFunctions are like verbs.\n\nWe use them to tell the computer what we want to do."
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#example-function",
-    "href": "files/slides/D2-Introduction-to-Coding.html#example-function",
-    "title": "Day 02Introduction to Coding",
-    "section": "Example Function",
-    "text": "Example Function\nFor creating a grilled cheese we want to start by buttering the bread. For this we could use the following function:\n\n\nbutter_bread()\n\n\nThis function allows us to (figuratively) butter some bread."
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#arguments",
-    "href": "files/slides/D2-Introduction-to-Coding.html#arguments",
-    "title": "Day 02Introduction to Coding",
-    "section": "Arguments",
-    "text": "Arguments\nFunctions require arguments to help specify what we want to do. For example we want to tell the computer what type of bread to butter:\n\n\nbutter_bread(type = \"wheat\")"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#notice",
-    "href": "files/slides/D2-Introduction-to-Coding.html#notice",
-    "title": "Day 02Introduction to Coding",
-    "section": "Notice!",
-    "text": "Notice!\n\nFunctions have a specific structure\nIf the structure isn’t correct, the computer won’t give you the right output - it might give you nothing!\nIn the example below notice that:\n\nThere is an underscore in the function name\nThe argument is in quotation marks to specify the type of bread\nThe argument is enclosed in parenthesis\n\n\n\nbutter_bread(type = \"wheat\")"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#notice-1",
-    "href": "files/slides/D2-Introduction-to-Coding.html#notice-1",
-    "title": "Day 02Introduction to Coding",
-    "section": "Notice!",
-    "text": "Notice!\n\nParenthesis matter.\nCapitalization matters.\nQuotes must be used correctly (need both opening and closing quotes, having them only where needed).\nOrder matters."
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#using-multiple-functions",
-    "href": "files/slides/D2-Introduction-to-Coding.html#using-multiple-functions",
-    "title": "Day 02Introduction to Coding",
-    "section": "Using Multiple Functions",
-    "text": "Using Multiple Functions\nFunctions can be chained together so that the output of one function is sent to another function.\n\n\nbutter_bread(type = \"wheat\") +\nadd_cheese(flavor = \"colby\") +\nfry_sandwich(time = 6)"
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity-cntd.",
-    "href": "files/slides/D2-Introduction-to-Coding.html#grilled-cheese-activity-cntd.",
-    "title": "Day 02Introduction to Coding",
-    "section": "Grilled Cheese Activity (cntd.)",
-    "text": "Grilled Cheese Activity (cntd.)\nComplete Parts 2 and 3 of the activity."
-  },
-  {
-    "objectID": "files/slides/D2-Introduction-to-Coding.html#looking-ahead",
-    "href": "files/slides/D2-Introduction-to-Coding.html#looking-ahead",
-    "title": "Day 02Introduction to Coding",
-    "section": "Looking Ahead",
-    "text": "Looking Ahead\n\nWe will write functions like this in class.\nWe will use R Studio for writing and analyzing code.\nYou will always be given functions.\nYou will need to be precise when writing code and checking for bugs.\n\nBugs are a normal part of the coding process!"
-  },
-  {
-    "objectID": "assignments/assignment-02.html#part-1-visualizing-summarizing-and-describing-the-sample-data",
-    "href": "assignments/assignment-02.html#part-1-visualizing-summarizing-and-describing-the-sample-data",
-    "title": "Assignment 02",
-    "section": "Part 1: Visualizing, Summarizing, and Describing the Sample Data",
-    "text": "Part 1: Visualizing, Summarizing, and Describing the Sample Data\nYou will use the sandwiches.csv data set to answer questions in this part of the lab. The data file and data codebook are available in the textbook.\n\nCreate a histogram for the sugar attribute. Be sure to update the labels and add a color of your choice. Include your histogram in your document.\nUse the df_stats() function to compute a set of numerical summary measures for the sugar attribute. Copy-and-paste (or screenshot) the output from this function into the document you will submit. If you copy-and-paste the output into your document, change the font to a monospaced font (e.g., Courier, Consolata).\n(3pts.) Write a couple of sentences describing the shape, center, and variation of the distribution using the context of the sugar content in sub shop sandwiches."
-  },
-  {
-    "objectID": "assignments/assignment-02.html#part-2-estimating-uncertainty",
-    "href": "assignments/assignment-02.html#part-2-estimating-uncertainty",
-    "title": "Assignment 02",
-    "section": "Part 2: Estimating Uncertainty",
-    "text": "Part 2: Estimating Uncertainty\nSuppose a social scientist carried out a bootstrap simulation (used the do() function similar to how we did in the Day 5 activity) to estimate the standard error of the sample mean amount of sugar. The resulting histogram and summary statistics of this simulation are shown below:\n\n\n\n\n\n\n\n\nFigure 1: Distribution of 1000 bootstrapped means.\n\n\n\n\n\n\n&gt; df_stats(~result, data = bootstrap_means)\n\n  response   min       Q1  median    Q3   max     mean        sd    n missing\n1   result 6.592 7.260375 7.49725 7.735 8.775 7.502887 0.3305093 1000       0\n\n\n\nExplain why we expect the mean of this distribution of sample means to be 7.50 (even before we run the simulation and see the histogram).\nWhat is the estimated standard error of the means?\nExplain what the standard error measures using the context."
   }
 ]
