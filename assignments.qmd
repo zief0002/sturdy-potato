@@ -11,7 +11,7 @@ There are two components that make up your grade: lab assignments (80%), and dai
 
 ### Lab Assignments
 
-There will be 5 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via email to the instructor before the end of the day that they are due (i.e., by 11:59 PM that day). 
+There will be 5 lab assignments that together are worth 80% of your grade. You will need to complete the lab assignments outside of class (as homework) and submit them via email to the instructor and TA. You can access each of the lab assignment below. For each lab assignment, you may choose to work alone or in a group. Working in a group may allow you to explore answers to a question with other students before submitting your lab assignment. Your lab assignment should be submitted via email to the instructor before the end of the day that they are due (i.e., by 11:59 PM that day).
 
 As a student of statistics, working through all of the lab assignments is an important piece in building a complete understanding of the concepts, as well as allowing you to practice doing statistics. As a way of connecting the work you are doing across all lab assignments, you will explore the same data set for each lab assignment.
 
@@ -20,7 +20,7 @@ As a student of statistics, working through all of the lab assignments is an imp
 
 ### Exit Tickets
 
-Exit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The "ticket" consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually.  The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket. 
+Exit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The "ticket" consists of a single question designed to assess your knowledge about or have you reflect on the day’s class content. These questions are to be completed individually.  The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.
 
 If you miss class for a University approved reason (see *Policy for Missing Class and Making up Missed/Late Work*), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor.
 
@@ -29,7 +29,7 @@ If you miss class for a University approved reason (see *Policy for Missing Clas
 
 ## Lab Assignment Due Dates
 
-Below are the due dates for the lab assignments, as well as links to each assignment. *All assignments are due by 11:59 PM on the due date.* The due dates may change at the instructor's discretion. Any revised due dates will be announced in class and posted to the website. 
+Below are the due dates for the lab assignments, as well as links to each assignment. *All assignments are due by 11:59 PM on the due date.* The due dates may change at the instructor's discretion. Any revised due dates will be announced in class and posted to the website.
 
 <br />
 
@@ -48,7 +48,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 <tr>
 <td>
-  [Lab Assignment \#1](assignments/assignment-01.html) 
+  [Lab Assignment \#1](assignments/assignment-01.html)
 </td>
 <td>Sept. 26</td>
 <!-- <td align="center" style="vertical-align:middle;"> -->
@@ -112,7 +112,7 @@ Below are the due dates for the lab assignments, as well as links to each assign
 :::stress
 ### Stress Management
 
-Stress management is an important piece of the skill set needed for success in graduate school. Pet Away Worry & Stress (PAWS) is one of the many resources available to students. Find out more at [https://boynton.umn.edu/paws](https://boynton.umn.edu/paws). 
+Stress management is an important piece of the skill set needed for success in graduate school. Pet Away Worry & Stress (PAWS) is one of the many resources available to students. Find out more at [https://boynton.umn.edu/paws](https://boynton.umn.edu/paws).
 
 <p style="font-size:70%;">You can follow Tilly the Therapy Chicken on Twitter (@TherapyChicken).</p>
 :::
@@ -122,7 +122,7 @@ Stress management is an important piece of the skill set needed for success in g
 
 ## Evaluation of Student Performance
 
-You will be evaluated on the basis of your performance on the assignments and exit tickets outlined above. Your course grade will be computed as a weighted average of: 
+You will be evaluated on the basis of your performance on the assignments and exit tickets outlined above. Your course grade will be computed as a weighted average of:
 
 Type            | Individual or Group? | Percent of Grade |
 --------------- | -------------------- | ---------------- |
@@ -132,18 +132,26 @@ Exit Tickets    | Individual           | 20%              |
 
 The formula to do this will be:
 
-$$
-\text{Percentage} = 0.8 \bigg(\frac{\text{Points earned on all labs}}{\text{Total points on all labs}}\bigg) + 0.2\bigg(\frac{\text{Number of Exit Tickets completed}}{\text{Total number of Exit Tickets}}\bigg)
-$$
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "80%"
+knitr::include_graphics("img/formula.png")
+```
+
+
+<!-- $$ -->
+<!-- \text{Percentage} = 0.8 \bigg(\frac{\text{Points earned on all labs}}{\text{Total points on all labs}}\bigg) + 0.2\bigg(\frac{\text{Number of Exit Tickets completed}}{\text{Total number of Exit Tickets}}\bigg) -->
+<!-- $$ -->
 
 
 This overall percentage in the class will then be converted to a final course grade using:
 
 Cutoff    | Grade | Definition for Graduate Credit |
 --------- | ----- | ------------------------------ |
-93%--100% | A     | For exceptional work, well above the minimum criteria | 
-90%--92%  | A--   | For outstanding work, well above the minimum criteria | 
-87%--89%  | B+    | For excellent work, significant above the minimum criteria | 
+93%--100% | A     | For exceptional work, well above the minimum criteria |
+90%--92%  | A--   | For outstanding work, well above the minimum criteria |
+87%--89%  | B+    | For excellent work, significant above the minimum criteria |
 83%--86%  | B     | For work above the minimum criteria |
 80%--82%  | B--   | |
 77%--79%  | C+    | |
@@ -161,7 +169,7 @@ If you are taking the course S/N, the minimum criterion to receive an S is 80% (
 
 ### Extra Credit Policy
 
-There is no extra credit in this course. 
+There is no extra credit in this course.
 
 <br />
 
@@ -212,7 +220,7 @@ No. I will address broad concepts if several students/groups made the same mista
 
 **Will you look at our assignment prior to us submitting it?**
 
-The instructor or TA will not "pre-grade" your assignment. If there is a "Preparation" part of the assignment we can ensure that you did that part correctly, and we can also give you feedback about syntax, but we will not tell you if an answer is correct or not. We can also answer clarifying questions (e.g., 'I know Question 8 is asking about […], but I’m not sure what this question is looking for. Is there another way to restate this question?'). If you completed the assignment without any trouble, then be confident in your work and simply submit the assignment! 😄 If you are unsure about something specific, then ask about that specific thing rather than a general 'did I do this right'! 
+The instructor or TA will not "pre-grade" your assignment. If there is a "Preparation" part of the assignment we can ensure that you did that part correctly, and we can also give you feedback about syntax, but we will not tell you if an answer is correct or not. We can also answer clarifying questions (e.g., 'I know Question 8 is asking about […], but I’m not sure what this question is looking for. Is there another way to restate this question?'). If you completed the assignment without any trouble, then be confident in your work and simply submit the assignment! 😄 If you are unsure about something specific, then ask about that specific thing rather than a general 'did I do this right'!
 
 
 **Will we be able to re-do the assignment?**
