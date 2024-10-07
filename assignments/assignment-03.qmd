@@ -87,7 +87,7 @@ p = 2.591249e-06
 --------------------------------------------------
 ```
 
-8. **(3pts.)** Sketch a picture of the *z*-distribution based on the null hypothesis being true. To fully answer this question include the following in your sketch:
+8. **(3pts.)** Sketch a picture of the *z*-distribution based on the null hypothesis being true. (*Note:* You do not need to do anything in R Studio.) To fully answer this question include the following in your sketch:
     
     + Label the x-axis.
     + Clearly indicate the observed z-value(s) in the sketch (based on the output) and draw vertical line(s) at the observed z-value(s).
