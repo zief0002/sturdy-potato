@@ -48,7 +48,8 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 <tr>
 <td>
-  [Lab Assignment \#1](assignments/assignment-01.html)
+  Lab Assignment \#1 [Closed]
+  <!-- [Lab Assignment \#1](assignments/assignment-01.html) -->
 </td>
 <td>Sept. 26</td>
 <!-- <td align="center" style="vertical-align:middle;"> -->
@@ -60,7 +61,8 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 <tr>
 <td>
-  [Lab Assignment \#2](assignments/assignment-02.html)
+  Lab Assignment \#2 [Closed]
+  <!-- [Lab Assignment \#2](assignments/assignment-02.html) -->
 </td>
 <td>Oct. 17</td>
 <!-- <td align="center" style="vertical-align:middle;"> -->
@@ -71,7 +73,8 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 <tr>
 <td>
-  [Lab Assignment \#3](assignments/assignment-03.html)
+  Lab Assignment \#3 [Closed]
+  <!-- [Lab Assignment \#3](assignments/assignment-03.html) -->
 </td>
 <td>Oct. 31</td>
 <!-- <td align="center" style="vertical-align:middle;"> -->
@@ -82,7 +85,8 @@ Below are the due dates for the lab assignments, as well as links to each assign
 
 <tr>
 <td>
-  [Lab Assignment \#4](assignments/assignment-04.html)
+  Lab Assignment \#4 [Closed]
+  <!-- [Lab Assignment \#4](assignments/assignment-04.html) -->
 </td>
 <td>Nov. 14</td>
 <!-- <td align="center" style="vertical-align:middle;"> -->
